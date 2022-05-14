@@ -5825,77 +5825,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
   methods: {
@@ -30181,28 +30110,11 @@ var render = function () {
                                 }),
                               ]
                             ),
-                            _vm._v(
-                              "\n<<<<<<< HEAD\n                                        "
-                            ),
+                            _vm._v(" "),
                             _c(
                               "span",
                               { staticClass: "ml-2 font-bold font-opensans" },
                               [_vm._v("Dashboard")]
-                            ),
-                            _vm._v(
-                              "\n||||||| 388b1e3\n                                        "
-                            ),
-                            _c("span", { staticClass: "ml-2 font-bold" }, [
-                              _vm._v("Dashboard"),
-                            ]),
-                            _vm._v(
-                              "\n=======\n                                        "
-                            ),
-                            _c("span", { staticClass: "ml-2 font-bold" }, [
-                              _vm._v("Home"),
-                            ]),
-                            _vm._v(
-                              "\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                                    "
                             ),
                           ]),
                         ]
@@ -30274,76 +30186,6 @@ var render = function () {
                           _c("span", { staticClass: "ml-2 font-bold" }, [
                             _vm._v("Deliverables"),
                           ]),
-                          _vm._v(
-                            "\n||||||| 388b1e3\n                                    "
-                          ),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "ml-2 font-bold" }, [
-                            _vm._v("Performance"),
-                          ]),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "border-b border-gray-300 xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "icon icon-tabler icon-tabler-code",
-                              attrs: {
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "20",
-                                height: "20",
-                                viewBox: "0 0 24 24",
-                                "stroke-width": "1.5",
-                                stroke: "currentColor",
-                                fill: "none",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
-                              },
-                            },
-                            [
-                              _c("path", {
-                                attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                              }),
-                              _vm._v(" "),
-                              _c("polyline", {
-                                attrs: { points: "7 8 3 12 7 16" },
-                              }),
-                              _vm._v(" "),
-                              _c("polyline", {
-                                attrs: { points: "17 8 21 12 17 16" },
-                              }),
-                              _vm._v(" "),
-                              _c("line", {
-                                attrs: {
-                                  x1: "14",
-                                  y1: "4",
-                                  x2: "10",
-                                  y2: "20",
-                                },
-                              }),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "ml-2 font-bold" }, [
-                            _vm._v("Deliverables"),
-                          ]),
-                          _vm._v(
-                            "\n=======\n                                    "
-                          ),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "ml-2 font-bold" }, [
-                            _vm._v("Our Team"),
-                          ]),
-                          _vm._v(
-                            "\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                                "
-                          ),
                         ]
                       ),
                       _vm._v(" "),
@@ -30542,80 +30384,7 @@ var render = function () {
         _vm._v(" "),
         _vm._m(2),
         _vm._v(" "),
-        _c("div", { staticClass: "flex " }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "hidden xl:flex md:mr-6 xl:mr-16 font-opensans xl:text-lg font-bold space-x-24 ",
-            },
-            [
-              _vm._m(3),
-              _vm._v(" "),
-              _vm._m(4),
-              _vm._v(" "),
-              _vm._m(5),
-              _vm._v(" "),
-              _vm._v(
-                "\n||||||| 388b1e3\n                            Performance\n                        "
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out",
-                  attrs: { href: "javascript: void(0)" },
-                },
-                [
-                  _c("span", { staticClass: "mr-2" }, [
-                    _c(
-                      "svg",
-                      {
-                        staticClass: "icon icon-tabler icon-tabler-code",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "20",
-                          height: "20",
-                          viewBox: "0 0 24 24",
-                          "stroke-width": "1.5",
-                          stroke: "currentColor",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                        }),
-                        _vm._v(" "),
-                        _c("polyline", { attrs: { points: "7 8 3 12 7 16" } }),
-                        _vm._v(" "),
-                        _c("polyline", {
-                          attrs: { points: "17 8 21 12 17 16" },
-                        }),
-                        _vm._v(" "),
-                        _c("line", {
-                          attrs: { x1: "14", y1: "4", x2: "10", y2: "20" },
-                        }),
-                      ]
-                    ),
-                  ]),
-                  _vm._v(
-                    "\n                            Deliverables\n                        "
-                  ),
-                ]
-              ),
-              _vm._v(
-                "\n=======\n                            Our Team\n                        "
-              ),
-              _vm._v(
-                "\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                    "
-              ),
-            ]
-          ),
-        ]),
+        _vm._m(3),
       ]),
     ]),
   ])
@@ -30627,15 +30396,6 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center" }, [
       _c("span", { staticClass: "ml-2 font-bold" }, [_vm._v("Menu")]),
-      _vm._v("\n||||||| 388b1e3\n                                        "),
-      _vm._v(" "),
-      _c("span", { staticClass: "ml-2 font-bold" }, [_vm._v("Products")]),
-      _vm._v("\n=======\n                                        "),
-      _vm._v(" "),
-      _c("span", { staticClass: "ml-2 font-bold" }, [_vm._v("Menu")]),
-      _vm._v(
-        "\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                                    "
-      ),
     ])
   },
   function () {
@@ -30674,29 +30434,6 @@ var staticRenderFns = [
               },
               [_vm._v("Nyehaat."), _c("span", [_vm._v("id")])]
             ),
-            _vm._v("\n||||||| 388b1e3\n                        "),
-            _vm._v(" "),
-            _c(
-              "h2",
-              {
-                staticClass:
-                  "hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3",
-              },
-              [_vm._v("The North")]
-            ),
-            _vm._v("\n=======\n                        "),
-            _vm._v(" "),
-            _c(
-              "h2",
-              {
-                staticClass:
-                  "hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3",
-              },
-              [_vm._v("nyehaat.id")]
-            ),
-            _vm._v(
-              "\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                    "
-            ),
           ]
         ),
       ]
@@ -30706,89 +30443,85 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass:
-          "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none",
-        attrs: { href: "javascript: void(0)" },
-      },
-      [
-        _c(
-          "span",
-          {
-            staticClass:
-              " border-transparent hover:space-y-2 hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ",
-          },
-          [
-            _vm._v(
-              "\n                                Home\n                            "
-            ),
-          ]
-        ),
-        _vm._v(
-          "\n<<<<<<< HEAD\n||||||| 388b1e3\n                            Dashboard\n=======\n                            Home\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                        "
-        ),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass:
-          "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none ",
-        attrs: { href: "javascript: void(0)" },
-      },
-      [
-        _c(
-          "span",
-          {
-            staticClass:
-              " border-transparent  hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ",
-          },
-          [
-            _vm._v(
-              "\n                                Menu\n                            "
-            ),
-          ]
-        ),
-        _vm._v(
-          "\n<<<<<<< HEAD\n\n||||||| 388b1e3\n                            Products\n=======\n                            Menu\n>>>>>>> fdcc36dd9597ac71f058cd884a5e4f20fb93a1e6\n                        "
-        ),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass:
-          "flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ",
-        attrs: { href: "javascript: void(0)" },
-      },
-      [
-        _c(
-          "span",
-          {
-            staticClass:
-              "  border-transparent   hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out  ",
-          },
-          [
-            _vm._v(
-              "\n                            Tentang Kami\n                            "
-            ),
-          ]
-        ),
-        _vm._v("\n<<<<<<< HEAD\n\n                        "),
-      ]
-    )
+    return _c("div", { staticClass: "flex " }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "hidden xl:flex md:mr-6 xl:mr-16 font-opensans xl:text-lg font-bold space-x-24 ",
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass:
+                "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none",
+              attrs: { href: "javascript: void(0)" },
+            },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    " border-transparent hover:space-y-2 hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ",
+                },
+                [
+                  _vm._v(
+                    "\n                            Home\n                        "
+                  ),
+                ]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none ",
+              attrs: { href: "javascript: void(0)" },
+            },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    " border-transparent  hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ",
+                },
+                [
+                  _vm._v(
+                    "\n                            Menu\n                        "
+                  ),
+                ]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ",
+              attrs: { href: "javascript: void(0)" },
+            },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    "  border-transparent   hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out  ",
+                },
+                [
+                  _vm._v(
+                    "\n                        Tentang Kami\n                        "
+                  ),
+                ]
+              ),
+            ]
+          ),
+        ]
+      ),
+    ])
   },
 ]
 render._withStripped = true
