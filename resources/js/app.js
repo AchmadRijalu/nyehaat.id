@@ -23,6 +23,17 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 Vue.component('home', require('./components/Home.vue').default);
 Vue.component('navbar', require('./components/Navbar.vue').default);
 
+Vue.filter('toCurrency', function (value) {
+    if (typeof value !== "number") {
+        return value;
+    }
+    var formatter = new Intl.NumberFormat('id-ID', {
+        style: 'currency',
+        currency: 'IDR'
+    });
+    return formatter.format(value);
+});
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
