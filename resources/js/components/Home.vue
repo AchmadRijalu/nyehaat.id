@@ -4,18 +4,21 @@
     <section>
         <Hero></Hero>
         <Menu></Menu>
+        <Team></Team>
     </section>
 </template>
 
 <script>
 import Menu from './Menu.vue'
 import Hero from "./Hero.vue";
+import Team from "./Team";
 
 export default {
     name: "Home",
     components: {
         Menu,
         Hero,
+        Team
     },
     methods: {
         MenuHandler(flag) {

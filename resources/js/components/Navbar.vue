@@ -15,7 +15,7 @@
                                             <rect x="4" y="14" width="6" height="6" rx="1"></rect>
                                             <rect x="14" y="14" width="6" height="6" rx="1"></rect>
                                         </svg>
-                                        <span class="ml-2 font-bold">Dashboard</span>
+                                        <span class="ml-2 font-bold">Home</span>
                                     </div>
                                 </li>
                                 <li class="xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex justify-center" @click="dropdownHandler($event)">
@@ -24,7 +24,7 @@
                                             <path stroke="none" d="M0 0h24v24H0z"></path>
                                             <path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"></path>
                                         </svg>
-                                        <span class="ml-2 font-bold">Products</span>
+                                        <span class="ml-2 font-bold">Menu</span>
                                     </div>
                                 </li>
                                 <li class="xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
@@ -33,16 +33,7 @@
                                         <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
                                         <circle cx="12" cy="12" r="9"></circle>
                                     </svg>
-                                    <span class="ml-2 font-bold">Performance</span>
-                                </li>
-                                <li class="border-b border-gray-300 xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"></path>
-                                        <polyline points="7 8 3 12 7 16"></polyline>
-                                        <polyline points="17 8 21 12 17 16"></polyline>
-                                        <line x1="14" y1="4" x2="10" y2="20"></line>
-                                    </svg>
-                                    <span class="ml-2 font-bold">Deliverables</span>
+                                    <span class="ml-2 font-bold">Our Team</span>
                                 </li>
                                 <li class="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
                                     <div class="flex items-center">
@@ -91,7 +82,7 @@
                                 />
                             </g>
                         </svg>
-                        <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3">The North</h2>
+                        <h2 class="hidden sm:block text-base text-gray-700 font-bold leading-normal pl-3">nyehaat.id</h2>
                     </div>
                 </div>
                 <div class="flex">
@@ -106,7 +97,7 @@
                                     <rect x="14" y="14" width="6" height="6" rx="1"></rect>
                                 </svg>
                             </span>
-                            Dashboard
+                            Home
                         </a>
                         <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                             <span class="mr-2">
@@ -115,7 +106,7 @@
                                     <path d="M4 7h3a1 1 0 0 0 1 -1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1h3a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h1a2 2 0 0 1 0 4h-1a1 1 0 0 0 -1 1v3a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-1a2 2 0 0 0 -4 0v1a1 1 0 0 1 -1 1h-3a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1h1a2 2 0 0 0 0 -4h-1a1 1 0 0 1 -1 -1v-3a1 1 0 0 1 1 -1"></path>
                                 </svg>
                             </span>
-                            Products
+                            Menu
                         </a>
                         <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                             <span class="mr-2">
@@ -125,18 +116,7 @@
                                     <circle cx="12" cy="12" r="9"></circle>
                                 </svg>
                             </span>
-                            Performance
-                        </a>
-                        <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
-                            <span class="mr-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z"></path>
-                                    <polyline points="7 8 3 12 7 16"></polyline>
-                                    <polyline points="17 8 21 12 17 16"></polyline>
-                                    <line x1="14" y1="4" x2="10" y2="20"></line>
-                                </svg>
-                            </span>
-                            Deliverables
+                            Our Team
                         </a>
                     </div>
                 </div>
