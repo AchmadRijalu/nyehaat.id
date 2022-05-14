@@ -8,7 +8,8 @@
                 <p class="text-indigo-500 uppercase text-2xl mb-4">Qusique Tincidun sapien</p>
                 <h1 class="text-gray-900 text-4xl md:text-7xl mb-8">All natural ingredients</h1>
                 <p class="text-gray-800 font-regular mb-8">COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science.</p>
-                <div class="bg-white py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center shadow-lg rounded-lg">
+                <div class="  py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center rounded-lg">
+
                     <div class="sm:flex items-center py-2">
                         <div class="flex items-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-500 icon icon-tabler icon-tabler-user" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -45,6 +46,7 @@
                         </svg>
                         <input class="sm:hidden border-b border-gray-300 w-full bg-transparent pr-6" />
                     </div>
+
                 </div>
             </div>
         </div>
