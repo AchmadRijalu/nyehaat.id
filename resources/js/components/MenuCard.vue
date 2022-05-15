@@ -50,7 +50,8 @@
 <!--            </div>-->
             <div class="flex justify-between items-center font-opensans">
                 <span class="text-2xl font-bold text-gray-900 mr-4">{{ menu.price | toCurrency }}</span>
-               <a href="#" class="text-black hover:text-red-400 border-2 border-green-600 px-4 font-bold py-2.5 rounded-md  hover:bg-greenprimary transition duration-150 ease-in-out">
+               <a href="#" class="text-black  border-2 border-green-600 px-4 font-bold py-2.5 rounded-md  hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out">
+
                    Pesan
                </a>
             </div>

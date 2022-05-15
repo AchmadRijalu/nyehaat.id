@@ -5,6 +5,7 @@
         <Hero></Hero>
         <Menu></Menu>
         <Team></Team>
+        <Footer></Footer>
     </section>
 </template>
 
@@ -12,13 +13,15 @@
 import Menu from './Menu.vue'
 import Hero from "./Hero.vue";
 import Team from "./Team";
+import Footer from "./Footer";
 
 export default {
     name: "Home",
     components: {
         Menu,
         Hero,
-        Team
+        Team,
+        Footer
     },
     methods: {
         MenuHandler(flag) {
