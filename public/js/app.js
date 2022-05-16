@@ -5671,7 +5671,7 @@ var menus = [{
   title: "Vegan Roasted Red Pepper Pasta",
   price: 79000,
   diseases: ['Darah tinggi'],
-  ingredients: ['Olive Oil', 'Merica', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'],
+  ingredients: ['Olive Oil', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'],
   calories: 487,
   carbs: 75,
   protein: 14
