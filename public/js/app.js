@@ -5640,41 +5640,41 @@ var menus = [{
   carbs: 112.9,
   protein: 28.8
 }, {
-  id: 1,
-  title: "Red Rice Pecel with Egg and Grilled Tempeh",
-  price: 79000,
-  diseases: ['Diabetes', 'Darah tinggi'],
-  ingredients: ['Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
-  calories: 628.7,
-  carbs: 112.9,
-  protein: 28.8
+  id: 2,
+  title: "Smoothie Cherry-Bayam Anti Peradangan",
+  price: 39000,
+  diseases: ['Penyakit Jantung'],
+  ingredients: ['Yogurt rendah lemak', 'Ceri', 'Daun bayam', 'Alpukat', 'Mentega', 'Jahe'],
+  calories: 410,
+  carbs: 46.6,
+  protein: 17.4
 }, {
-  id: 1,
-  title: "Red Rice Pecel with Egg and Grilled Tempeh",
-  price: 79000,
-  diseases: ['Diabetes', 'Darah tinggi'],
-  ingredients: ['Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
-  calories: 628.7,
-  carbs: 112.9,
-  protein: 28.8
+  id: 3,
+  title: "Baked Cod with Spring Vegetables",
+  price: 22000,
+  diseases: ['Darah tinggi'],
+  ingredients: ['Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'],
+  calories: 221,
+  carbs: 11.3,
+  protein: 20.9
 }, {
-  id: 1,
-  title: "Red Rice Pecel with Egg and Grilled Tempeh",
+  id: 4,
+  title: "Chickpea Quinoa Soup",
   price: 79000,
-  diseases: ['Diabetes', 'Darah tinggi'],
-  ingredients: ['Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
-  calories: 628.7,
+  diseases: ['Darah tinggi'],
+  ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
+  calories: 227,
   carbs: 112.9,
-  protein: 28.8
+  protein: 8
 }, {
-  id: 1,
-  title: "Red Rice Pecel with Egg and Grilled Tempeh",
+  id: 5,
+  title: "Vegan Roasted Red Pepper Pasta",
   price: 79000,
-  diseases: ['Diabetes', 'Darah tinggi'],
-  ingredients: ['Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
-  calories: 628.7,
-  carbs: 112.9,
-  protein: 28.8
+  diseases: ['Darah tinggi'],
+  ingredients: ['Olive Oil', 'Merica', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'],
+  calories: 487,
+  carbs: 75,
+  protein: 14
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Menu",
@@ -11138,7 +11138,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

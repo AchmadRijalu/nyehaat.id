@@ -30,60 +30,60 @@ const menus = [
         protein: 28.8
     },
     {
-        id: 1,
-        title: "Red Rice Pecel with Egg and Grilled Tempeh",
-        price: 79000,
+        id: 2,
+        title: "Smoothie Cherry-Bayam Anti Peradangan",
+        price: 39000,
         diseases: [
-            'Diabetes', 'Darah tinggi'
+            'Penyakit Jantung'
         ],
         ingredients: [
-            'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Yogurt rendah lemak', 'Ceri', 'Daun bayam', 'Alpukat', 'Mentega', 'Jahe'
         ],
-        calories: 628.7,
-        carbs: 112.9,
-        protein: 28.8
+        calories: 410,
+        carbs: 46.6,
+        protein: 17.4
     },
     {
-        id: 1,
-        title: "Red Rice Pecel with Egg and Grilled Tempeh",
-        price: 79000,
+        id: 3,
+        title: "Baked Cod with Spring Vegetables",
+        price: 22000,
         diseases: [
-            'Diabetes', 'Darah tinggi'
+            'Darah tinggi'
         ],
         ingredients: [
-            'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'
         ],
-        calories: 628.7,
-        carbs: 112.9,
-        protein: 28.8
+        calories: 221,
+        carbs: 11.3,
+        protein: 20.9
     },
     {
-        id: 1,
-        title: "Red Rice Pecel with Egg and Grilled Tempeh",
+        id: 4,
+        title: "Chickpea Quinoa Soup",
         price: 79000,
         diseases: [
-            'Diabetes', 'Darah tinggi'
+            'Darah tinggi'
         ],
         ingredients: [
-            'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'
         ],
-        calories: 628.7,
+        calories: 227,
         carbs: 112.9,
-        protein: 28.8
+        protein: 8
     },
     {
-        id: 1,
-        title: "Red Rice Pecel with Egg and Grilled Tempeh",
+        id: 5,
+        title: "Vegan Roasted Red Pepper Pasta",
         price: 79000,
         diseases: [
-            'Diabetes', 'Darah tinggi'
+            'Darah tinggi'
         ],
         ingredients: [
-            'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Olive Oil', 'Merica', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'
         ],
-        calories: 628.7,
-        carbs: 112.9,
-        protein: 28.8
+        calories: 487,
+        carbs: 75,
+        protein: 14
     },
 ]
 
