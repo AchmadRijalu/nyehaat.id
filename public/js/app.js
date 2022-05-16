@@ -5392,6 +5392,80 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "Feature"
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
@@ -5463,49 +5537,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Hero"
 });
@@ -5527,6 +5558,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Hero_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hero.vue */ "./resources/js/components/Hero.vue");
 /* harmony import */ var _Team__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Team */ "./resources/js/components/Team.vue");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.vue");
+/* harmony import */ var _Feature__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Feature */ "./resources/js/components/Feature.vue");
 //
 //
 //
@@ -5538,6 +5570,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
 
 
@@ -5545,6 +5579,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Home",
   components: {
+    Feature: _Feature__WEBPACK_IMPORTED_MODULE_4__["default"],
     Menu: _Menu_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     Hero: _Hero_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     Team: _Team__WEBPACK_IMPORTED_MODULE_2__["default"],
@@ -5666,6 +5701,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
 //
 //
 //
@@ -6007,7 +6043,8 @@ Vue.filter('toCurrency', function (value) {
     style: 'currency',
     currency: 'IDR'
   });
-  return formatter.format(value);
+  var str = formatter.format(value);
+  return str.substring(0, str.length - 3);
 });
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -11101,7 +11138,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28964,6 +29001,45 @@ component.options.__file = "resources/js/components/ExampleComponent.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/Feature.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/Feature.vue ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Feature.vue?vue&type=template&id=7df58d4a&scoped=true& */ "./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true&");
+/* harmony import */ var _Feature_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Feature.vue?vue&type=script&lang=js& */ "./resources/js/components/Feature.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Feature_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "7df58d4a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Feature.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/Footer.vue":
 /*!********************************************!*\
   !*** ./resources/js/components/Footer.vue ***!
@@ -29255,6 +29331,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/Feature.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/Feature.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Feature_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Feature.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Feature_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/Footer.vue?vue&type=script&lang=js&":
 /*!*********************************************************************!*\
   !*** ./resources/js/components/Footer.vue?vue&type=script&lang=js& ***!
@@ -29393,6 +29485,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ExampleComponent_vue_vue_type_template_id_299e239e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./ExampleComponent.vue?vue&type=template&id=299e239e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true& ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Feature_vue_vue_type_template_id_7df58d4a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Feature.vue?vue&type=template&id=7df58d4a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true&");
 
 
 /***/ }),
@@ -29564,6 +29673,286 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Feature.vue?vue&type=template&id=7df58d4a&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "mx-auto container py-20" }, [
+    _c("div", { staticClass: "flex justify-center items-center flex-col" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "pt-24 grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center xl:gap-y-16 gap-y-20 gap-x-16 lg:gap-x-20 xl:gap-x-0 lg:px-10 xl:px-0",
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+            },
+            [
+              _c("div", { staticClass: "mb-6" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "32",
+                      height: "32",
+                      viewBox: "0 0 32 32",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M24 13.3333H32L28 8L24 13.3333ZM24 18.6667H32L28 24L24 18.6667Z",
+                        fill: "#C7D2FE",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M1.33333 0H9.33333V32H1.33333C0.979711 32 0.640572 31.8595 0.390523 31.6095C0.140475 31.3594 0 31.0203 0 30.6667V1.33333C0 0.979711 0.140475 0.640572 0.390523 0.390523C0.640572 0.140475 0.979711 0 1.33333 0Z",
+                        fill: "#818CF8",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M12 0H20C20.3536 0 20.6928 0.140475 20.9428 0.390523C21.1929 0.640572 21.3333 0.979711 21.3333 1.33333V30.6667C21.3333 31.0203 21.1929 31.3594 20.9428 31.6095C20.6928 31.8595 20.3536 32 20 32H12V0Z",
+                        fill: "#6366F1",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _vm._m(1),
+              _vm._v(" "),
+              _vm._m(2),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+            },
+            [
+              _c("div", { staticClass: "mb-6" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "32",
+                      height: "32",
+                      viewBox: "0 0 32 32",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M5.33325 1.33337H30.6666L26.6666 9.33337H1.33325L5.33325 1.33337Z",
+                        fill: "#818CF8",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M5.33325 12H30.6666L26.6666 20H1.33325L5.33325 12Z",
+                        fill: "#6366F1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M5.33325 22.6667H30.6666L26.6666 30.6667H1.33325L5.33325 22.6667Z",
+                        fill: "#C7D2FE",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _vm._m(3),
+              _vm._v(" "),
+              _vm._m(4),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass:
+                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+            },
+            [
+              _c("div", { staticClass: "mb-6" }, [
+                _c(
+                  "svg",
+                  {
+                    attrs: {
+                      width: "32",
+                      height: "32",
+                      viewBox: "0 0 32 32",
+                      fill: "none",
+                      xmlns: "http://www.w3.org/2000/svg",
+                    },
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        d: "M30.6667 8.00004V2.66671C30.6667 2.31309 30.5262 1.97395 30.2762 1.7239C30.0261 1.47385 29.687 1.33337 29.3334 1.33337H2.66671C2.31309 1.33337 1.97395 1.47385 1.7239 1.7239C1.47385 1.97395 1.33337 2.31309 1.33337 2.66671V8.00004H30.6667Z",
+                        fill: "#6366F1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M1.33337 10.6667V29.3334C1.33337 29.687 1.47385 30.0262 1.7239 30.2762C1.97395 30.5263 2.31309 30.6667 2.66671 30.6667H9.33337V10.6667H1.33337Z",
+                        fill: "#C7D2FE",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c("path", {
+                      attrs: {
+                        d: "M12 30.6667H29.3333C29.687 30.6667 30.0261 30.5263 30.2761 30.2762C30.5262 30.0262 30.6667 29.687 30.6667 29.3334V10.6667H12V30.6667Z",
+                        fill: "#818CF8",
+                      },
+                    }),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _vm._m(6),
+            ]
+          ),
+        ]
+      ),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "lg:text-6xl md:text-5xl text-4xl font-black leading-10 text-center text-gray-800",
+      },
+      [_c("h1", [_vm._v("Tailor-made features")])]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
+      [_c("h2", [_vm._v("Robust workflow")])]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-600 mt-2 text-lg text-center" },
+      [
+        _c("p", [
+          _vm._v(
+            "Workflows can help streamline and automate repeatable business tasks."
+          ),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
+      [_c("h2", [_vm._v("Flexibility")])]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-600 mt-2 text-lg text-center" },
+      [
+        _c("p", [
+          _vm._v(
+            "A flexible software architecture is able to changes in usability requirements"
+          ),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
+      [_c("h2", [_vm._v("User friendly")])]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "text-gray-600 mt-2 text-lg text-center" },
+      [
+        _c("p", [
+          _vm._v(
+            "Good usability can improve a new software chances of successful adoption."
+          ),
+        ]),
+      ]
+    )
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true&":
 /*!******************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true& ***!
@@ -29685,7 +30074,7 @@ var staticRenderFns = [
               },
               [_vm._v("Nyehaat.id")]
             ),
-            _vm._v(". Surabaya,Indonesia\n"),
+            _vm._v(". Surabaya,Indonesia\r\n"),
           ]
         ),
       ]
@@ -29714,273 +30103,36 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "w-full relative px-6 xl:px-0" }, [
-    _c(
-      "div",
-      {
-        staticClass:
-          "pt-32 lg:flex items-center relative z-10 container mx-auto",
-      },
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _c("div", { staticClass: "w-full lg:w-1/2 h-full" }, [
-          _c("p", { staticClass: "text-indigo-500 uppercase text-2xl mb-4" }, [
-            _vm._v("Qusique Tincidun sapien"),
-          ]),
-          _vm._v(" "),
-          _c("h1", { staticClass: "text-gray-900 text-4xl md:text-7xl mb-8" }, [
-            _vm._v("All natural ingredients"),
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text-gray-800 font-regular mb-8" }, [
-            _vm._v(
-              "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
-            ),
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "  py-4 px-4 flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center rounded-lg",
-            },
-            [
-              _c("div", { staticClass: "sm:flex items-center py-2" }, [
-                _c("div", { staticClass: "flex items-center" }, [
-                  _c(
-                    "svg",
-                    {
-                      staticClass:
-                        "text-indigo-500 icon icon-tabler icon-tabler-user",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "16",
-                        height: "16",
-                        viewBox: "0 0 24 24",
-                        "stroke-width": "1.5",
-                        stroke: "currentColor",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                      },
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          stroke: "none",
-                          d: "M0 0h24v24H0z",
-                          fill: "none",
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c("circle", { attrs: { cx: "12", cy: "7", r: "4" } }),
-                      _vm._v(" "),
-                      _c("path", {
-                        attrs: {
-                          d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
-                        },
-                      }),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "leading-none tracking-normal text-gray-800 ml-2.5",
-                    },
-                    [_vm._v("Doctor Name")]
-                  ),
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "flex items-center sm:mx-4 xl:mx-14 my-6 lg:my-0",
-                  },
-                  [
-                    _c(
-                      "svg",
-                      {
-                        staticClass:
-                          "text-indigo-500 icon icon-tabler icon-tabler-layout-bottombar",
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "16",
-                          height: "16",
-                          viewBox: "0 0 24 24",
-                          "stroke-width": "1.5",
-                          stroke: "currentColor",
-                          fill: "none",
-                          "stroke-linecap": "round",
-                          "stroke-linejoin": "round",
-                        },
-                      },
-                      [
-                        _c("path", {
-                          attrs: {
-                            stroke: "none",
-                            d: "M0 0h24v24H0z",
-                            fill: "none",
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("rect", {
-                          attrs: {
-                            x: "4",
-                            y: "4",
-                            width: "16",
-                            height: "16",
-                            rx: "2",
-                          },
-                        }),
-                        _vm._v(" "),
-                        _c("line", {
-                          attrs: { x1: "4", y1: "15", x2: "20", y2: "15" },
-                        }),
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "p",
-                      {
-                        staticClass:
-                          "leading-none tracking-normal text-gray-800 ml-2.5",
-                      },
-                      [_vm._v("Zip code")]
-                    ),
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "flex items-center" }, [
-                  _c(
-                    "svg",
-                    {
-                      staticClass:
-                        "text-indigo-500 icon icon-tabler icon-tabler-flag",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "16",
-                        height: "16",
-                        viewBox: "0 0 24 24",
-                        "stroke-width": "1.5",
-                        stroke: "currentColor",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                      },
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          stroke: "none",
-                          d: "M0 0h24v24H0z",
-                          fill: "none",
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c("line", {
-                        attrs: { x1: "5", y1: "5", x2: "5", y2: "21" },
-                      }),
-                      _vm._v(" "),
-                      _c("line", {
-                        attrs: { x1: "19", y1: "5", x2: "19", y2: "14" },
-                      }),
-                      _vm._v(" "),
-                      _c("path", {
-                        attrs: { d: "M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                      }),
-                      _vm._v(" "),
-                      _c("path", {
-                        attrs: { d: "M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0" },
-                      }),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "leading-none tracking-normal text-gray-800 ml-2.5",
-                    },
-                    [_vm._v("Insurance")]
-                  ),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "text-white bg-indigo-600 mt-4 sm:mt-0 p-3 rounded w-full sm:w-auto relative",
-                },
-                [
-                  _c(
-                    "svg",
-                    {
-                      staticClass:
-                        "absolute right-0 mr-2 sm:mr-auto sm:relative icon icon-tabler icon-tabler-search cursor-pointer",
-                      attrs: {
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "24",
-                        height: "24",
-                        viewBox: "0 0 24 24",
-                        "stroke-width": "1.5",
-                        stroke: "currentColor",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                      },
-                    },
-                    [
-                      _c("path", {
-                        attrs: {
-                          stroke: "none",
-                          d: "M0 0h24v24H0z",
-                          fill: "none",
-                        },
-                      }),
-                      _vm._v(" "),
-                      _c("circle", { attrs: { cx: "10", cy: "10", r: "7" } }),
-                      _vm._v(" "),
-                      _c("line", {
-                        attrs: { x1: "21", y1: "21", x2: "15", y2: "15" },
-                      }),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("input", {
-                    staticClass:
-                      "sm:hidden border-b border-gray-300 w-full bg-transparent pr-6",
-                  }),
-                ]
-              ),
-            ]
-          ),
-        ]),
-      ]
-    ),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "w-full lg:w-1/2 h-full lg:pr-10 xl:pr-0" },
-      [
-        _c("img", {
-          staticClass: "mx-auto",
-          attrs: {
-            src: "https://cdn.tuk.dev/assets/templates/weCare/hero2-left.png",
-          },
-        }),
-      ]
-    )
+    return _c("div", { staticClass: "w-full relative px-6 xl:px-0 hero" }, [
+      _c("div", { staticClass: "py-32 relative z-10 container mx-auto" }, [
+        _c(
+          "div",
+          { staticClass: "w-full lg:w-1/2 h-full mx-auto text-center" },
+          [
+            _c("p", { staticClass: "text-white uppercase text-4xl mb-4" }, [
+              _vm._v("Qusique Tincidun sapien"),
+            ]),
+            _vm._v(" "),
+            _c("h1", { staticClass: "text-white text-6xl md:text-7xl mb-8" }, [
+              _vm._v("All natural ingredients"),
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-white font-regular mb-8" }, [
+              _vm._v(
+                "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
+              ),
+            ]),
+          ]
+        ),
+      ]),
+    ])
   },
 ]
 render._withStripped = true
@@ -30009,6 +30161,8 @@ var render = function () {
     "section",
     [
       _c("Hero"),
+      _vm._v(" "),
+      _c("Feature"),
       _vm._v(" "),
       _c("Menu"),
       _vm._v(" "),
@@ -30061,7 +30215,7 @@ var render = function () {
               "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center",
           },
           _vm._l(_vm.menus, function (menu) {
-            return _c("MenuCard", { attrs: { menu: menu } })
+            return _c("MenuCard", { key: menu.id, attrs: { menu: menu } })
           }),
           1
         ),
@@ -30093,171 +30247,189 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
+    "a",
     {
-      staticClass:
-        "max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700",
+      attrs: {
+        href:
+          "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20" +
+          _vm.menu.title,
+      },
     },
     [
-      _c("img", {
-        staticClass: "pb-8 rounded-t-lg",
-        attrs: {
-          src: "/img/menu/" + _vm.menu.id + ".png",
-          alt: "product image",
+      _c(
+        "div",
+        {
+          staticClass:
+            "max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700",
         },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "px-4 pb-5" }, [
-        _c(
-          "h3",
-          {
-            staticClass:
-              "text-xl font-semibold font-opensans tracking-tight text-gray-900",
-          },
-          [_vm._v(_vm._s(_vm.menu.title))]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "pt-3" },
-          _vm._l(_vm.menu.diseases, function (disease, index) {
-            return _c(
-              "p",
-              {
-                key: disease,
-                staticClass:
-                  "text-md font-bold font-opensans text-gray-900 inline",
-              },
-              [
-                index === 0
-                  ? [
-                      _vm._v(
-                        "\n                        Aman untuk " +
-                          _vm._s(disease) +
-                          ",\n                    "
-                      ),
-                    ]
-                  : index !== _vm.menu.diseases.length - 1
-                  ? [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(disease) +
-                          ",\n                    "
-                      ),
-                    ]
-                  : [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(disease) +
-                          "\n                    "
-                      ),
-                    ],
-              ],
-              2
-            )
+        [
+          _c("img", {
+            staticClass: "pb-8 rounded-t-lg",
+            attrs: {
+              src: "/img/menu/" + _vm.menu.id + ".png",
+              alt: "product image",
+            },
           }),
-          0
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "pt-3 flex flex-row gap-x-4" }, [
-          _c(
-            "div",
-            {
-              staticClass:
-                "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
-              attrs: { href: "#" },
-            },
-            [
-              _c("h5", { staticClass: "font-bold" }, [_vm._v("Calories")]),
-              _vm._v(" "),
-              _c("h5", [_vm._v(_vm._s(_vm.menu.calories))]),
-            ]
-          ),
           _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
-              attrs: { href: "#" },
-            },
-            [
-              _c("h5", { staticClass: "font-bold" }, [_vm._v("Carbs")]),
-              _vm._v(" "),
-              _c("h5", [_vm._v(_vm._s(_vm.menu.carbs))]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
-              attrs: { href: "#" },
-            },
-            [
-              _c("h5", { staticClass: "font-bold" }, [_vm._v("Protein")]),
-              _vm._v(" "),
-              _c("h5", [_vm._v(_vm._s(_vm.menu.protein))]),
-            ]
-          ),
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "py-3 " },
-          _vm._l(_vm.menu.ingredients, function (ingredient, index) {
-            return _c(
-              "p",
-              {
-                key: ingredient,
-                staticClass: "text-md font-opensans text-gray-900 inline",
-              },
-              [
-                index !== _vm.menu.ingredients.length - 1
-                  ? [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(ingredient) +
-                          ",\n                    "
-                      ),
-                    ]
-                  : [
-                      _vm._v(
-                        "\n                        " +
-                          _vm._s(ingredient) +
-                          "\n                    "
-                      ),
-                    ],
-              ],
-              2
-            )
-          }),
-          0
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "flex justify-between items-center font-opensans" },
-          [
+          _c("div", { staticClass: "px-4 pb-5" }, [
             _c(
-              "span",
-              { staticClass: "text-2xl font-bold text-gray-900 mr-4" },
-              [_vm._v(_vm._s(_vm._f("toCurrency")(_vm.menu.price)))]
+              "h3",
+              {
+                staticClass:
+                  "text-xl font-semibold font-opensans tracking-tight text-gray-900",
+              },
+              [_vm._v(_vm._s(_vm.menu.title))]
             ),
             _vm._v(" "),
             _c(
-              "a",
-              {
-                staticClass:
-                  "text-black  border-2 border-green-600 px-4 font-bold py-2.5 rounded-md  hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out",
-                attrs: { href: "#" },
-              },
-              [_vm._v("\n\n                   Pesan\n               ")]
+              "div",
+              { staticClass: "pt-3" },
+              _vm._l(_vm.menu.diseases, function (disease, index) {
+                return _c(
+                  "p",
+                  {
+                    key: disease,
+                    staticClass:
+                      "text-md font-bold font-opensans text-gray-900 inline",
+                  },
+                  [
+                    index === 0
+                      ? [
+                          _vm._v(
+                            "\n                        Aman untuk " +
+                              _vm._s(disease) +
+                              ",\n                    "
+                          ),
+                        ]
+                      : index !== _vm.menu.diseases.length - 1
+                      ? [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(disease) +
+                              ",\n                    "
+                          ),
+                        ]
+                      : [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(disease) +
+                              "\n                    "
+                          ),
+                        ],
+                  ],
+                  2
+                )
+              }),
+              0
             ),
-          ]
-        ),
-      ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "pt-3 flex flex-row gap-x-4" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                  attrs: { href: "#" },
+                },
+                [
+                  _c("h5", { staticClass: "font-bold" }, [_vm._v("Calories")]),
+                  _vm._v(" "),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.calories))]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                  attrs: { href: "#" },
+                },
+                [
+                  _c("h5", { staticClass: "font-bold" }, [_vm._v("Carbs")]),
+                  _vm._v(" "),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.carbs))]),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                  attrs: { href: "#" },
+                },
+                [
+                  _c("h5", { staticClass: "font-bold" }, [_vm._v("Protein")]),
+                  _vm._v(" "),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.protein))]),
+                ]
+              ),
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "py-3 " },
+              _vm._l(_vm.menu.ingredients, function (ingredient, index) {
+                return _c(
+                  "p",
+                  {
+                    key: ingredient,
+                    staticClass: "text-md font-opensans text-gray-900 inline",
+                  },
+                  [
+                    index !== _vm.menu.ingredients.length - 1
+                      ? [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(ingredient) +
+                              ",\n                    "
+                          ),
+                        ]
+                      : [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(ingredient) +
+                              "\n                    "
+                          ),
+                        ],
+                  ],
+                  2
+                )
+              }),
+              0
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "flex justify-between items-center font-opensans",
+              },
+              [
+                _c(
+                  "span",
+                  { staticClass: "text-2xl font-bold text-gray-900 mr-4" },
+                  [_vm._v(_vm._s(_vm._f("toCurrency")(_vm.menu.price)))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "border-2 border-green-600 px-4 font-bold py-2.5 rounded-md hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out",
+                    attrs: {
+                      href:
+                        "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20" +
+                        _vm.menu.title,
+                    },
+                  },
+                  [_vm._v("\n                    Pesan\n                ")]
+                ),
+              ]
+            ),
+          ]),
+        ]
+      ),
     ]
   )
 }
@@ -30693,14 +30865,10 @@ var staticRenderFns = [
           "div",
           { staticClass: "flex items-center font-opensans font-bold" },
           [
-            _c(
-              "h2",
-              {
-                staticClass:
-                  "hidden sm:block  text-gray-700 drop-shadow-lg leading-normal pl-2 sm:text-lg font-bold ",
-              },
-              [_vm._v("Nyehaat."), _c("span", [_vm._v("id")])]
-            ),
+            _c("img", {
+              staticClass: "w-40",
+              attrs: { src: "/img/logo_black.png", alt: "" },
+            }),
           ]
         ),
       ]

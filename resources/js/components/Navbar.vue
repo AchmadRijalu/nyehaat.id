@@ -92,7 +92,7 @@
                             </g>
                         </svg> -->
                         <!-- <img src="/img/menu/nyehaat.id-logo-pngyow-1.png" class="h-20" alt=""> -->
-                        <h2 class="hidden sm:block  text-gray-700 drop-shadow-lg leading-normal pl-2 sm:text-lg font-bold ">Nyehaat.<span>id</span></h2>
+                        <img src="/img/logo_black.png" class="w-40" alt="">
                     </div>
                 </div>
                 <div class="flex ">

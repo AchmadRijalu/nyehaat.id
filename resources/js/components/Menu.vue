@@ -4,7 +4,7 @@
         <div class="mx-auto container px-6 xl:px-0">
             <div class="flex flex-col">
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center">
-                    <MenuCard v-for="menu in menus" :menu="menu"></MenuCard>
+                    <MenuCard v-for="menu in menus" :key="menu.id" :menu="menu"></MenuCard>
                 </div>
             </div>
         </div>

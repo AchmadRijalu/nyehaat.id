@@ -3,6 +3,7 @@
     <!-- replace appropriate tags after installing vue-router -->
     <section>
         <Hero></Hero>
+        <Feature></Feature>
         <Menu></Menu>
         <Team></Team>
         <Footer></Footer>
@@ -14,10 +15,12 @@ import Menu from './Menu.vue'
 import Hero from "./Hero.vue";
 import Team from "./Team";
 import Footer from "./Footer";
+import Feature from "./Feature";
 
 export default {
     name: "Home",
     components: {
+        Feature,
         Menu,
         Hero,
         Team,
