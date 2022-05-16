@@ -30238,7 +30238,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center",
+              "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch",
           },
           _vm._l(_vm.menus, function (menu) {
             return _c("MenuCard", { key: menu.id, attrs: { menu: menu } })
@@ -30286,7 +30286,7 @@ var render = function () {
         "div",
         {
           staticClass:
-            "max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700",
+            "max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full",
         },
         [
           _c("img", {
@@ -30445,7 +30445,10 @@ var render = function () {
               [
                 _c(
                   "span",
-                  { staticClass: "text-2xl font-bold text-gray-900 mr-4" },
+                  {
+                    staticClass:
+                      "text-2xl font-bold text-gray-900 mr-4 mt-auto",
+                  },
                   [_vm._v(_vm._s(_vm._f("toCurrency")(_vm.menu.price)))]
                 ),
                 _vm._v(" "),

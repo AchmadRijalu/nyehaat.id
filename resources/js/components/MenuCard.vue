@@ -1,6 +1,6 @@
 <template>
     <a :href="'https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20' + menu.title">
-        <div class="max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700">
+        <div class="max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full">
             <img class="pb-8 rounded-t-lg h-72 object-cover w-full" :src="'/img/menu/' + menu.id + '.png'" alt="product image" />
             <div class="px-4 pb-5">
                 <h3 class="text-xl font-semibold font-opensans tracking-tight text-gray-900">{{ menu.title }}</h3>
@@ -53,7 +53,7 @@
                 <!--                <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>-->
                 <!--            </div>-->
                 <div class="flex justify-between items-center font-opensans">
-                    <span class="text-2xl font-bold text-gray-900 mr-4">{{ menu.price | toCurrency }}</span>
+                    <span class="text-2xl font-bold text-gray-900 mr-4 mt-auto">{{ menu.price | toCurrency }}</span>
                     <a :href="'https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20' + menu.title" class="border-2 border-green-600 px-4 font-bold py-2.5 rounded-md hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out">
                         Pesan
                     </a>
