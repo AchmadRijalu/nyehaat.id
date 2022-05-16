@@ -1,13 +1,16 @@
 <template>
     <a :href="'https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20' + menu.title">
         <div class="max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700">
-            <img class="pb-8 rounded-t-lg" :src="'/img/menu/' + menu.id + '.png'" alt="product image" />
+            <img class="pb-8 rounded-t-lg h-72 object-cover w-full" :src="'/img/menu/' + menu.id + '.png'" alt="product image" />
             <div class="px-4 pb-5">
                 <h3 class="text-xl font-semibold font-opensans tracking-tight text-gray-900">{{ menu.title }}</h3>
                 <div class="pt-3">
-                    <p v-for="(disease, index) in menu.diseases" :key="disease" class="text-md font-bold font-opensans text-gray-900 inline">
+                    <p class="text-md font-opensans text-gray-900 pr-1 inline">
+                        Aman untuk
+                    </p>
+                    <span v-for="(disease, index) in menu.diseases" :key="disease" class="inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2 mb-2">
                         <template v-if="index === 0">
-                            Aman untuk {{ disease }},
+                            {{ disease }}
                         </template>
                         <template v-else-if="index !== menu.diseases.length - 1">
                             {{ disease }},
@@ -15,20 +18,20 @@
                         <template v-else>
                             {{ disease }}
                         </template>
-                    </p>
+                    </span>
                 </div>
                 <div class="pt-3 flex flex-row gap-x-4">
                     <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Calories</h5>
-                        <h5>{{ menu.calories }}</h5>
+                        <h5>{{ menu.calories }} kcal</h5>
                     </div>
                     <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Carbs</h5>
-                        <h5>{{ menu.carbs }}</h5>
+                        <h5>{{ menu.carbs }} g</h5>
                     </div>
                     <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Protein</h5>
-                        <h5>{{ menu.protein }}</h5>
+                        <h5>{{ menu.protein }} g</h5>
                     </div>
                 </div>
                 <div class="py-3 ">

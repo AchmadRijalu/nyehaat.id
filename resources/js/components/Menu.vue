@@ -25,7 +25,7 @@ const menus = [
         ingredients: [
             'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
         ],
-        calories: 628.7,
+        calories: 629,
         carbs: 112.9,
         protein: 28.8
     },

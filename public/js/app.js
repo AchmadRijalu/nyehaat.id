@@ -5636,7 +5636,7 @@ var menus = [{
   price: 79000,
   diseases: ['Diabetes', 'Darah tinggi'],
   ingredients: ['Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
-  calories: 628.7,
+  calories: 629,
   carbs: 112.9,
   protein: 28.8
 }, {
@@ -5701,6 +5701,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
 //
 //
 //
@@ -30120,9 +30123,11 @@ var staticRenderFns = [
               _vm._v("Qusique Tincidun sapien"),
             ]),
             _vm._v(" "),
-            _c("h1", { staticClass: "text-white text-6xl md:text-7xl mb-8" }, [
-              _vm._v("All natural ingredients"),
-            ]),
+            _c(
+              "h1",
+              { staticClass: "text-white text-6xl md:text-7xl mb-8 font-bold" },
+              [_vm._v("All natural ingredients")]
+            ),
             _vm._v(" "),
             _c("p", { staticClass: "text-white font-regular mb-8" }, [
               _vm._v(
@@ -30264,7 +30269,7 @@ var render = function () {
         },
         [
           _c("img", {
-            staticClass: "pb-8 rounded-t-lg",
+            staticClass: "pb-8 rounded-t-lg h-72 object-cover w-full",
             attrs: {
               src: "/img/menu/" + _vm.menu.id + ".png",
               alt: "product image",
@@ -30284,43 +30289,54 @@ var render = function () {
             _c(
               "div",
               { staticClass: "pt-3" },
-              _vm._l(_vm.menu.diseases, function (disease, index) {
-                return _c(
+              [
+                _c(
                   "p",
                   {
-                    key: disease,
                     staticClass:
-                      "text-md font-bold font-opensans text-gray-900 inline",
+                      "text-md font-opensans text-gray-900 pr-1 inline",
                   },
-                  [
-                    index === 0
-                      ? [
-                          _vm._v(
-                            "\n                        Aman untuk " +
-                              _vm._s(disease) +
-                              ",\n                    "
-                          ),
-                        ]
-                      : index !== _vm.menu.diseases.length - 1
-                      ? [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(disease) +
-                              ",\n                    "
-                          ),
-                        ]
-                      : [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(disease) +
-                              "\n                    "
-                          ),
-                        ],
-                  ],
-                  2
-                )
-              }),
-              0
+                  [_vm._v("\n                    Aman untuk\n                ")]
+                ),
+                _vm._v(" "),
+                _vm._l(_vm.menu.diseases, function (disease, index) {
+                  return _c(
+                    "span",
+                    {
+                      key: disease,
+                      staticClass:
+                        "inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2 mb-2",
+                    },
+                    [
+                      index === 0
+                        ? [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(disease) +
+                                "\n                    "
+                            ),
+                          ]
+                        : index !== _vm.menu.diseases.length - 1
+                        ? [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(disease) +
+                                ",\n                    "
+                            ),
+                          ]
+                        : [
+                            _vm._v(
+                              "\n                        " +
+                                _vm._s(disease) +
+                                "\n                    "
+                            ),
+                          ],
+                    ],
+                    2
+                  )
+                }),
+              ],
+              2
             ),
             _vm._v(" "),
             _c("div", { staticClass: "pt-3 flex flex-row gap-x-4" }, [
@@ -30334,7 +30350,7 @@ var render = function () {
                 [
                   _c("h5", { staticClass: "font-bold" }, [_vm._v("Calories")]),
                   _vm._v(" "),
-                  _c("h5", [_vm._v(_vm._s(_vm.menu.calories))]),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.calories) + " kcal")]),
                 ]
               ),
               _vm._v(" "),
@@ -30348,7 +30364,7 @@ var render = function () {
                 [
                   _c("h5", { staticClass: "font-bold" }, [_vm._v("Carbs")]),
                   _vm._v(" "),
-                  _c("h5", [_vm._v(_vm._s(_vm.menu.carbs))]),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.carbs) + " g")]),
                 ]
               ),
               _vm._v(" "),
@@ -30362,7 +30378,7 @@ var render = function () {
                 [
                   _c("h5", { staticClass: "font-bold" }, [_vm._v("Protein")]),
                   _vm._v(" "),
-                  _c("h5", [_vm._v(_vm._s(_vm.menu.protein))]),
+                  _c("h5", [_vm._v(_vm._s(_vm.menu.protein) + " g")]),
                 ]
               ),
             ]),
