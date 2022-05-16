@@ -11305,6 +11305,19 @@ textarea.form-control-lg {
   -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
           mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
 }
+
+.activea {
+  color: white;
+  transition: 500ms;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.notactivea {
+  color: black;
+  transition: 500ms;
+  border-radius: 8px;
+}
 /*
 ! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 *//*
@@ -11782,6 +11795,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .relative {
   position: relative;
 }
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -11800,6 +11817,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .z-0 {
   z-index: 0;
+}
+.z-20 {
+  z-index: 20;
 }
 .m-0 {
   margin: 0px;
@@ -12124,6 +12144,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-b-2 {
   border-bottom-width: 2px;
 }
+.border-b-4 {
+  border-bottom-width: 4px;
+}
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -12142,6 +12165,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .border-transparent {
   border-color: transparent;
+}
+.border-greenprimary {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 192 54 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -12476,6 +12503,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-indigo-800 {
   --tw-text-opacity: 1;
   color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+.text-greenprimary {
+  --tw-text-opacity: 1;
+  color: rgb(0 192 54 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;

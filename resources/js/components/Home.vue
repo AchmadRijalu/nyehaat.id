@@ -2,10 +2,10 @@
     <!-- for vue instead of using a href, vue router links will be used -->
     <!-- replace appropriate tags after installing vue-router -->
     <section>
-        <Hero></Hero>
-        <Feature></Feature>
-        <Menu></Menu>
-        <Team></Team>
+        <Hero id="home"></Hero>
+        <Feature id="feature"></Feature>
+        <Menu id="menu"></Menu>
+        <Team id="tentang-kami"></Team>
         <Footer></Footer>
     </section>
 </template>

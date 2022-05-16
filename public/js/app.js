@@ -5917,6 +5917,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+window.addEventListener('DOMContentLoaded', function () {
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var id = entry.target.getAttribute('id');
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelector("nav div a[href=\"#".concat(id, "\"]")).children[0].classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
+      } else {
+        document.querySelector("nav div a[href=\"#".concat(id, "\"]")).children[0].classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
+      }
+    });
+  }); // Track all sections that have an `id` applied
+
+  document.querySelectorAll('section[id]').forEach(function (section) {
+    observer.observe(section);
+  });
+});
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Navbar",
   methods: {
@@ -30113,7 +30134,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w-full relative px-6 xl:px-0 hero" }, [
+    return _c("section", { staticClass: "w-full relative px-6 xl:px-0 hero" }, [
       _c("div", { staticClass: "py-32 relative z-10 container mx-auto" }, [
         _c(
           "div",
@@ -30165,13 +30186,13 @@ var render = function () {
   return _c(
     "section",
     [
-      _c("Hero"),
+      _c("Hero", { attrs: { id: "home" } }),
       _vm._v(" "),
-      _c("Feature"),
+      _c("Feature", { attrs: { id: "feature" } }),
       _vm._v(" "),
-      _c("Menu"),
+      _c("Menu", { attrs: { id: "menu" } }),
       _vm._v(" "),
-      _c("Team"),
+      _c("Team", { attrs: { id: "tentang-kami" } }),
       _vm._v(" "),
       _c("Footer"),
     ],
@@ -30472,7 +30493,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("nav", { staticClass: "bg-white shadow" }, [
+  return _c("nav", { staticClass: "bg-white shadow sticky top-0 z-20" }, [
     _c("div", { staticClass: "mx-auto container px-6 py-2 xl:py-0" }, [
       _c("div", { staticClass: "flex items-center justify-between h-16" }, [
         _c(
@@ -30907,7 +30928,7 @@ var staticRenderFns = [
             {
               staticClass:
                 "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none",
-              attrs: { href: "javascript: void(0)" },
+              attrs: { href: "#home" },
             },
             [
               _c(
@@ -30929,8 +30950,31 @@ var staticRenderFns = [
             "a",
             {
               staticClass:
+                "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none",
+              attrs: { href: "#feature" },
+            },
+            [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    " border-transparent hover:space-y-2 hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ",
+                },
+                [
+                  _vm._v(
+                    "\n                            Feature\n                        "
+                  ),
+                ]
+              ),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
                 "flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none ",
-              attrs: { href: "javascript: void(0)" },
+              attrs: { href: "#menu" },
             },
             [
               _c(
@@ -30953,7 +30997,7 @@ var staticRenderFns = [
             {
               staticClass:
                 "flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ",
-              attrs: { href: "javascript: void(0)" },
+              attrs: { href: "#tentang-kami" },
             },
             [
               _c(

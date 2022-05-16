@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-white shadow">
+    <nav class="bg-white shadow sticky top-0 z-20">
         <div class="mx-auto container px-6 py-2 xl:py-0">
             <div class="flex items-center justify-between h-16">
                 <div class="inset-y-0 left-0 flex items-center xl:hidden">
@@ -97,21 +97,25 @@
                 </div>
                 <div class="flex ">
                     <div class="hidden xl:flex md:mr-6 xl:mr-16 font-opensans xl:text-lg font-bold space-x-24 ">
-                        <a href="javascript: void(0)" class="flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none">
+                        <a href="#home" class="flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none">
                             <span class=" border-transparent hover:space-y-2 hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ">
                                 Home
                             </span>
                         </a>
-                        <a href="javascript: void(0)" class="flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none ">
+                        <a href="#feature" class="flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none">
+                            <span class=" border-transparent hover:space-y-2 hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ">
+                                Feature
+                            </span>
+                        </a>
+                        <a href="#menu" class="flex  items-center   leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none ">
                             <span class=" border-transparent  hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out ">
                                 Menu
                             </span>
                         </a>
-                        <a href="javascript: void(0)" class="flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ">
+                        <a href="#tentang-kami" class="flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ">
                             <span class="  border-transparent   hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out  ">
                             Tentang Kami
                             </span>
-
                         </a>
                         <!-- <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
                             <span class="mr-2">
@@ -132,6 +136,25 @@
 </template>
 
 <script>
+window.addEventListener('DOMContentLoaded', () => {
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+                document.querySelector(`nav div a[href="#${id}"]`).children[0].classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
+            } else {
+                document.querySelector(`nav div a[href="#${id}"]`).children[0].classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
+            }
+        });
+    });
+
+    // Track all sections that have an `id` applied
+    document.querySelectorAll('section[id]').forEach((section) => {
+        observer.observe(section);
+    });
+});
+
 export default {
     name: "Navbar",
     methods: {
