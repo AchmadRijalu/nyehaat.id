@@ -79,7 +79,7 @@ const menus = [
             'Darah tinggi'
         ],
         ingredients: [
-            'Olive Oil', 'Merica', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'
+            'Olive Oil', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'
         ],
         calories: 487,
         carbs: 75,
