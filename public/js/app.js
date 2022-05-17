@@ -5999,23 +5999,23 @@ __webpack_require__.r(__webpack_exports__);
 var teams = [{
   id: 1,
   name: "Achmad Rijalu Arianindita",
-  jobs: "Developer"
+  jobs: "Co-Founder"
 }, {
   id: 2,
   name: "Justin Jap",
-  jobs: "Developer"
+  jobs: "Co-Founder"
 }, {
   id: 3,
   name: "Kenny Jinhiro Wibowo",
-  jobs: "Developer"
+  jobs: "Co-Founder"
 }, {
   id: 4,
   name: "Maximus Aurellius Wiranata",
-  jobs: "Developer"
+  jobs: "Co-Founder"
 }, {
   id: 5,
   name: "Kevin Sander Utomo",
-  jobs: "Developer"
+  jobs: "Co-Founder"
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Team",
@@ -11191,7 +11191,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30196,7 +30196,7 @@ var staticRenderFns = [
               },
               [_vm._v("Nyehaat.id")]
             ),
-            _vm._v(". Surabaya,Indonesia\n"),
+            _vm._v(". Surabaya,Indonesia\r\n"),
           ]
         ),
       ]

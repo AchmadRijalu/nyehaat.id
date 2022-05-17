@@ -24,28 +24,28 @@ const teams = [
     {
         id: 1,
         name: "Achmad Rijalu Arianindita",
-        jobs: "Developer",
+        jobs: "Co-Founder",
 
     },
     {
         id: 2,
         name: "Justin Jap",
-        jobs: "Developer",
+        jobs: "Co-Founder",
     },
     {
          id: 3,
         name: "Kenny Jinhiro Wibowo",
-        jobs: "Developer",
+        jobs: "Co-Founder",
     },
     {
          id: 4,
         name: "Maximus Aurellius Wiranata",
-        jobs: "Developer",
+        jobs: "Co-Founder",
     },
     {
           id: 5,
         name: "Kevin Sander Utomo",
-        jobs: "Developer",
+        jobs: "Co-Founder",
     },
 ]
 
