@@ -30310,15 +30310,10 @@ var staticRenderFns = [
           },
           [
             _vm._v("© 2022 "),
-            _c(
-              "a",
-              {
-                staticClass: "hover:underline",
-                attrs: { href: "https://flowbite.com" },
-              },
-              [_vm._v("Nyehaat.id")]
-            ),
-            _vm._v(". Surabaya,Indonesia\r\n"),
+            _c("a", { staticClass: "hover:underline", attrs: { href: "/" } }, [
+              _vm._v("Nyehaat.id"),
+            ]),
+            _vm._v(". Surabaya,Indonesia\n"),
           ]
         ),
       ]
