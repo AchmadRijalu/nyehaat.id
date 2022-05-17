@@ -1,7 +1,7 @@
 
 <template>
     <section class="xl:mx-auto xl:container 2xl:px-20 px-6 py-20">
-    <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-8">Meet our team</h1>
+    <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-8">Tim Kami</h1>
     <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Berikut ini merupakan tim dari Nyehaat.id, salam kenal :)</h2>
     <div class="flex flex-wrap items-stretch justify-center xl:gap-6 gap-4">
 
