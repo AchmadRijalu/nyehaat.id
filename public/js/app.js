@@ -5733,7 +5733,7 @@ var menus = [{
 }, {
   id: 4,
   title: "Chickpea Quinoa Soup",
-  price: 79000,
+  price: 36000,
   diseases: ['Darah tinggi'],
   ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
   calories: 227,
@@ -5742,7 +5742,7 @@ var menus = [{
 }, {
   id: 5,
   title: "Vegan Roasted Red Pepper Pasta",
-  price: 79000,
+  price: 43000,
   diseases: ['Darah tinggi'],
   ingredients: ['Olive Oil', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'],
   calories: 487,
@@ -31267,7 +31267,7 @@ var render = function () {
           staticClass:
             "text-5xl font-semibold leading-10 text-greenprimary text-center mb-8",
         },
-        [_vm._v("Meet our team")]
+        [_vm._v("Tim Kami")]
       ),
       _vm._v(" "),
       _c(
