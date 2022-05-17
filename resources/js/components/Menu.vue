@@ -18,7 +18,7 @@ const menus = [
     {
         id: 1,
         title: "Tumis Jamur & Tahu Saus Tiram",
-        price: 79000,
+        price: 30000,
         diseases: [
             'Diabetes'
         ],
