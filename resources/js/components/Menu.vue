@@ -1,6 +1,6 @@
 <template>
     <section class="overflow-y-hidden py-20">
-        <h1 class="text-5xl font-semibold leading-10 text-gray-800 text-center mb-16">Menu Kami</h1>
+        <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Kami</h1>
         <div class="mx-auto container px-6 xl:px-0">
             <div class="flex flex-col">
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch">
@@ -17,17 +17,17 @@ import MenuCard from "./MenuCard";
 const menus = [
     {
         id: 1,
-        title: "Red Rice Pecel with Egg and Grilled Tempeh",
+        title: "Tumis Jamur & Tahu Saus Tiram",
         price: 79000,
         diseases: [
-            'Diabetes', 'Darah tinggi'
+            'Diabetes'
         ],
         ingredients: [
-            'Sayur musiman matang', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Minyak kanola', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
         ],
-        calories: 629,
-        carbs: 112.9,
-        protein: 28.8
+        calories: 171,
+        carbs: 8.6,
+        protein: 7.7
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ const menus = [
             'Penyakit Jantung'
         ],
         ingredients: [
-            'Yogurt rendah lemak', 'Ceri', 'Daun bayam', 'Alpukat', 'Mentega', 'Jahe'
+            'Yogurt rendah lemak', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'
         ],
         calories: 410,
         carbs: 46.6,

@@ -33,7 +33,7 @@
                                         <polyline points="8 16 10 10 16 8 14 14 8 16"></polyline>
                                         <circle cx="12" cy="12" r="9"></circle>
                                     </svg> -->
-                                    <span class="ml-2 font-bold">Tentang Kami</span>
+                                    <span class="ml-2 font-bold">Tim Kami</span>
                                 </li>
                                 <li class="border-b border-gray-300 xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:greenprimary flex items-center focus:text-indigo-700 focus:outline-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -114,7 +114,7 @@
                         </a>
                         <a href="#tentang-kami" class="flex  items-center  leading-5 text-gray-700 hover:text-greenprimary  focus:bg-gray-100 focus:outline-none  ">
                             <span class="  border-transparent   hover:border-b-4 hover:border-greenprimary hover:transition transition ease-in hover:ease-in-out  ">
-                            Tentang Kami
+                            Tim Kami
                             </span>
                         </a>
                         <!-- <a href="javascript: void(0)" class="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out">
