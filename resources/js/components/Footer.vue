@@ -2,8 +2,8 @@
 
 <footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-800">
 <div class="sm:flex sm:items-center md:justify-between sm:justify-center">
-<a href="https://flowbite.com" class="flex items-center mb-4 sm:mb-0">
-<img src="/img/menu/nyehaat.id-logo-pngyow-1.png" class="mr-1 h-24 mt-2 md:block mini:hidden absolute" alt="Nyehaat.id logo">
+<a href="https://www.instagram.com/nyehaat.id/" class="flex items-center mb-4 sm:mb-0">
+<img src="/img/logo_black.png" class="mr-1 h-10  md:block mini:hidden " alt="Nyehaat.id logo">
 <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap font-opensans font-bold">Nyehaat.id</span> -->
 </a>
 <ul class="flex flex-wrap font-opensans font-bold  items-center mb-6 text-sm text-gray-700 sm:mb-0 dark:text-gray-400">
@@ -17,7 +17,7 @@
 <a href="#" class="mr-4 hover:underline md:mr-6 hover:text-greenprimary">Licensing</a>
 </li> -->
 <li>
-<a href="#" class="hover:underline hover:text-greenprimary">Kontak</a>
+<a href="mailto: nyehaat.id@gmail.com" class="hover:underline hover:text-greenprimary">Kontak</a>
 </li>
 </ul>
 </div>

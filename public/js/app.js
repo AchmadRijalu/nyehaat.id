@@ -5976,6 +5976,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _TeamCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamCard.vue */ "./resources/js/components/TeamCard.vue");
 //
 //
 //
@@ -5994,26 +5995,53 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
+var teams = [{
+  id: 1,
+  name: "Achmad Rijalu Arianindita",
+  jobs: "Developer"
+}, {
+  id: 2,
+  name: "Justin Jap",
+  jobs: "Developer"
+}, {
+  id: 3,
+  name: "Kenny Jinhiro Wibowo",
+  jobs: "Developer"
+}, {
+  id: 4,
+  name: "Maximus Aurellius Wiranata",
+  jobs: "Developer"
+}, {
+  id: 5,
+  name: "Kevin Sander Utomo",
+  jobs: "Developer"
+}];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "Team",
+  components: {
+    TeamCard: _TeamCard_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      teams: teams
+    };
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 //
 //
 //
@@ -6026,7 +6054,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Team"
+  name: "TeamCard",
+  props: ['team']
 });
 
 /***/ }),
@@ -29339,6 +29368,45 @@ component.options.__file = "resources/js/components/Team.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/TeamCard.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/TeamCard.vue ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamCard.vue?vue&type=template&id=093c81f8&scoped=true& */ "./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true&");
+/* harmony import */ var _TeamCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TeamCard.vue?vue&type=script&lang=js& */ "./resources/js/components/TeamCard.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _TeamCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "093c81f8",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/TeamCard.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -29480,6 +29548,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Team_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Team.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Team.vue?vue&type=script&lang=js&");
  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Team_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/TeamCard.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/TeamCard.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TeamCard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -29645,6 +29729,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Team_vue_vue_type_template_id_402b42c8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Team_vue_vue_type_template_id_402b42c8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Team.vue?vue&type=template&id=402b42c8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Team.vue?vue&type=template&id=402b42c8&scoped=true&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true& ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_TeamCard_vue_vue_type_template_id_093c81f8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./TeamCard.vue?vue&type=template&id=093c81f8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true&");
 
 
 /***/ }),
@@ -30018,15 +30119,12 @@ var staticRenderFns = [
               "a",
               {
                 staticClass: "flex items-center mb-4 sm:mb-0",
-                attrs: { href: "https://flowbite.com" },
+                attrs: { href: "https://www.instagram.com/nyehaat.id/" },
               },
               [
                 _c("img", {
-                  staticClass: "mr-1 h-24 mt-2 md:block mini:hidden absolute",
-                  attrs: {
-                    src: "/img/menu/nyehaat.id-logo-pngyow-1.png",
-                    alt: "Nyehaat.id logo",
-                  },
+                  staticClass: "mr-1 h-10  md:block mini:hidden ",
+                  attrs: { src: "/img/logo_black.png", alt: "Nyehaat.id logo" },
                 }),
               ]
             ),
@@ -30067,7 +30165,7 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "hover:underline hover:text-greenprimary",
-                      attrs: { href: "#" },
+                      attrs: { href: "mailto: nyehaat.id@gmail.com" },
                     },
                     [_vm._v("Kontak")]
                   ),
@@ -30098,7 +30196,7 @@ var staticRenderFns = [
               },
               [_vm._v("Nyehaat.id")]
             ),
-            _vm._v(". Surabaya,Indonesia\r\n"),
+            _vm._v(". Surabaya,Indonesia\n"),
           ]
         ),
       ]
@@ -31042,239 +31140,92 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "section",
+    { staticClass: "xl:mx-auto xl:container 2xl:px-20 px-6 py-20" },
+    [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "text-5xl font-semibold leading-10 text-gray-800 text-center mb-8",
+        },
+        [_vm._v("Meet our team")]
+      ),
+      _vm._v(" "),
+      _c(
+        "h2",
+        {
+          staticClass:
+            "text-xl font-medium leading-10 text-gray-800 text-center mb-16 ",
+        },
+        [_vm._v("Berikut ini merupakan tim dari Nyehaat.id, salam kenal :)")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex flex-wrap items-stretch xl:justify-between justify-center xl:gap-6 gap-4",
+        },
+        _vm._l(_vm.teams, function (team) {
+          return _c("TeamCard", { key: team.id, attrs: { team: team } })
+        }),
+        1
+      ),
+    ]
+  )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      { staticClass: "xl:mx-auto xl:container 2xl:px-20 px-6 py-20" },
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true&":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/TeamCard.vue?vue&type=template&id=093c81f8&scoped=true& ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "lg:w-96 w-80" }, [
+    _c("img", {
+      staticClass: "h-72 w-full object-cover object-center rounded-t-md",
+      attrs: { src: "/img/team/" + _vm.team.id + ".jpg", alt: "woman smiling" },
+    }),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "bg-white shadow-md rounded-md py-4 text-center" },
       [
         _c(
-          "h1",
+          "p",
           {
             staticClass:
-              "text-5xl font-semibold leading-10 text-gray-800 text-center mb-16",
+              "text-base font-medium leading-6 text-gray-600 font-opensans font-semibold",
           },
-          [_vm._v("Meet our team")]
+          [_vm._v(_vm._s(_vm.team.name))]
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass:
-              "flex flex-wrap items-stretch xl:justify-between justify-center xl:gap-6 gap-4",
-          },
-          [
-            _c("div", { staticClass: "lg:w-96 w-80" }, [
-              _c("img", {
-                staticClass:
-                  "h-72 w-full object-cover object-center rounded-t-md",
-                attrs: {
-                  src: "https://i.ibb.co/Vm2T6Gj/team-1.png",
-                  alt: "woman smiling",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "bg-white shadow-md rounded-md py-4 text-center",
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-base font-medium leading-6 text-gray-600",
-                    },
-                    [_vm._v("Samantha Jane")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "text-base leading-6 mt-2 text-gray-800" },
-                    [_vm._v("Designer")]
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "bg-indigo-700 rounded-md lg:w-96 w-80 flex flex-col items-center justify-center md:py-0 py-12",
-              },
-              [
-                _c(
-                  "h3",
-                  {
-                    staticClass:
-                      "text-2xl font-semibold leading-6 text-center text-white",
-                  },
-                  [_vm._v("About Team")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "p",
-                  {
-                    staticClass:
-                      "lg:w-80 lg:px-0 px-4 text-base leading-6 text-center text-white mt-6",
-                  },
-                  [
-                    _vm._v(
-                      "Teamwork is the collaborative effort of a team to achieve a common goal or to complete task in the most effective way. This concept is seen in the greater framework of a team in which indipendent indiviuals who work together towards common goal basic requirement for effective team and company"
-                    ),
-                  ]
-                ),
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "lg:w-96 w-80" }, [
-              _c("img", {
-                staticClass:
-                  "h-72 w-full object-cover object-center rounded-t-md",
-                attrs: {
-                  src: "https://i.ibb.co/85Y7MG9/team-2.png",
-                  alt: "woman in black dress",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "bg-white shadow-md rounded-md py-4 text-center",
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-base font-medium leading-6 text-gray-600",
-                    },
-                    [_vm._v("Marilyn Rhodes")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "text-base leading-6 mt-2 text-gray-800" },
-                    [_vm._v("Designer")]
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "lg:w-96 w-80" }, [
-              _c("img", {
-                staticClass:
-                  "h-72 w-full object-cover object-center rounded-t-md",
-                attrs: {
-                  src: "https://i.ibb.co/wKq8ZCW/team-3.png",
-                  alt: "woman smiling",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "bg-white shadow-md rounded-md py-4 text-center",
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-base font-medium leading-6 text-gray-600",
-                    },
-                    [_vm._v("Marry Smith")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "text-base leading-6 mt-2 text-gray-800" },
-                    [_vm._v("Writer")]
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "lg:w-96 w-80" }, [
-              _c("img", {
-                staticClass:
-                  "h-72 w-full object-cover object-center rounded-t-md",
-                attrs: {
-                  src: "https://i.ibb.co/TKzGPFx/team-4.png",
-                  alt: "woman smiling",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "bg-white shadow-md rounded-md py-4 text-center",
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-base font-medium leading-6 text-gray-600",
-                    },
-                    [_vm._v("John Renolds")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "text-base leading-6 mt-2 text-gray-800" },
-                    [_vm._v("Developer")]
-                  ),
-                ]
-              ),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "lg:w-96 w-80" }, [
-              _c("img", {
-                staticClass:
-                  "h-72 w-full object-cover object-center rounded-t-md",
-                attrs: {
-                  src: "https://i.ibb.co/Lng30RF/team-5.png",
-                  alt: "woman smiling",
-                },
-              }),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "bg-white shadow-md rounded-md py-4 text-center",
-                },
-                [
-                  _c(
-                    "p",
-                    {
-                      staticClass:
-                        "text-base font-medium leading-6 text-gray-600",
-                    },
-                    [_vm._v("Annie Jackie")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "p",
-                    { staticClass: "text-base leading-6 mt-2 text-gray-800" },
-                    [_vm._v("Designer")]
-                  ),
-                ]
-              ),
-            ]),
-          ]
-        ),
+        _c("p", { staticClass: "text-base leading-6 mt-2 text-gray-800" }, [
+          _vm._v(_vm._s(_vm.team.jobs)),
+        ]),
       ]
-    )
-  },
-]
+    ),
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
