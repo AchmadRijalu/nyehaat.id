@@ -30725,7 +30725,7 @@ var render = function () {
                       "ul",
                       {
                         staticClass:
-                          "p-2 font-opensans space-y-3 border-r bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden",
+                          "p-2 font-opensans space-y-3 border-r p-3 bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden",
                       },
                       [
                         _vm._m(0),

@@ -5,7 +5,7 @@
                 <div class="inset-y-0 left-0 flex items-center xl:hidden">
                     <div class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-100 focus:outline-none transition duration-150 ease-in-out">
                         <div class="visible xl:hidden transition ease-out origin-top-left ">
-                            <ul class="p-2 font-opensans space-y-3 border-r bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden">
+                            <ul class="p-2 font-opensans space-y-3 border-r p-3 bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden">
                                 <li class="flex xl:hidden cursor-pointer text-gray-600 text-xl leading-3 tracking-normal  py-2 hover:text-greenprimary focus:text-indigo-700 focus:outline-none">
                                     <div class="flex items-center">
                                         <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-grid" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
