@@ -34,7 +34,7 @@
                         <h5>{{ menu.protein }} g</h5>
                     </div>
                 </div>
-                <div class="py-3 ">
+                <div class="py-3">
                     <p v-for="(ingredient, index) in menu.ingredients" :key="ingredient" class="text-md font-opensans text-gray-900 inline">
                         <template v-if="index !== menu.ingredients.length - 1">
                             {{ ingredient }},
