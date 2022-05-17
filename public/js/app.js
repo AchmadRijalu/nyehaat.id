@@ -11162,7 +11162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29889,7 +29889,7 @@ var staticRenderFns = [
         staticClass:
           "lg:text-6xl md:text-5xl text-4xl font-black leading-10 text-center text-gray-800",
       },
-      [_c("h1", [_vm._v("Tailor-made features")])]
+      [_c("h1", [_vm._v("Bagaimana Cara Pesan?")])]
     )
   },
   function () {
@@ -29899,7 +29899,7 @@ var staticRenderFns = [
     return _c(
       "div",
       { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
-      [_c("h2", [_vm._v("Robust workflow")])]
+      [_c("h2", [_vm._v("Pilih Menu Anda")])]
     )
   },
   function () {
@@ -29912,7 +29912,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Workflows can help streamline and automate repeatable business tasks."
+            "Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda yang dapat anda seleksi."
           ),
         ]),
       ]
@@ -29925,7 +29925,7 @@ var staticRenderFns = [
     return _c(
       "div",
       { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
-      [_c("h2", [_vm._v("Flexibility")])]
+      [_c("h2", [_vm._v("Pesan")])]
     )
   },
   function () {
@@ -29938,7 +29938,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "A flexible software architecture is able to changes in usability requirements"
+            "Pemesanan akan dibantu oleh Customer Service nyehaat.id melalui WhatsApp."
           ),
         ]),
       ]
@@ -29951,7 +29951,7 @@ var staticRenderFns = [
     return _c(
       "div",
       { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
-      [_c("h2", [_vm._v("User friendly")])]
+      [_c("h2", [_vm._v("Pengiriman")])]
     )
   },
   function () {
@@ -29964,7 +29964,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Good usability can improve a new software chances of successful adoption."
+            "Setelah melakukan pemesanan, makanan akan dikirimkan esok harinya (H+1)."
           ),
         ]),
       ]
@@ -30140,19 +30140,17 @@ var staticRenderFns = [
           "div",
           { staticClass: "w-full lg:w-1/2 h-full mx-auto text-center" },
           [
-            _c("p", { staticClass: "text-white uppercase text-4xl mb-4" }, [
-              _vm._v("Qusique Tincidun sapien"),
-            ]),
+            _c("p"),
             _vm._v(" "),
             _c(
               "h1",
               { staticClass: "text-white text-6xl md:text-7xl mb-8 font-bold" },
-              [_vm._v("All natural ingredients")]
+              [_vm._v("Makan Sehat, Hidup Nyehaat")]
             ),
             _vm._v(" "),
             _c("p", { staticClass: "text-white font-regular mb-8" }, [
               _vm._v(
-                "COMBINING SCIENCE WITH BEAUTY. L'Oreal Paris offers a wide range of skincare solutions for your beauty needs. Each of our skincare products is developed and rigorously tested with leading scientists. Indulge yourself in a luxurious and sensorial skincare experience. Cutting-edge innovations, proven by Science."
+                "Nyehaat.id adalah jasa penyedia makanan yang menjunjung kesehatan anda dengan menyesuaikan makanan-makanan pilihan sesuai dengan kebutuhan anda."
               ),
             ]),
           ]
@@ -30229,7 +30227,7 @@ var render = function () {
         staticClass:
           "text-5xl font-semibold leading-10 text-gray-800 text-center mb-16",
       },
-      [_vm._v("Our Menu")]
+      [_vm._v("Menu Kami")]
     ),
     _vm._v(" "),
     _c("div", { staticClass: "mx-auto container px-6 xl:px-0" }, [

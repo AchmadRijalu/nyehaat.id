@@ -2,7 +2,7 @@
     <section class="mx-auto container py-20">
         <div class="flex justify-center items-center flex-col">
             <div class="lg:text-6xl md:text-5xl text-4xl font-black leading-10 text-center text-gray-800">
-                <h1>Tailor-made features</h1>
+                <h1>Bagaimana Cara Pesan?</h1>
             </div>
             <div class="pt-24 grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center xl:gap-y-16 gap-y-20 gap-x-16 lg:gap-x-20 xl:gap-x-0 lg:px-10 xl:px-0">
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -14,10 +14,10 @@
                         </svg>
                     </div>
                     <div class="text-gray-800 text-2xl font-semibold text-center">
-                        <h2>Robust workflow</h2>
+                        <h2>Pilih Menu Anda</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Workflows can help streamline and automate repeatable business tasks.</p>
+                        <p>Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda yang dapat anda seleksi.</p>
                     </div>
                 </div>
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -29,10 +29,10 @@
                         </svg>
                     </div>
                     <div class="text-gray-800 text-2xl font-semibold text-center">
-                        <h2>Flexibility</h2>
+                        <h2>Pesan</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>A flexible software architecture is able to changes in usability requirements</p>
+                        <p>Pemesanan akan dibantu oleh Customer Service nyehaat.id melalui WhatsApp.</p>
                     </div>
                 </div>
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -44,10 +44,10 @@
                         </svg>
                     </div>
                     <div class="text-gray-800 text-2xl font-semibold text-center">
-                        <h2>User friendly</h2>
+                        <h2>Pengiriman</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Good usability can improve a new software chances of successful adoption.</p>
+                        <p>Setelah melakukan pemesanan, makanan akan dikirimkan esok harinya (H+1).</p>
                     </div>
                 </div>
             </div>

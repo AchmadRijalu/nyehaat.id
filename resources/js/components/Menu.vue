@@ -1,6 +1,6 @@
 <template>
     <section class="overflow-y-hidden py-20">
-        <h1 class="text-5xl font-semibold leading-10 text-gray-800 text-center mb-16">Our Menu</h1>
+        <h1 class="text-5xl font-semibold leading-10 text-gray-800 text-center mb-16">Menu Kami</h1>
         <div class="mx-auto container px-6 xl:px-0">
             <div class="flex flex-col">
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch">
