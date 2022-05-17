@@ -60,7 +60,7 @@ const menus = [
     {
         id: 4,
         title: "Chickpea Quinoa Soup",
-        price: 79000,
+        price: 36000,
         diseases: [
             'Darah tinggi'
         ],
@@ -74,7 +74,7 @@ const menus = [
     {
         id: 5,
         title: "Vegan Roasted Red Pepper Pasta",
-        price: 79000,
+        price: 43000,
         diseases: [
             'Darah tinggi'
         ],
