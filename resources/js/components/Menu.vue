@@ -1,6 +1,7 @@
 <template>
     <section class="overflow-y-hidden py-20 items-center justify-center">
         <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Kami</h1>
+        <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Seluruh resep dari menu kami telah disetujui oleh ahhli gizi.</h2>
         <div class="mx-auto container px-6 xl:px-0 items-center ">
             <div class="flex flex-col items-center ">
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
@@ -23,25 +24,11 @@ const menus = [
             'Diabetes'
         ],
         ingredients: [
-            'Minyak kanola', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'
+            'Minyak kanola', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'
         ],
         calories: 171,
         carbs: 8.6,
         protein: 7.7
-    },
-    {
-        id: 2,
-        title: "Smoothie Cherry-Bayam Anti Peradangan",
-        price: 35000,
-        diseases: [
-            'Penyakit Jantung'
-        ],
-        ingredients: [
-            'Yogurt rendah lemak', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'
-        ],
-        calories: 410,
-        carbs: 46.6,
-        protein: 17.4
     },
     {
         id: 3,
@@ -84,6 +71,20 @@ const menus = [
         calories: 487,
         carbs: 75,
         protein: 14
+    },
+    {
+        id: 5,
+        title: "Smoothie Cherry-Bayam Anti Peradangan",
+        price: 35000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Yogurt rendah lemak', 'Jahe', 'Cherry', 'Daun bayam', 'Alpukat', 'Mentega'
+        ],
+        calories: 410,
+        carbs: 46.6,
+        protein: 17.4
     },
 ]
 
