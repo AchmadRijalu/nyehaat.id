@@ -73,7 +73,7 @@ const menus = [
         protein: 14
     },
     {
-        id: 5,
+        id: 2,
         title: "Smoothie Cherry-Bayam Anti Peradangan",
         price: 35000,
         diseases: [
