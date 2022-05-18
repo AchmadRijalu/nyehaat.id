@@ -5741,7 +5741,7 @@ var menus = [{
   carbs: 75,
   protein: 14
 }, {
-  id: 5,
+  id: 2,
   title: "Smoothie Cherry-Bayam Anti Peradangan",
   price: 35000,
   diseases: ['Penyakit Jantung'],
