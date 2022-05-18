@@ -46,7 +46,7 @@ const menus = [
     {
         id: 3,
         title: "Baked Cod with Spring Vegetables",
-        price: 22000,
+        price: 42000,
         diseases: [
             'Darah tinggi'
         ],

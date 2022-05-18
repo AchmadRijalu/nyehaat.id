@@ -5706,7 +5706,7 @@ __webpack_require__.r(__webpack_exports__);
 var menus = [{
   id: 1,
   title: "Tumis Jamur & Tahu Saus Tiram",
-  price: 79000,
+  price: 30000,
   diseases: ['Diabetes'],
   ingredients: ['Minyak kanola', 'Bumbu pecel mete', 'Nasi merah', 'Tempe bumbu rujak', 'Telur', 'Emping garut'],
   calories: 171,
@@ -5724,7 +5724,7 @@ var menus = [{
 }, {
   id: 3,
   title: "Baked Cod with Spring Vegetables",
-  price: 22000,
+  price: 42000,
   diseases: ['Darah tinggi'],
   ingredients: ['Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'],
   calories: 221,
