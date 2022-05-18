@@ -30438,11 +30438,7 @@ var render = function () {
           staticClass:
             "text-xl font-medium leading-10 text-gray-800 text-center mb-16 ",
         },
-        [
-          _vm._v(
-            "Seluruh resep dari menu kami telah disetujui oleh ahhli gizi."
-          ),
-        ]
+        [_vm._v("Seluruh resep dari menu kami telah disetujui oleh ahli gizi.")]
       ),
       _vm._v(" "),
       _c(
