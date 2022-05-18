@@ -11970,11 +11970,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-80 {
   width: 20rem;
 }
-.max-w-6xl {
-  max-width: 72rem;
-}
 .max-w-xl {
   max-width: 36rem;
+}
+.max-w-6xl {
+  max-width: 72rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -11984,6 +11984,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .basis-full {
   flex-basis: 100%;
+}
+.origin-top-left {
+  transform-origin: top left;
+}
+.translate-x-5 {
+  --tw-translate-x: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -12052,6 +12059,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(6rem * var(--tw-space-x-reverse));
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 .self-center {
   align-self: center;
@@ -12158,9 +12170,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
-.fill-white {
-  fill: #fff;
-}
 .fill-greenprimary {
   fill: #00C036;
 }
@@ -12184,17 +12193,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
+.p-3 {
+  padding: 0.75rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .py-20 {
   padding-top: 5rem;
@@ -12251,6 +12263,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -12392,6 +12408,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
 }
+.text-greenprimary {
+  --tw-text-opacity: 1;
+  color: rgb(0 192 54 / var(--tw-text-opacity));
+}
 .text-gray-800 {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -12407,10 +12427,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-800 {
   --tw-text-opacity: 1;
   color: rgb(30 64 175 / var(--tw-text-opacity));
-}
-.text-greenprimary {
-  --tw-text-opacity: 1;
-  color: rgb(0 192 54 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -12452,17 +12468,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.delay-100 {
+  transition-delay: 100ms;
+}
 .duration-500 {
   transition-duration: 500ms;
 }
 .duration-150 {
   transition-duration: 150ms;
 }
+.duration-200 {
+  transition-duration: 200ms;
+}
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 .hover\:space-y-2:hover > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -12882,10 +12907,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
   }
 
   .xl\:gap-6 {

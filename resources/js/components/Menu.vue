@@ -1,9 +1,9 @@
 <template>
-    <section class="overflow-y-hidden py-20">
+    <section class="overflow-y-hidden py-20 items-center justify-center">
         <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Kami</h1>
-        <div class="mx-auto container px-6 xl:px-0">
-            <div class="flex flex-col">
-                <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch">
+        <div class="mx-auto container px-6 xl:px-0 items-center ">
+            <div class="flex flex-col items-center ">
+                <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
                     <MenuCard v-for="menu in menus" :key="menu.id" :menu="menu"></MenuCard>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const menus = [
     {
         id: 2,
         title: "Smoothie Cherry-Bayam Anti Peradangan",
-        price: 39000,
+        price: 35000,
         diseases: [
             'Penyakit Jantung'
         ],

@@ -5715,7 +5715,7 @@ var menus = [{
 }, {
   id: 2,
   title: "Smoothie Cherry-Bayam Anti Peradangan",
-  price: 39000,
+  price: 35000,
   diseases: ['Penyakit Jantung'],
   ingredients: ['Yogurt rendah lemak', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'],
   calories: 410,
@@ -5857,23 +5857,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -11264,7 +11247,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30313,7 +30296,7 @@ var staticRenderFns = [
             _c("a", { staticClass: "hover:underline", attrs: { href: "/" } }, [
               _vm._v("Nyehaat.id"),
             ]),
-            _vm._v(". Surabaya,Indonesia\n"),
+            _vm._v(". Surabaya,Indonesia\r\n"),
           ]
         ),
       ]
@@ -30435,32 +30418,40 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "overflow-y-hidden py-20" }, [
-    _c(
-      "h1",
-      {
-        staticClass:
-          "text-5xl font-semibold leading-10 text-greenprimary text-center mb-16",
-      },
-      [_vm._v("Menu Kami")]
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "mx-auto container px-6 xl:px-0" }, [
-      _c("div", { staticClass: "flex flex-col" }, [
-        _c(
-          "div",
-          {
-            staticClass:
-              "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch",
-          },
-          _vm._l(_vm.menus, function (menu) {
-            return _c("MenuCard", { key: menu.id, attrs: { menu: menu } })
-          }),
-          1
-        ),
-      ]),
-    ]),
-  ])
+  return _c(
+    "section",
+    { staticClass: "overflow-y-hidden py-20 items-center justify-center" },
+    [
+      _c(
+        "h1",
+        {
+          staticClass:
+            "text-5xl font-semibold leading-10 text-greenprimary text-center mb-16",
+        },
+        [_vm._v("Menu Kami")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "mx-auto container px-6 xl:px-0 items-center " },
+        [
+          _c("div", { staticClass: "flex flex-col items-center " }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+              },
+              _vm._l(_vm.menus, function (menu) {
+                return _c("MenuCard", { key: menu.id, attrs: { menu: menu } })
+              }),
+              1
+            ),
+          ]),
+        ]
+      ),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -30619,7 +30610,7 @@ var render = function () {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "py-3 " },
+              { staticClass: "py-3" },
               _vm._l(_vm.menu.ingredients, function (ingredient, index) {
                 return _c(
                   "p",
@@ -30723,360 +30714,135 @@ var render = function () {
                   "inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-100 focus:outline-none transition duration-150 ease-in-out",
               },
               [
-                _c("div", { staticClass: "visible xl:hidden" }, [
-                  _c(
-                    "ul",
-                    {
-                      staticClass:
-                        "p-2 font-opensans  border-r bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden",
-                    },
-                    [
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "flex xl:hidden cursor-pointer text-gray-600 text-xl leading-3 tracking-normal mt-2 py-2 hover:text-greenprimary focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _c(
-                              "svg",
-                              {
-                                staticClass:
-                                  "icon icon-tabler icon-tabler-grid",
-                                attrs: {
-                                  xmlns: "http://www.w3.org/2000/svg",
-                                  width: "20",
-                                  height: "20",
-                                  viewBox: "0 0 24 24",
-                                  "stroke-width": "1.5",
-                                  stroke: "currentColor",
-                                  fill: "none",
-                                  "stroke-linecap": "round",
-                                  "stroke-linejoin": "round",
-                                },
-                              },
-                              [
-                                _c("path", {
-                                  attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    x: "4",
-                                    y: "4",
-                                    width: "6",
-                                    height: "6",
-                                    rx: "1",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    x: "14",
-                                    y: "4",
-                                    width: "6",
-                                    height: "6",
-                                    rx: "1",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    x: "4",
-                                    y: "14",
-                                    width: "6",
-                                    height: "6",
-                                    rx: "1",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("rect", {
-                                  attrs: {
-                                    x: "14",
-                                    y: "14",
-                                    width: "6",
-                                    height: "6",
-                                    rx: "1",
-                                  },
-                                }),
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "span",
-                              { staticClass: "ml-2 font-bold font-opensans" },
-                              [_vm._v("Dashboard")]
-                            ),
-                          ]),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "xl:hidden flex-col cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-greenprimary focus:text-indigo-700 focus:outline-none flex justify-center",
-                          on: {
-                            click: function ($event) {
-                              return _vm.dropdownHandler($event)
-                            },
-                          },
-                        },
-                        [_vm._m(0)]
-                      ),
-                      _vm._v(" "),
-                      _vm._m(1),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "border-b border-gray-300 xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:greenprimary flex items-center focus:text-indigo-700 focus:outline-none",
-                        },
-                        [
-                          _c(
-                            "svg",
-                            {
-                              staticClass: "icon icon-tabler icon-tabler-code",
-                              attrs: {
-                                xmlns: "http://www.w3.org/2000/svg",
-                                width: "20",
-                                height: "20",
-                                viewBox: "0 0 24 24",
-                                "stroke-width": "1.5",
-                                stroke: "currentColor",
-                                fill: "none",
-                                "stroke-linecap": "round",
-                                "stroke-linejoin": "round",
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "visible xl:hidden transition ease-out origin-top-left ",
+                  },
+                  [
+                    _c(
+                      "ul",
+                      {
+                        staticClass:
+                          "p-2 font-opensans space-y-3 border-r p-3 bg-white absolute rounded left-0 right-0 shadow mt-8 md:mt-8 hidden",
+                      },
+                      [
+                        _vm._m(0),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "xl:hidden flex-col cursor-pointer text-lg text-gray-600  leading-3 tracking-normal py-2 hover:text-greenprimary focus:text-indigo-700 focus:outline-none flex justify-center",
+                            on: {
+                              click: function ($event) {
+                                return _vm.dropdownHandler($event)
                               },
                             },
-                            [
-                              _c("path", {
-                                attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                              }),
-                              _vm._v(" "),
-                              _c("polyline", {
-                                attrs: { points: "7 8 3 12 7 16" },
-                              }),
-                              _vm._v(" "),
-                              _c("polyline", {
-                                attrs: { points: "17 8 21 12 17 16" },
-                              }),
-                              _vm._v(" "),
-                              _c("line", {
-                                attrs: {
-                                  x1: "14",
-                                  y1: "4",
-                                  x2: "10",
-                                  y2: "20",
-                                },
-                              }),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "ml-2 font-bold" }, [
-                            _vm._v("Deliverables"),
-                          ]),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-greenprimary focus:outline-none",
+                          },
+                          [_vm._m(1)]
+                        ),
+                        _vm._v(" "),
+                        _vm._m(2),
+                        _vm._v(" "),
+                        _vm._m(3),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "svg",
+                      {
+                        staticClass:
+                          "show-m-menu icon icon-tabler icon-tabler-menu cursor-pointer ",
+                        attrs: {
+                          "aria-haspopup": "true",
+                          "aria-label": "Main Menu",
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "28",
+                          height: "28",
+                          viewBox: "0 0 24 24",
+                          "stroke-width": "1.5",
+                          stroke: "currentColor",
+                          fill: "none",
+                          "stroke-linecap": "round",
+                          "stroke-linejoin": "round",
                         },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _c(
-                              "p",
-                              { staticClass: "text-sm ml-2 cursor-pointer" },
-                              [_vm._v("Jane Doe")]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "div",
-                              { staticClass: "sm:ml-2 text-white relative" },
-                              [
-                                _c(
-                                  "svg",
-                                  {
-                                    staticClass:
-                                      "icon icon-tabler icon-tabler-chevron-down cursor-pointer",
-                                    attrs: {
-                                      xmlns: "http://www.w3.org/2000/svg",
-                                      width: "20",
-                                      height: "20",
-                                      viewBox: "0 0 24 24",
-                                      "stroke-width": "1.5",
-                                      stroke: "currentColor",
-                                      fill: "none",
-                                      "stroke-linecap": "round",
-                                      "stroke-linejoin": "round",
-                                    },
-                                  },
-                                  [
-                                    _c("path", {
-                                      attrs: {
-                                        stroke: "none",
-                                        d: "M0 0h24v24H0z",
-                                      },
-                                    }),
-                                    _vm._v(" "),
-                                    _c("polyline", {
-                                      attrs: { points: "6 9 12 15 18 9" },
-                                    }),
-                                  ]
-                                ),
-                              ]
-                            ),
-                          ]),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-indigo-700 focus:text-greenprimary focus:outline-none",
-                        },
-                        [
-                          _c("div", { staticClass: "flex items-center" }, [
-                            _c(
-                              "svg",
-                              {
-                                staticClass:
-                                  "icon icon-tabler icon-tabler-user",
-                                attrs: {
-                                  xmlns: "http://www.w3.org/2000/svg",
-                                  width: "20",
-                                  height: "20",
-                                  viewBox: "0 0 24 24",
-                                  "stroke-width": "1.5",
-                                  stroke: "currentColor",
-                                  fill: "none",
-                                  "stroke-linecap": "round",
-                                  "stroke-linejoin": "round",
-                                },
-                              },
-                              [
-                                _c("path", {
-                                  attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                                }),
-                                _vm._v(" "),
-                                _c("circle", {
-                                  attrs: { cx: "12", cy: "7", r: "4" },
-                                }),
-                                _vm._v(" "),
-                                _c("path", {
-                                  attrs: {
-                                    d: "M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2",
-                                  },
-                                }),
-                              ]
-                            ),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "ml-2" }, [
-                              _vm._v("Profile"),
-                            ]),
-                          ]),
-                        ]
-                      ),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "svg",
-                    {
-                      staticClass:
-                        "show-m-menu icon icon-tabler icon-tabler-menu",
-                      attrs: {
-                        "aria-haspopup": "true",
-                        "aria-label": "Main Menu",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        width: "28",
-                        height: "28",
-                        viewBox: "0 0 24 24",
-                        "stroke-width": "1.5",
-                        stroke: "currentColor",
-                        fill: "none",
-                        "stroke-linecap": "round",
-                        "stroke-linejoin": "round",
-                      },
-                      on: {
-                        click: function ($event) {
-                          return _vm.MenuHandler($event, true)
-                        },
-                      },
-                    },
-                    [
-                      _c("path", {
-                        attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                      }),
-                      _vm._v(" "),
-                      _c("line", {
-                        attrs: { x1: "4", y1: "8", x2: "20", y2: "8" },
-                      }),
-                      _vm._v(" "),
-                      _c("line", {
-                        attrs: { x1: "4", y1: "16", x2: "20", y2: "16" },
-                      }),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "hidden close-m-menu text-gray-700",
-                      on: {
-                        click: function ($event) {
-                          return _vm.MenuHandler($event, false)
-                        },
-                      },
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          attrs: {
-                            "aria-label": "Close",
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "24",
-                            height: "24",
-                            viewBox: "0 0 24 24",
-                            "stroke-width": "1.5",
-                            stroke: "currentColor",
-                            fill: "none",
-                            "stroke-linecap": "round",
-                            "stroke-linejoin": "round",
+                        on: {
+                          click: function ($event) {
+                            return _vm.MenuHandler($event, true)
                           },
                         },
-                        [
-                          _c("path", {
-                            attrs: { stroke: "none", d: "M0 0h24v24H0z" },
-                          }),
-                          _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "18", y1: "6", x2: "6", y2: "18" },
-                          }),
-                          _vm._v(" "),
-                          _c("line", {
-                            attrs: { x1: "6", y1: "6", x2: "18", y2: "18" },
-                          }),
-                        ]
-                      ),
-                    ]
-                  ),
-                ]),
+                      },
+                      [
+                        _c("path", {
+                          attrs: { stroke: "none", d: "M0 0h24v24H0z" },
+                        }),
+                        _vm._v(" "),
+                        _c("line", {
+                          attrs: { x1: "4", y1: "8", x2: "20", y2: "8" },
+                        }),
+                        _vm._v(" "),
+                        _c("line", {
+                          attrs: { x1: "4", y1: "16", x2: "20", y2: "16" },
+                        }),
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "hidden close-m-menu text-gray-700 cursor-pointer transition ease-in-out delay-100",
+                        on: {
+                          click: function ($event) {
+                            return _vm.MenuHandler($event, false)
+                          },
+                        },
+                      },
+                      [
+                        _c(
+                          "svg",
+                          {
+                            attrs: {
+                              "aria-label": "Close",
+                              xmlns: "http://www.w3.org/2000/svg",
+                              width: "24",
+                              height: "24",
+                              viewBox: "0 0 24 24",
+                              "stroke-width": "1.5",
+                              stroke: "currentColor",
+                              fill: "none",
+                              "stroke-linecap": "round",
+                              "stroke-linejoin": "round",
+                            },
+                          },
+                          [
+                            _c("path", {
+                              attrs: { stroke: "none", d: "M0 0h24v24H0z" },
+                            }),
+                            _vm._v(" "),
+                            _c("line", {
+                              attrs: { x1: "18", y1: "6", x2: "6", y2: "18" },
+                            }),
+                            _vm._v(" "),
+                            _c("line", {
+                              attrs: { x1: "6", y1: "6", x2: "18", y2: "18" },
+                            }),
+                          ]
+                        ),
+                      ]
+                    ),
+                  ]
+                ),
               ]
             ),
           ]
         ),
         _vm._v(" "),
-        _vm._m(2),
+        _vm._m(4),
         _vm._v(" "),
-        _vm._m(3),
+        _vm._m(5),
       ]),
     ]),
   ])
@@ -31086,8 +30852,43 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass:
+          "flex xl:hidden cursor-pointer text-gray-600 text-xl leading-3 tracking-normal  py-2 hover:text-greenprimary focus:text-indigo-700 focus:outline-none",
+      },
+      [
+        _c("div", { staticClass: "flex items-center" }, [
+          _c("span", { staticClass: "ml-2 font-bold font-opensans " }, [
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-greenprimary",
+                attrs: { href: "#home" },
+              },
+              [_vm._v("Home")]
+            ),
+          ]),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center" }, [
-      _c("span", { staticClass: "ml-2 font-bold" }, [_vm._v("Menu")]),
+      _c("span", { staticClass: "ml-2 font-bold" }, [
+        _c(
+          "a",
+          {
+            staticClass: "hover:text-greenprimary",
+            attrs: { href: "#feature" },
+          },
+          [_vm._v("Feature")]
+        ),
+      ]),
     ])
   },
   function () {
@@ -31098,9 +30899,51 @@ var staticRenderFns = [
       "li",
       {
         staticClass:
-          "xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal py-2 hover:text-greenprimary flex items-center focus:text-indigo-700 focus:outline-none",
+          "xl:hidden cursor-pointer text-gray-600 text-lg leading-3 tracking-normal py-2 hover:text-greenprimary flex items-center focus:text-indigo-700 focus:outline-none",
       },
-      [_c("span", { staticClass: "ml-2 font-bold" }, [_vm._v("Tim Kami")])]
+      [
+        _c("span", { staticClass: "ml-2 font-bold" }, [
+          _c(
+            "a",
+            {
+              staticClass: "hover:text-greenprimary",
+              attrs: { href: "#menu" },
+            },
+            [_vm._v("Menu")]
+          ),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "li",
+      {
+        staticClass:
+          "border-b border-gray-300 xl:hidden cursor-pointer text-gray-600 text-lg leading-3 tracking-normal py-2  hover:greenprimary flex items-center focus:text-indigo-700 focus:outline-none",
+      },
+      [
+        _c(
+          "span",
+          {
+            staticClass:
+              "ml-2 font-bold xl:hidden cursor-pointer text-gray-600 text-lg leading-3 tracking-normal py-2 hover:text-greenprimary flex items-center focus:text-indigo-700 focus:outline-none",
+          },
+          [
+            _c(
+              "a",
+              {
+                staticClass: "hover:text-greenprimary",
+                attrs: { href: "#tentang-kami" },
+              },
+              [_vm._v("Tim Kami")]
+            ),
+          ]
+        ),
+      ]
     )
   },
   function () {
