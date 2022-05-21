@@ -86,6 +86,34 @@ const menus = [
         carbs: 46.6,
         protein: 17.4
     },
+    {
+        id: 6,
+        title: "Ayam-Jagung Lapis Aprikot",
+        price: 28000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis',
+        ],
+        calories: 500,
+        carbs: 33,
+        protein: 51
+    },
+    {
+        id: 7,
+        title: "Spaghetti Jamur Panggang",
+        price: 38000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Spaghetti', 'Jamur', 'Kacang Hijau', 'Irisan Daun Bawang', 'Perasan Air Lemon',
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
 ]
 
 export default {
