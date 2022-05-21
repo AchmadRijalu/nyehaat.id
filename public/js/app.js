@@ -5726,7 +5726,7 @@ var menus = [{
   id: 4,
   title: "Chickpea Quinoa Soup",
   price: 36000,
-  diseases: ['Darah tinggi'],
+  diseases: ['Darah tinggi', 'Diabetes'],
   ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
   calories: 227,
   carbs: 112.9,
@@ -5764,6 +5764,24 @@ var menus = [{
   price: 38000,
   diseases: ['Penyakit Jantung'],
   ingredients: ['Spaghetti', 'Jamur', 'Kacang Hijau', 'Irisan Daun Bawang', 'Perasan Air Lemon'],
+  calories: 439,
+  carbs: 81,
+  protein: 17
+}, {
+  id: 8,
+  title: "Beef Sukiyaki",
+  price: 38000,
+  diseases: ['Diabetes'],
+  ingredients: ['Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'],
+  calories: 439,
+  carbs: 81,
+  protein: 17
+}, {
+  id: 9,
+  title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
+  price: 38000,
+  diseases: ['Diabetes'],
+  ingredients: ['Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'],
   calories: 439,
   carbs: 81,
   protein: 17
@@ -30558,7 +30576,7 @@ var render = function () {
                     {
                       key: disease,
                       staticClass:
-                        "inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2 mb-2",
+                        "inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2",
                     },
                     [
                       index === 0

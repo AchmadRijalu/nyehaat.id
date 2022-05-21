@@ -49,7 +49,7 @@ const menus = [
         title: "Chickpea Quinoa Soup",
         price: 36000,
         diseases: [
-            'Darah tinggi'
+            'Darah tinggi', 'Diabetes'
         ],
         ingredients: [
             'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'
@@ -109,6 +109,34 @@ const menus = [
         ],
         ingredients: [
             'Spaghetti', 'Jamur', 'Kacang Hijau', 'Irisan Daun Bawang', 'Perasan Air Lemon',
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
+    {
+        id: 8,
+        title: "Beef Sukiyaki",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
+    {
+        id: 9,
+        title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'
         ],
         calories: 439,
         carbs: 81,
