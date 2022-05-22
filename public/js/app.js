@@ -31292,7 +31292,7 @@ var render = function () {
             },
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "px-4 pb-5" }, [
+          _c("div", { staticClass: "px-4 pb-4" }, [
             _c(
               "h3",
               {
@@ -31312,7 +31312,11 @@ var render = function () {
                     staticClass:
                       "text-md font-opensans text-gray-900 pr-1 inline",
                   },
-                  [_vm._v("\n                    Aman untuk\n                ")]
+                  [
+                    _vm._v(
+                      "\n                        Aman untuk\n                    "
+                    ),
+                  ]
                 ),
                 _vm._v(" "),
                 _vm._l(_vm.menu.diseases, function (disease, index) {
@@ -31327,24 +31331,24 @@ var render = function () {
                       index === 0
                         ? [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                "\n                    "
+                                "\n                        "
                             ),
                           ]
                         : index !== _vm.menu.diseases.length - 1
                         ? [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                ",\n                    "
+                                ",\n                        "
                             ),
                           ]
                         : [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                "\n                    "
+                                "\n                        "
                             ),
                           ],
                     ],
@@ -31413,16 +31417,16 @@ var render = function () {
                     index !== _vm.menu.ingredients.length - 1
                       ? [
                           _vm._v(
-                            "\n                        " +
+                            "\n                            " +
                               _vm._s(ingredient) +
-                              ",\n                    "
+                              ",\n                        "
                           ),
                         ]
                       : [
                           _vm._v(
-                            "\n                        " +
+                            "\n                            " +
                               _vm._s(ingredient) +
-                              "\n                    "
+                              "\n                        "
                           ),
                         ],
                   ],
@@ -31430,37 +31434,6 @@ var render = function () {
                 )
               }),
               0
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "flex justify-between items-center font-opensans",
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "text-2xl font-bold text-gray-900 mr-4 mt-auto",
-                  },
-                  [_vm._v(_vm._s(_vm._f("toCurrency")(_vm.menu.price)))]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "border-2 border-green-600 px-4 font-bold py-2.5 rounded-md hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out",
-                    attrs: {
-                      href:
-                        "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20" +
-                        _vm.menu.title,
-                    },
-                  },
-                  [_vm._v("\n                    Pesan\n                ")]
-                ),
-              ]
             ),
           ]),
         ]
