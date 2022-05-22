@@ -4,7 +4,12 @@
     <section>
         <Hero id="home"></Hero>
         <Feature id="feature"></Feature>
-        <Menu id="menu"></Menu>
+        <template v-if="customer">
+            <Menu id="menu" :conditions="customer.conditions"></Menu>
+        </template>
+        <template v-else>
+            <Menu id="menu"></Menu>
+        </template>
         <Team id="tentang-kami"></Team>
         <Footer></Footer>
     </section>
@@ -26,6 +31,7 @@ export default {
         Team,
         Footer
     },
+    props: ['customer'],
     methods: {
         MenuHandler(flag) {
             if (flag) {

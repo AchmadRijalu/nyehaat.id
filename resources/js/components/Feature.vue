@@ -125,12 +125,47 @@
                 </div>
             </div>
         </div>
+        <button @click="openCustomerForm" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Pesan di sini</button>
+        <CustomerForm v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
     </section>
 </template>
 
 <script>
+import CustomerForm from "./CustomerForm.vue";
+
 export default {
-    name: "Feature"
+    name: "Feature",
+    components: {
+        CustomerForm
+    },
+    data(){
+        return {
+            isCustomerFormVisible: false,
+        }
+    },
+    methods: {
+        MenuHandler(flag) {
+            if (flag) {
+                document.getElementById("list").classList.add("top-100");
+                document.getElementById("list").classList.remove("hidden");
+                document.getElementById("close").classList.remove("hidden");
+                document.getElementById("open").classList.add("hidden");
+            } else {
+                document.getElementById("list").classList.remove("top-100");
+                document.getElementById("list").classList.add("hidden");
+                document.getElementById("close").classList.add("hidden");
+                document.getElementById("open").classList.remove("hidden");
+            }
+        },
+        openCustomerForm() {
+            this.isCustomerFormVisible = true;
+            document.querySelector(`body`).classList.add('overflow-y-hidden');
+        },
+        closeCustomerForm() {
+            this.isCustomerFormVisible = false;
+            document.querySelector(`body`).classList.remove('overflow-y-hidden');
+        },
+    },
 };
 </script>
 
