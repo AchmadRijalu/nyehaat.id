@@ -58,7 +58,7 @@ const menus = [
         title: "Chickpea Quinoa Soup",
         price: 36000,
         diseases: [
-            'Darah Tinggi'
+            'Darah Tinggi', 'Diabetes'
         ],
         ingredients: [
             'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'
@@ -94,6 +94,62 @@ const menus = [
         calories: 410,
         carbs: 46.6,
         protein: 17.4
+    },
+    {
+        id: 6,
+        title: "Ayam-Jagung Lapis Aprikot",
+        price: 28000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis',
+        ],
+        calories: 500,
+        carbs: 33,
+        protein: 51
+    },
+    {
+        id: 7,
+        title: "Spaghetti Jamur Panggang",
+        price: 38000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Spaghetti', 'Jamur', 'Kacang Hijau', 'Irisan Daun Bawang', 'Perasan Air Lemon',
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
+    {
+        id: 8,
+        title: "Beef Sukiyaki",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
+    {
+        id: 9,
+        title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
     },
 ]
 

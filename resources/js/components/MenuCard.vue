@@ -8,7 +8,7 @@
                     <p class="text-md font-opensans text-gray-900 pr-1 inline">
                         Aman untuk
                     </p>
-                    <span v-for="(disease, index) in menu.diseases" :key="disease" class="inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                    <span v-for="(disease, index) in menu.diseases" :key="disease" class="inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2">
                         <template v-if="index === 0">
                             {{ disease }}
                         </template>
