@@ -1,5 +1,5 @@
 <template>
-    <section class="mx-auto container py-20">
+    <section class="mx-auto container py-20 flex flex-col justify-content-center">
         <div class="flex justify-center items-center flex-col">
             <div class="lg:text-6xl md:text-5xl text-4xl font-black leading-10 text-center text-greenprimary">
                 <h1>Bagaimana Cara Pesan?</h1>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <button @click="openCustomerForm" class="block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">Pesan di sini</button>
+        <button @click="openCustomerForm" class="mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</button>
         <CustomerForm v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
     </section>
 </template>

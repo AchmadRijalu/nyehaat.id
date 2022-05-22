@@ -58,7 +58,7 @@ const menus = [
         title: "Chickpea Quinoa Soup",
         price: 36000,
         diseases: [
-            'Darah Tinggi', 'Diabetes'
+            'Darah Tinggi'
         ],
         ingredients: [
             'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'

@@ -5943,7 +5943,7 @@ var menus = [{
   id: 4,
   title: "Chickpea Quinoa Soup",
   price: 36000,
-  diseases: ['Darah Tinggi', 'Diabetes'],
+  diseases: ['Darah Tinggi'],
   ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
   calories: 227,
   carbs: 112.9,
@@ -30599,7 +30599,10 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    { staticClass: "mx-auto container py-20" },
+    {
+      staticClass:
+        "mx-auto container py-20 flex flex-col justify-content-center",
+    },
     [
       _c("div", { staticClass: "flex justify-center items-center flex-col" }, [
         _vm._m(0),
@@ -30817,7 +30820,7 @@ var render = function () {
         "button",
         {
           staticClass:
-            "block w-full text-center my-4 border rounded-md px-3 sm:px-16 py-3 bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50",
+            "mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3",
           on: { click: _vm.openCustomerForm },
         },
         [_vm._v("Pesan di sini")]
