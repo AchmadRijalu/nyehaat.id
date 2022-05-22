@@ -2,5 +2,10 @@
 
 @section('content')
     <navbar></navbar>
-    <home></home>
+    @if (Session::has('customer'))
+        {{ Session::get('customer') }}
+        <home :customer="{{ Session::get('customer') }}"></home>
+    @else
+        <home></home>
+    @endif
 @endsection

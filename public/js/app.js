@@ -5357,6 +5357,173 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: 'CustomerFOrm',
+  props: ['name', 'type', 'qrCode'],
+  data: function data() {
+    return {
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+    };
+  },
+  methods: {
+    closeModal: function closeModal() {
+      this.$emit('close-modal');
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -5403,6 +5570,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _CustomerForm_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CustomerForm.vue */ "./resources/js/components/CustomerForm.vue");
 //
 //
 //
@@ -5533,8 +5701,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Feature"
+  name: "Feature",
+  components: {
+    CustomerForm: _CustomerForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      isCustomerFormVisible: false
+    };
+  },
+  methods: {
+    MenuHandler: function MenuHandler(flag) {
+      if (flag) {
+        document.getElementById("list").classList.add("top-100");
+        document.getElementById("list").classList.remove("hidden");
+        document.getElementById("close").classList.remove("hidden");
+        document.getElementById("open").classList.add("hidden");
+      } else {
+        document.getElementById("list").classList.remove("top-100");
+        document.getElementById("list").classList.add("hidden");
+        document.getElementById("close").classList.add("hidden");
+        document.getElementById("open").classList.remove("hidden");
+      }
+    },
+    openCustomerForm: function openCustomerForm() {
+      this.isCustomerFormVisible = true;
+      document.querySelector("body").classList.add('overflow-y-hidden');
+    },
+    closeCustomerForm: function closeCustomerForm() {
+      this.isCustomerFormVisible = false;
+      document.querySelector("body").classList.remove('overflow-y-hidden');
+    }
+  }
 });
 
 /***/ }),
@@ -5644,6 +5846,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -5658,6 +5865,7 @@ __webpack_require__.r(__webpack_exports__);
     Team: _Team__WEBPACK_IMPORTED_MODULE_2__["default"],
     Footer: _Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
+  props: ['customer'],
   methods: {
     MenuHandler: function MenuHandler(flag) {
       if (flag) {
@@ -5703,6 +5911,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var menus = [{
   id: 1,
@@ -5717,7 +5934,7 @@ var menus = [{
   id: 3,
   title: "Baked Cod with Spring Vegetables",
   price: 42000,
-  diseases: ['Darah tinggi'],
+  diseases: ['Darah Tinggi'],
   ingredients: ['Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'],
   calories: 221,
   carbs: 11.3,
@@ -5726,7 +5943,7 @@ var menus = [{
   id: 4,
   title: "Chickpea Quinoa Soup",
   price: 36000,
-  diseases: ['Darah tinggi'],
+  diseases: ['Darah Tinggi'],
   ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
   calories: 227,
   carbs: 112.9,
@@ -5735,7 +5952,7 @@ var menus = [{
   id: 5,
   title: "Vegan Roasted Red Pepper Pasta",
   price: 43000,
-  diseases: ['Darah tinggi'],
+  diseases: ['Darah Tinggi'],
   ingredients: ['Olive Oil', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'],
   calories: 487,
   carbs: 75,
@@ -5767,12 +5984,31 @@ var menus = [{
   calories: 439,
   carbs: 81,
   protein: 17
+}, {
+  id: 8,
+  title: "Beef Sukiyaki",
+  price: 38000,
+  diseases: ['Diabetes'],
+  ingredients: ['Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'],
+  calories: 439,
+  carbs: 81,
+  protein: 17
+}, {
+  id: 9,
+  title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
+  price: 38000,
+  diseases: ['Diabetes'],
+  ingredients: ['Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'],
+  calories: 439,
+  carbs: 81,
+  protein: 17
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Menu",
   components: {
     MenuCard: _MenuCard__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  props: ['conditions'],
   data: function data() {
     return {
       menus: menus
@@ -6002,9 +6238,9 @@ window.addEventListener('DOMContentLoaded', function () {
       var id = entry.target.getAttribute('id');
 
       if (entry.intersectionRatio > 0) {
-        document.querySelector("nav div a[href=\"#".concat(id, "\"]")).children[0].classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
+        document.querySelector("nav div a[href=\"#".concat(id, "\"] span")).classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
       } else {
-        document.querySelector("nav div a[href=\"#".concat(id, "\"]")).children[0].classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
+        document.querySelector("nav div a[href=\"#".concat(id, "\"] span")).classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
       }
     });
   }); // Track all sections that have an `id` applied
@@ -11249,6 +11485,30 @@ defineJQueryPlugin(Toast);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.modal[data-v-f726b6a6] {\n    position: fixed;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 1050;\n    display: block;\n    overflow: hidden;\n    outline: 0;\n    background-color: rgba(0, 0, 0, 0.6);\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& ***!
@@ -11266,7 +11526,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28781,6 +29041,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_style_index_0_id_f726b6a6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_style_index_0_id_f726b6a6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_style_index_0_id_f726b6a6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&":
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& ***!
@@ -29087,6 +29377,47 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./resources/js/components/CustomerForm.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/CustomerForm.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true& */ "./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true&");
+/* harmony import */ var _CustomerForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CustomerForm.vue?vue&type=script&lang=js& */ "./resources/js/components/CustomerForm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _CustomerForm_vue_vue_type_style_index_0_id_f726b6a6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& */ "./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+;
+
+
+/* normalize component */
+
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CustomerForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
+  _CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  "f726b6a6",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CustomerForm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
@@ -29482,6 +29813,22 @@ component.options.__file = "resources/js/components/TeamCard.vue"
 
 /***/ }),
 
+/***/ "./resources/js/components/CustomerForm.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/CustomerForm.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CustomerForm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
@@ -29642,6 +29989,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_style_index_0_id_f726b6a6_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=style&index=0&id=f726b6a6&scoped=true&lang=css&");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&":
 /*!***************************************************************************************************!*\
   !*** ./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& ***!
@@ -29651,6 +30011,23 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Home_vue_vue_type_style_index_0_id_f2b6376c_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Home.vue?vue&type=style&index=0&id=f2b6376c&scoped=true&lang=css&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true& ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CustomerForm_vue_vue_type_template_id_f726b6a6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true&");
 
 
 /***/ }),
@@ -29825,6 +30202,337 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true&":
+/*!************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CustomerForm.vue?vue&type=template&id=f726b6a6&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("section", { staticClass: "modal" }, [
+    _c("div", { staticClass: "w-2/3 m-auto h-screen" }, [
+      _c("div", { staticClass: "modal-content h-screen my-2" }, [
+        _c("div", { staticClass: "modal-header" }, [
+          _c("h4", { staticClass: "modal-title" }, [
+            _vm._v(_vm._s(_vm.name) + "'s QR code for " + _vm._s(_vm.type)),
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-sm",
+              attrs: { type: "button" },
+              on: { click: _vm.closeModal },
+            },
+            [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "modal-body overflow-y-auto" }, [
+          _c("div", { staticClass: "w-full px-8 mx-auto" }, [
+            _c(
+              "form",
+              {
+                staticClass: "xl:px-24",
+                attrs: { method: "POST", action: "/customers" },
+              },
+              [
+                _c("input", {
+                  attrs: { type: "hidden", name: "_token" },
+                  domProps: { value: _vm.csrf },
+                }),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2),
+                _vm._v(" "),
+                _vm._m(3),
+              ]
+            ),
+          ]),
+        ]),
+      ]),
+    ]),
+  ])
+}
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "px-5 py-4 bg-gray-100 rounded-lg flex items-center justify-between mt-7",
+      },
+      [
+        _c("div", { staticClass: "flex items-center" }, [
+          _c("p", { staticClass: "text-sm text-gray-800" }, [
+            _vm._v(
+              "\n                                        We take privacy issues seriously. You can be sure that your\n                                        personal data is securely protected.\n                                    "
+            ),
+          ]),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "mt-16 lg:flex justify-between border-b border-gray-200 pb-16",
+      },
+      [
+        _c("div", { staticClass: "w-80" }, [
+          _c("div", { staticClass: "flex items-center" }, [
+            _c(
+              "h1",
+              {
+                staticClass: "text-xl font-medium pr-2 leading-5 text-gray-800",
+              },
+              [
+                _vm._v(
+                  "\n                                            Personal Information\n                                        "
+                ),
+              ]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
+            _vm._v(
+              "\n                                        Information about the section could go here and a brief\n                                        description of how this might be used.\n                                    "
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "div",
+            { staticClass: "md:flex items-center lg:ml-24 lg:mt-0 mt-4" },
+            [
+              _c("div", { staticClass: "md:w-64" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "text-sm leading-none text-gray-800",
+                    attrs: { id: "firstName" },
+                  },
+                  [_vm._v("Name")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass:
+                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                  attrs: {
+                    type: "name",
+                    name: "name",
+                    tabindex: "0",
+                    "aria-labelledby": "firstName",
+                    placeholder: "John",
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "md:w-64 md:ml-12 " }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "text-sm leading-none text-gray-800",
+                    attrs: { id: "lastName" },
+                  },
+                  [_vm._v("Address")]
+                ),
+                _vm._v(" "),
+                _c("input", {
+                  staticClass:
+                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                  attrs: {
+                    type: "name",
+                    name: "address",
+                    tabindex: "0",
+                    "aria-labelledby": "address",
+                    placeholder: "Jl. Sudirman M/20",
+                  },
+                }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "md:flex items-center lg:ml-24 mt-8" }, [
+            _c("div", { staticClass: "md:w-64" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "text-sm leading-none text-gray-800",
+                  attrs: { id: "phone" },
+                },
+                [_vm._v("Phone number")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                staticClass:
+                  "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                attrs: {
+                  type: "name",
+                  name: "phone",
+                  tabindex: "0",
+                  "aria-labelledby": "phone",
+                  placeholder: "123-1234567",
+                },
+              }),
+            ]),
+          ]),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "mt-16 lg:flex border-b border-gray-200 pb-16 mb-4" },
+      [
+        _c("div", { staticClass: "w-80" }, [
+          _c("div", { staticClass: "flex items-center" }, [
+            _c(
+              "h1",
+              {
+                staticClass: "text-xl font-medium pr-2 leading-5 text-gray-800",
+              },
+              [
+                _vm._v(
+                  "\n                                            Security\n                                        "
+                ),
+              ]
+            ),
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
+            _vm._v(
+              "\n                                        Information about the section could go here and a brief\n                                        description of how this might be used.\n                                    "
+            ),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "div",
+            { staticClass: "md:flex items-center lg:ml-24 lg:mt-0 mt-4" },
+            [
+              _c("fieldset", [
+                _c("legend", { staticClass: "sr-only" }, [
+                  _vm._v("Checkbox variants"),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex items-center mb-4" }, [
+                  _c("input", {
+                    staticClass:
+                      "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2",
+                    attrs: {
+                      name: "conditions[]",
+                      id: "checkbox-1",
+                      type: "radio",
+                      value: "1",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "ml-2 text-sm font-medium text-gray-900",
+                      attrs: { for: "checkbox-1" },
+                    },
+                    [_vm._v("Diabetes")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex items-center mb-4" }, [
+                  _c("input", {
+                    staticClass:
+                      "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2",
+                    attrs: {
+                      name: "conditions[]",
+                      id: "checkbox-2",
+                      type: "radio",
+                      value: "2",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "ml-2 text-sm font-medium text-gray-900",
+                      attrs: { for: "checkbox-2" },
+                    },
+                    [_vm._v("Darah Tinggi")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex items-center mb-4" }, [
+                  _c("input", {
+                    staticClass:
+                      "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2",
+                    attrs: {
+                      name: "conditions[]",
+                      id: "checkbox-3",
+                      type: "radio",
+                      value: "3",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "ml-2 text-sm font-medium text-gray-900",
+                      attrs: { for: "checkbox-3" },
+                    },
+                    [_vm._v("Penyakit Jantung")]
+                  ),
+                ]),
+              ]),
+            ]
+          ),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", [
+      _c("input", {
+        staticClass:
+          "mx-2 mt-2 mb-9 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-100",
+        attrs: { type: "submit" },
+      }),
+    ])
+  },
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=template&id=299e239e& ***!
@@ -29889,219 +30597,249 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "mx-auto container py-20" }, [
-    _c("div", { staticClass: "flex justify-center items-center flex-col" }, [
-      _vm._m(0),
+  return _c(
+    "section",
+    {
+      staticClass:
+        "mx-auto container py-20 flex flex-col justify-content-center",
+    },
+    [
+      _c("div", { staticClass: "flex justify-center items-center flex-col" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass:
+              "pt-24 grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center xl:gap-y-16 gap-y-20 gap-x-16 lg:gap-x-20 xl:gap-x-0 lg:px-10 xl:px-0",
+          },
+          [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+              },
+              [
+                _c("div", { staticClass: "mb-6" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "fill-greenprimary",
+                      staticStyle: { "enable-background": "new 0 0 463 463" },
+                      attrs: {
+                        version: "1.1",
+                        id: "Layer_1",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        width: "64",
+                        height: "64",
+                        viewBox: "0 0 463 463",
+                        "xml:space": "preserve",
+                      },
+                    },
+                    [
+                      _c("g", [
+                        _c("g", [
+                          _c("g", [
+                            _c("path", {
+                              attrs: {
+                                d: "M275,159.5c0-4.142-3.358-7.5-7.5-7.5h-112c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h112\n                                        C271.642,167,275,163.642,275,159.5z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M259,191.5c0-4.142-3.358-7.5-7.5-7.5h-80c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h80\n                                        C255.642,199,259,195.642,259,191.5z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M259.5,135c12.958,0,23.5-10.542,23.5-23.5S272.458,88,259.5,88h-96c-12.958,0-23.5,10.542-23.5,23.5\n                                        s10.542,23.5,23.5,23.5H259.5z M155,111.5c0-4.687,3.813-8.5,8.5-8.5h96c4.687,0,8.5,3.813,8.5,8.5s-3.813,8.5-8.5,8.5h-96\n                                        C158.813,120,155,116.187,155,111.5z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M346.723,417.14c-1.57-19.72-10.354-37.431-23.723-50.486V15.5C323,6.953,316.047,0,307.5,0h-192\n                                        C106.953,0,100,6.953,100,15.5v432c0,8.547,6.953,15.5,15.5,15.5h224c12.958,0,23.5-10.542,23.5-23.5\n                                        C363,429.062,356.157,420.195,346.723,417.14z M331.55,416h-128.1c3.73-32.043,31.023-57,64.05-57S327.82,383.957,331.55,416z\n                                         M173.597,448H115.5c-0.276,0-0.5-0.224-0.5-0.5v-432c0-0.276,0.224-0.5,0.5-0.5h192c0.276,0,0.5,0.224,0.5,0.5v339.627\n                                        c-9.839-5.85-21.036-9.638-33-10.763V327h8.5c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5h-32\n                                        c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h8.5v17.364c-38.239,3.596-68.667,34.385-71.723,72.776\n                                        C178.843,420.195,172,429.062,172,439.5C172,442.497,172.57,445.362,173.597,448z M339.5,448h-144c-4.687,0-8.5-3.813-8.5-8.5\n                                        s3.813-8.5,8.5-8.5h144c4.687,0,8.5,3.813,8.5,8.5S344.187,448,339.5,448z",
+                              },
+                            }),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _vm._m(2),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+              },
+              [
+                _c("div", { staticClass: "mb-6" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "fill-greenprimary",
+                      staticStyle: { "enable-background": "new 0 0 512 512" },
+                      attrs: {
+                        version: "1.1",
+                        id: "Layer_1",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                        height: "64",
+                        width: "64",
+                        viewBox: "0 0 512 512",
+                        "xml:space": "preserve",
+                      },
+                    },
+                    [
+                      _c("g", { attrs: { transform: "translate(1 1)" } }, [
+                        _c("g", [
+                          _c("g", [
+                            _c("path", {
+                              attrs: {
+                                d: "M506.054,313.027c-15.36-20.48-30.72-20.48-68.267-0.853L364.4,357.4c-10.24,5.973-33.28,7.68-54.613,7.68\n                                        c4.267-7.68,2.56-17.067-5.12-28.16c-13.653-19.627-36.693-31.573-61.44-31.573h-33.28c-17.92,0-34.987-5.12-48.64-15.36\n                                        c-30.791-23.093-78.94,2.035-102.4,17.023v-17.876H-0.826V511h59.733v-25.6H169.84c17.067,0,34.987-1.707,52.053-2.56\n                                        l110.933-17.067c4.267,0,8.533-0.853,11.947-1.707c10.24-1.707,19.627-6.827,28.16-14.507l128.853-102.4\n                                        C512.027,338.627,513.734,323.267,506.054,313.027z M41.84,493.933h-25.6V306.2h25.6V319v166.4V493.933z M491.547,336.067\n                                        L361.84,436.76l-0.853,0.853c-5.973,5.12-11.947,8.533-18.773,9.387h-0.853c-3.413,0.853-5.973,0.853-9.387,0.853l-112.64,17.067\n                                        c-16.213,2.56-33.28,3.413-49.493,3.413H58.907v-140.8c20.48-14.507,68.267-41.813,92.16-23.04\n                                        c16.213,11.947,37.547,18.773,58.88,18.773h33.28c19.627,0,37.547,8.533,48.64,25.6c3.413,5.12,4.267,10.24,3.413,11.947\n                                        c-2.56,4.267-12.8,5.973-23.893,6.827c-1.15,0-2.296,0-3.413,0c-2.2,0-4.275,0-5.973,0h-76.8\n                                        c-26.453,0-42.667,12.8-42.667,34.133c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533\n                                        c0-4.267,0-17.067,25.6-17.067h75.947c1.769,0,3.962,0,6.827,0c1.282,0,2.684,0,4.267,0c0.853,0,2.56,0,4.267,0\n                                        c40.107,0.853,77.653,0,97.28-10.24l73.387-45.227c35.84-17.92,39.253-13.653,46.08-3.413\n                                        C494.96,328.387,494.96,333.507,491.547,336.067z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M65.734,268.653c1.707,1.707,4.267,3.413,6.827,3.413h365.227c3.413,0,5.973-1.707,6.827-4.267l30.72-42.667\n                                        c1.707-2.56,2.56-5.973,0.853-8.533s-4.267-4.267-7.68-4.267h-17.263c-4.35-101.584-85.953-183.187-187.537-187.537v-8.729\n                                        h17.067c5.12,0,8.533-3.413,8.533-8.533S285.894-1,280.774-1h-51.2c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533\n                                        h17.067v8.729c-101.584,4.35-183.187,85.953-187.537,187.537H41.84c-3.413,0-6.827,2.56-7.68,5.12s-0.853,5.973,0.853,8.533\n                                        L65.734,268.653z M255.174,41.667c96.427,0,174.933,75.947,179.2,170.667h-358.4C81.094,117.613,159.6,41.667,255.174,41.667z\n                                         M67.44,229.4h375.467h8.533L433.52,255H76.827l-17.92-25.6H67.44z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M255.174,58.733c-57.173,0-110.933,30.72-140.8,81.067c-1.707,4.267-0.853,9.387,3.413,11.947\n                                        c1.707,0.853,2.56,0.853,4.267,0.853c3.413,0,5.973-1.707,7.68-4.267c25.6-44.373,74.24-72.533,125.44-72.533\n                                        c5.12,0,8.533-3.413,8.533-8.533S260.294,58.733,255.174,58.733z",
+                              },
+                            }),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _vm._m(3),
+                _vm._v(" "),
+                _vm._m(4),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
+              },
+              [
+                _c("div", { staticClass: "mb-6" }, [
+                  _c(
+                    "svg",
+                    {
+                      staticClass: "fill-greenprimary",
+                      staticStyle: {
+                        "enable-background": "new 0 0 462.999 462.999",
+                      },
+                      attrs: {
+                        version: "1.1",
+                        id: "Layer_1",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        "xmlns:xlink": "http://www.w3.org/1999/xlink",
+                        height: "64",
+                        width: "64",
+                        viewBox: "0 0 462.999 462.999",
+                        "xml:space": "preserve",
+                      },
+                    },
+                    [
+                      _c("g", [
+                        _c("g", [
+                          _c("g", [
+                            _c("path", {
+                              attrs: {
+                                d: "M383.5,313c-7.995,0-14.5,6.505-14.5,14.5s6.505,14.5,14.5,14.5s14.5-6.505,14.5-14.5S391.495,313,383.5,313z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M95.5,313c-7.995,0-14.5,6.505-14.5,14.5S87.505,342,95.5,342s14.5-6.505,14.5-14.5S103.495,313,95.5,313z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M444.293,218.312l-55.167-24.519l-40.382-87.494C343.614,95.182,332.387,88,320.144,88H23.5C10.542,88,0,98.542,0,111.5\n                                            v200C0,324.458,10.542,335,23.5,335h25.098c3.607,22.64,23.263,40,46.902,40s43.295-17.36,46.902-40h194.195\n                                            c3.607,22.64,23.263,40,46.902,40c23.639,0,43.295-17.36,46.902-40h9.098c12.958,0,23.5-10.542,23.5-23.5v-64.403\n                                            C463,234.661,455.657,223.362,444.293,218.312z M349.163,143l22.615,49H303v-49H349.163z M95.5,360C77.58,360,63,345.42,63,327.5\n                                            c0-17.921,14.58-32.5,32.5-32.5s32.5,14.579,32.5,32.5C128,345.42,113.42,360,95.5,360z M383.5,360\n                                            c-17.92,0-32.5-14.579-32.5-32.5c0-17.921,14.58-32.5,32.5-32.5c17.92,0,32.5,14.579,32.5,32.5C416,345.42,401.42,360,383.5,360z\n                                             M448,288h-8.5c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h8.5v8.5c0,4.687-3.813,8.5-8.5,8.5h-9.098\n                                            c-3.607-22.64-23.263-40-46.902-40c-23.639,0-43.295,17.36-46.902,40H142.402c-3.607-22.64-23.263-40-46.902-40\n                                            s-43.295,17.36-46.902,40H23.5c-4.687,0-8.5-3.813-8.5-8.5V303h24.5c4.142,0,7.5-3.357,7.5-7.5s-3.358-7.5-7.5-7.5H15V111.5\n                                            c0-4.687,3.813-8.5,8.5-8.5h296.644c6.413,0,12.294,3.763,14.981,9.585L342.24,128H271.5c-8.547,0-15.5,6.953-15.5,15.5v32\n                                            c0,17.369,14.131,31.5,31.5,31.5h94.409l46.575,20.7l-1.18,0.716C420.332,232.649,416,240.346,416,248.503V263.5\n                                            c0,4.143,3.358,7.5,7.5,7.5H448V288z M288,143v49h-0.5c-9.098,0-16.5-7.402-16.5-16.5v-32c0-0.275,0.224-0.5,0.5-0.5H288z\n                                             M448,256h-17v-7.496c0-2.95,1.567-5.734,4.088-7.266l8.616-5.231c2.707,2.982,4.296,6.911,4.296,11.089V256z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M327.5,288h-176c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h176c4.142,0,7.5-3.357,7.5-7.5S331.642,288,327.5,288z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M119.5,120c-4.142,0-7.5,3.357-7.5,7.5V160h-9v-32.5c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5V160h-9v-32.5\n                                            c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5v48c0,12.958,10.542,23.5,23.5,23.5H88v64.5c0,4.143,3.358,7.5,7.5,7.5\n                                            c4.142,0,7.5-3.357,7.5-7.5V199h0.5c12.958,0,23.5-10.542,23.5-23.5v-48C127,123.357,123.642,120,119.5,120z M112,175.5\n                                            c0,4.687-3.813,8.5-8.5,8.5h-16c-4.687,0-8.5-3.813-8.5-8.5V175h33V175.5z",
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("path", {
+                              attrs: {
+                                d: "M151.5,271c4.142,0,7.5-3.357,7.5-7.5V231h15.056c4.565,0,8.876-1.998,11.827-5.481\n                                            c2.951-3.483,4.212-8.063,3.462-12.567l-13.244-79.465C174.799,125.672,168.103,120,160.14,120c-8.9,0-16.14,7.24-16.14,16.14\n                                            V263.5C144,267.643,147.358,271,151.5,271z M159,136.14c0-0.628,0.511-1.14,1.181-1.14c0.56,0,1.033,0.4,1.125,0.953\n                                            l13.244,79.465c0.01,0.063,0.038,0.229-0.111,0.405C174.288,216,174.12,216,174.056,216H159V136.14z",
+                              },
+                            }),
+                          ]),
+                        ]),
+                      ]),
+                    ]
+                  ),
+                ]),
+                _vm._v(" "),
+                _vm._m(5),
+                _vm._v(" "),
+                _vm._m(6),
+              ]
+            ),
+          ]
+        ),
+      ]),
       _vm._v(" "),
       _c(
-        "div",
+        "button",
         {
           staticClass:
-            "pt-24 grid lg:grid-cols-3 md:grid-cols-2 justify-center items-center xl:gap-y-16 gap-y-20 gap-x-16 lg:gap-x-20 xl:gap-x-0 lg:px-10 xl:px-0",
+            "mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3",
+          on: { click: _vm.openCustomerForm },
         },
-        [
-          _c(
-            "div",
-            {
-              staticClass:
-                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
-            },
-            [
-              _c("div", { staticClass: "mb-6" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "fill-greenprimary",
-                    staticStyle: { "enable-background": "new 0 0 463 463" },
-                    attrs: {
-                      version: "1.1",
-                      id: "Layer_1",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      width: "64",
-                      height: "64",
-                      viewBox: "0 0 463 463",
-                      "xml:space": "preserve",
-                    },
-                  },
-                  [
-                    _c("g", [
-                      _c("g", [
-                        _c("g", [
-                          _c("path", {
-                            attrs: {
-                              d: "M275,159.5c0-4.142-3.358-7.5-7.5-7.5h-112c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h112\n                                        C271.642,167,275,163.642,275,159.5z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M259,191.5c0-4.142-3.358-7.5-7.5-7.5h-80c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h80\n                                        C255.642,199,259,195.642,259,191.5z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M259.5,135c12.958,0,23.5-10.542,23.5-23.5S272.458,88,259.5,88h-96c-12.958,0-23.5,10.542-23.5,23.5\n                                        s10.542,23.5,23.5,23.5H259.5z M155,111.5c0-4.687,3.813-8.5,8.5-8.5h96c4.687,0,8.5,3.813,8.5,8.5s-3.813,8.5-8.5,8.5h-96\n                                        C158.813,120,155,116.187,155,111.5z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M346.723,417.14c-1.57-19.72-10.354-37.431-23.723-50.486V15.5C323,6.953,316.047,0,307.5,0h-192\n                                        C106.953,0,100,6.953,100,15.5v432c0,8.547,6.953,15.5,15.5,15.5h224c12.958,0,23.5-10.542,23.5-23.5\n                                        C363,429.062,356.157,420.195,346.723,417.14z M331.55,416h-128.1c3.73-32.043,31.023-57,64.05-57S327.82,383.957,331.55,416z\n                                         M173.597,448H115.5c-0.276,0-0.5-0.224-0.5-0.5v-432c0-0.276,0.224-0.5,0.5-0.5h192c0.276,0,0.5,0.224,0.5,0.5v339.627\n                                        c-9.839-5.85-21.036-9.638-33-10.763V327h8.5c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5h-32\n                                        c-4.142,0-7.5,3.358-7.5,7.5c0,4.142,3.358,7.5,7.5,7.5h8.5v17.364c-38.239,3.596-68.667,34.385-71.723,72.776\n                                        C178.843,420.195,172,429.062,172,439.5C172,442.497,172.57,445.362,173.597,448z M339.5,448h-144c-4.687,0-8.5-3.813-8.5-8.5\n                                        s3.813-8.5,8.5-8.5h144c4.687,0,8.5,3.813,8.5,8.5S344.187,448,339.5,448z",
-                            },
-                          }),
-                        ]),
-                      ]),
-                    ]),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
-            },
-            [
-              _c("div", { staticClass: "mb-6" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "fill-greenprimary",
-                    staticStyle: { "enable-background": "new 0 0 512 512" },
-                    attrs: {
-                      version: "1.1",
-                      id: "Layer_1",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                      height: "64",
-                      width: "64",
-                      viewBox: "0 0 512 512",
-                      "xml:space": "preserve",
-                    },
-                  },
-                  [
-                    _c("g", { attrs: { transform: "translate(1 1)" } }, [
-                      _c("g", [
-                        _c("g", [
-                          _c("path", {
-                            attrs: {
-                              d: "M506.054,313.027c-15.36-20.48-30.72-20.48-68.267-0.853L364.4,357.4c-10.24,5.973-33.28,7.68-54.613,7.68\n                                        c4.267-7.68,2.56-17.067-5.12-28.16c-13.653-19.627-36.693-31.573-61.44-31.573h-33.28c-17.92,0-34.987-5.12-48.64-15.36\n                                        c-30.791-23.093-78.94,2.035-102.4,17.023v-17.876H-0.826V511h59.733v-25.6H169.84c17.067,0,34.987-1.707,52.053-2.56\n                                        l110.933-17.067c4.267,0,8.533-0.853,11.947-1.707c10.24-1.707,19.627-6.827,28.16-14.507l128.853-102.4\n                                        C512.027,338.627,513.734,323.267,506.054,313.027z M41.84,493.933h-25.6V306.2h25.6V319v166.4V493.933z M491.547,336.067\n                                        L361.84,436.76l-0.853,0.853c-5.973,5.12-11.947,8.533-18.773,9.387h-0.853c-3.413,0.853-5.973,0.853-9.387,0.853l-112.64,17.067\n                                        c-16.213,2.56-33.28,3.413-49.493,3.413H58.907v-140.8c20.48-14.507,68.267-41.813,92.16-23.04\n                                        c16.213,11.947,37.547,18.773,58.88,18.773h33.28c19.627,0,37.547,8.533,48.64,25.6c3.413,5.12,4.267,10.24,3.413,11.947\n                                        c-2.56,4.267-12.8,5.973-23.893,6.827c-1.15,0-2.296,0-3.413,0c-2.2,0-4.275,0-5.973,0h-76.8\n                                        c-26.453,0-42.667,12.8-42.667,34.133c0,5.12,3.413,8.533,8.533,8.533c5.12,0,8.533-3.413,8.533-8.533\n                                        c0-4.267,0-17.067,25.6-17.067h75.947c1.769,0,3.962,0,6.827,0c1.282,0,2.684,0,4.267,0c0.853,0,2.56,0,4.267,0\n                                        c40.107,0.853,77.653,0,97.28-10.24l73.387-45.227c35.84-17.92,39.253-13.653,46.08-3.413\n                                        C494.96,328.387,494.96,333.507,491.547,336.067z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M65.734,268.653c1.707,1.707,4.267,3.413,6.827,3.413h365.227c3.413,0,5.973-1.707,6.827-4.267l30.72-42.667\n                                        c1.707-2.56,2.56-5.973,0.853-8.533s-4.267-4.267-7.68-4.267h-17.263c-4.35-101.584-85.953-183.187-187.537-187.537v-8.729\n                                        h17.067c5.12,0,8.533-3.413,8.533-8.533S285.894-1,280.774-1h-51.2c-5.12,0-8.533,3.413-8.533,8.533s3.413,8.533,8.533,8.533\n                                        h17.067v8.729c-101.584,4.35-183.187,85.953-187.537,187.537H41.84c-3.413,0-6.827,2.56-7.68,5.12s-0.853,5.973,0.853,8.533\n                                        L65.734,268.653z M255.174,41.667c96.427,0,174.933,75.947,179.2,170.667h-358.4C81.094,117.613,159.6,41.667,255.174,41.667z\n                                         M67.44,229.4h375.467h8.533L433.52,255H76.827l-17.92-25.6H67.44z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M255.174,58.733c-57.173,0-110.933,30.72-140.8,81.067c-1.707,4.267-0.853,9.387,3.413,11.947\n                                        c1.707,0.853,2.56,0.853,4.267,0.853c3.413,0,5.973-1.707,7.68-4.267c25.6-44.373,74.24-72.533,125.44-72.533\n                                        c5.12,0,8.533-3.413,8.533-8.533S260.294,58.733,255.174,58.733z",
-                            },
-                          }),
-                        ]),
-                      ]),
-                    ]),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _vm._m(3),
-              _vm._v(" "),
-              _vm._m(4),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass:
-                "cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col",
-            },
-            [
-              _c("div", { staticClass: "mb-6" }, [
-                _c(
-                  "svg",
-                  {
-                    staticClass: "fill-greenprimary",
-                    staticStyle: {
-                      "enable-background": "new 0 0 462.999 462.999",
-                    },
-                    attrs: {
-                      version: "1.1",
-                      id: "Layer_1",
-                      xmlns: "http://www.w3.org/2000/svg",
-                      "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                      height: "64",
-                      width: "64",
-                      viewBox: "0 0 462.999 462.999",
-                      "xml:space": "preserve",
-                    },
-                  },
-                  [
-                    _c("g", [
-                      _c("g", [
-                        _c("g", [
-                          _c("path", {
-                            attrs: {
-                              d: "M383.5,313c-7.995,0-14.5,6.505-14.5,14.5s6.505,14.5,14.5,14.5s14.5-6.505,14.5-14.5S391.495,313,383.5,313z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M95.5,313c-7.995,0-14.5,6.505-14.5,14.5S87.505,342,95.5,342s14.5-6.505,14.5-14.5S103.495,313,95.5,313z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M444.293,218.312l-55.167-24.519l-40.382-87.494C343.614,95.182,332.387,88,320.144,88H23.5C10.542,88,0,98.542,0,111.5\n                                            v200C0,324.458,10.542,335,23.5,335h25.098c3.607,22.64,23.263,40,46.902,40s43.295-17.36,46.902-40h194.195\n                                            c3.607,22.64,23.263,40,46.902,40c23.639,0,43.295-17.36,46.902-40h9.098c12.958,0,23.5-10.542,23.5-23.5v-64.403\n                                            C463,234.661,455.657,223.362,444.293,218.312z M349.163,143l22.615,49H303v-49H349.163z M95.5,360C77.58,360,63,345.42,63,327.5\n                                            c0-17.921,14.58-32.5,32.5-32.5s32.5,14.579,32.5,32.5C128,345.42,113.42,360,95.5,360z M383.5,360\n                                            c-17.92,0-32.5-14.579-32.5-32.5c0-17.921,14.58-32.5,32.5-32.5c17.92,0,32.5,14.579,32.5,32.5C416,345.42,401.42,360,383.5,360z\n                                             M448,288h-8.5c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h8.5v8.5c0,4.687-3.813,8.5-8.5,8.5h-9.098\n                                            c-3.607-22.64-23.263-40-46.902-40c-23.639,0-43.295,17.36-46.902,40H142.402c-3.607-22.64-23.263-40-46.902-40\n                                            s-43.295,17.36-46.902,40H23.5c-4.687,0-8.5-3.813-8.5-8.5V303h24.5c4.142,0,7.5-3.357,7.5-7.5s-3.358-7.5-7.5-7.5H15V111.5\n                                            c0-4.687,3.813-8.5,8.5-8.5h296.644c6.413,0,12.294,3.763,14.981,9.585L342.24,128H271.5c-8.547,0-15.5,6.953-15.5,15.5v32\n                                            c0,17.369,14.131,31.5,31.5,31.5h94.409l46.575,20.7l-1.18,0.716C420.332,232.649,416,240.346,416,248.503V263.5\n                                            c0,4.143,3.358,7.5,7.5,7.5H448V288z M288,143v49h-0.5c-9.098,0-16.5-7.402-16.5-16.5v-32c0-0.275,0.224-0.5,0.5-0.5H288z\n                                             M448,256h-17v-7.496c0-2.95,1.567-5.734,4.088-7.266l8.616-5.231c2.707,2.982,4.296,6.911,4.296,11.089V256z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M327.5,288h-176c-4.142,0-7.5,3.357-7.5,7.5s3.358,7.5,7.5,7.5h176c4.142,0,7.5-3.357,7.5-7.5S331.642,288,327.5,288z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M119.5,120c-4.142,0-7.5,3.357-7.5,7.5V160h-9v-32.5c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5V160h-9v-32.5\n                                            c0-4.143-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.357-7.5,7.5v48c0,12.958,10.542,23.5,23.5,23.5H88v64.5c0,4.143,3.358,7.5,7.5,7.5\n                                            c4.142,0,7.5-3.357,7.5-7.5V199h0.5c12.958,0,23.5-10.542,23.5-23.5v-48C127,123.357,123.642,120,119.5,120z M112,175.5\n                                            c0,4.687-3.813,8.5-8.5,8.5h-16c-4.687,0-8.5-3.813-8.5-8.5V175h33V175.5z",
-                            },
-                          }),
-                          _vm._v(" "),
-                          _c("path", {
-                            attrs: {
-                              d: "M151.5,271c4.142,0,7.5-3.357,7.5-7.5V231h15.056c4.565,0,8.876-1.998,11.827-5.481\n                                            c2.951-3.483,4.212-8.063,3.462-12.567l-13.244-79.465C174.799,125.672,168.103,120,160.14,120c-8.9,0-16.14,7.24-16.14,16.14\n                                            V263.5C144,267.643,147.358,271,151.5,271z M159,136.14c0-0.628,0.511-1.14,1.181-1.14c0.56,0,1.033,0.4,1.125,0.953\n                                            l13.244,79.465c0.01,0.063,0.038,0.229-0.111,0.405C174.288,216,174.12,216,174.056,216H159V136.14z",
-                            },
-                          }),
-                        ]),
-                      ]),
-                    ]),
-                  ]
-                ),
-              ]),
-              _vm._v(" "),
-              _vm._m(5),
-              _vm._v(" "),
-              _vm._m(6),
-            ]
-          ),
-        ]
+        [_vm._v("Pesan di sini")]
       ),
-    ]),
-  ])
+      _vm._v(" "),
+      _c("CustomerForm", {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.isCustomerFormVisible,
+            expression: "isCustomerFormVisible",
+          },
+        ],
+        on: { "close-modal": _vm.closeCustomerForm },
+      }),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
@@ -30315,7 +31053,7 @@ var staticRenderFns = [
             _c("a", { staticClass: "hover:underline", attrs: { href: "/" } }, [
               _vm._v("Nyehaat.id"),
             ]),
-            _vm._v(". Surabaya,Indonesia\r\n"),
+            _vm._v(". Surabaya,Indonesia\n"),
           ]
         ),
       ]
@@ -30405,13 +31143,19 @@ var render = function () {
       _vm._v(" "),
       _c("Feature", { attrs: { id: "feature" } }),
       _vm._v(" "),
-      _c("Menu", { attrs: { id: "menu" } }),
+      _vm.customer
+        ? [
+            _c("Menu", {
+              attrs: { id: "menu", conditions: _vm.customer.conditions },
+            }),
+          ]
+        : [_c("Menu", { attrs: { id: "menu" } })],
       _vm._v(" "),
       _c("Team", { attrs: { id: "tentang-kami" } }),
       _vm._v(" "),
       _c("Footer"),
     ],
-    1
+    2
   )
 }
 var staticRenderFns = []
@@ -30470,10 +31214,32 @@ var render = function () {
                 staticClass:
                   "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
               },
-              _vm._l(_vm.menus, function (menu) {
-                return _c("MenuCard", { key: menu.id, attrs: { menu: menu } })
-              }),
-              1
+              [
+                _vm.conditions
+                  ? [
+                      _vm._l(_vm.menus, function (menu) {
+                        return [
+                          menu.diseases[0] === _vm.conditions[0].condition
+                            ? _c("MenuCard", {
+                                key: menu.id,
+                                attrs: { menu: menu },
+                              })
+                            : _vm._e(),
+                        ]
+                      }),
+                    ]
+                  : [
+                      _vm._l(_vm.menus, function (menu) {
+                        return [
+                          _c("MenuCard", {
+                            key: menu.id,
+                            attrs: { menu: menu },
+                          }),
+                        ]
+                      }),
+                    ],
+              ],
+              2
             ),
           ]),
         ]
@@ -30529,7 +31295,7 @@ var render = function () {
             },
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "px-4 pb-5" }, [
+          _c("div", { staticClass: "px-4 pb-4" }, [
             _c(
               "h3",
               {
@@ -30549,7 +31315,11 @@ var render = function () {
                     staticClass:
                       "text-md font-opensans text-gray-900 pr-1 inline",
                   },
-                  [_vm._v("\n                    Aman untuk\n                ")]
+                  [
+                    _vm._v(
+                      "\n                        Aman untuk\n                    "
+                    ),
+                  ]
                 ),
                 _vm._v(" "),
                 _vm._l(_vm.menu.diseases, function (disease, index) {
@@ -30558,30 +31328,30 @@ var render = function () {
                     {
                       key: disease,
                       staticClass:
-                        "inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2 mb-2",
+                        "inline-block bg-gray-200 rounded-full px-3 py-1 mb-2 text-sm font-semibold text-gray-700 mr-2",
                     },
                     [
                       index === 0
                         ? [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                "\n                    "
+                                "\n                        "
                             ),
                           ]
                         : index !== _vm.menu.diseases.length - 1
                         ? [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                ",\n                    "
+                                ",\n                        "
                             ),
                           ]
                         : [
                             _vm._v(
-                              "\n                        " +
+                              "\n                            " +
                                 _vm._s(disease) +
-                                "\n                    "
+                                "\n                        "
                             ),
                           ],
                     ],
@@ -30650,16 +31420,16 @@ var render = function () {
                     index !== _vm.menu.ingredients.length - 1
                       ? [
                           _vm._v(
-                            "\n                        " +
+                            "\n                            " +
                               _vm._s(ingredient) +
-                              ",\n                    "
+                              ",\n                        "
                           ),
                         ]
                       : [
                           _vm._v(
-                            "\n                        " +
+                            "\n                            " +
                               _vm._s(ingredient) +
-                              "\n                    "
+                              "\n                        "
                           ),
                         ],
                   ],
@@ -30667,37 +31437,6 @@ var render = function () {
                 )
               }),
               0
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "flex justify-between items-center font-opensans",
-              },
-              [
-                _c(
-                  "span",
-                  {
-                    staticClass:
-                      "text-2xl font-bold text-gray-900 mr-4 mt-auto",
-                  },
-                  [_vm._v(_vm._s(_vm._f("toCurrency")(_vm.menu.price)))]
-                ),
-                _vm._v(" "),
-                _c(
-                  "a",
-                  {
-                    staticClass:
-                      "border-2 border-green-600 px-4 font-bold py-2.5 rounded-md hover:bg-greenprimary hover:text-white transition duration-150 ease-in-out",
-                    attrs: {
-                      href:
-                        "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20" +
-                        _vm.menu.title,
-                    },
-                  },
-                  [_vm._v("\n                    Pesan\n                ")]
-                ),
-              ]
             ),
           ]),
         ]

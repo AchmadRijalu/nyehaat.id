@@ -1,5 +1,5 @@
 <template>
-    <section class="mx-auto container py-20">
+    <section class="mx-auto container py-20 flex flex-col justify-content-center">
         <div class="flex justify-center items-center flex-col">
             <div class="lg:text-6xl md:text-5xl text-4xl font-black leading-10 text-center text-greenprimary">
                 <h1>Bagaimana Cara Pesan?</h1>
@@ -125,12 +125,47 @@
                 </div>
             </div>
         </div>
+        <button @click="openCustomerForm" class="mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</button>
+        <CustomerForm v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
     </section>
 </template>
 
 <script>
+import CustomerForm from "./CustomerForm.vue";
+
 export default {
-    name: "Feature"
+    name: "Feature",
+    components: {
+        CustomerForm
+    },
+    data(){
+        return {
+            isCustomerFormVisible: false,
+        }
+    },
+    methods: {
+        MenuHandler(flag) {
+            if (flag) {
+                document.getElementById("list").classList.add("top-100");
+                document.getElementById("list").classList.remove("hidden");
+                document.getElementById("close").classList.remove("hidden");
+                document.getElementById("open").classList.add("hidden");
+            } else {
+                document.getElementById("list").classList.remove("top-100");
+                document.getElementById("list").classList.add("hidden");
+                document.getElementById("close").classList.add("hidden");
+                document.getElementById("open").classList.remove("hidden");
+            }
+        },
+        openCustomerForm() {
+            this.isCustomerFormVisible = true;
+            document.querySelector(`body`).classList.add('overflow-y-hidden');
+        },
+        closeCustomerForm() {
+            this.isCustomerFormVisible = false;
+            document.querySelector(`body`).classList.remove('overflow-y-hidden');
+        },
+    },
 };
 </script>
 

@@ -5,7 +5,16 @@
         <div class="mx-auto container px-6 xl:px-0 items-center ">
             <div class="flex flex-col items-center ">
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
-                    <MenuCard v-for="menu in menus" :key="menu.id" :menu="menu"></MenuCard>
+                    <template v-if="conditions">
+                        <template v-for="menu in menus">
+                            <MenuCard v-if="menu.diseases[0] === conditions[0].condition" :key="menu.id" :menu="menu"></MenuCard>
+                        </template>
+                    </template>
+                    <template v-else>
+                        <template v-for="menu in menus">
+                            <MenuCard :key="menu.id" :menu="menu"></MenuCard>
+                        </template>
+                    </template>
                 </div>
             </div>
         </div>
@@ -35,7 +44,7 @@ const menus = [
         title: "Baked Cod with Spring Vegetables",
         price: 42000,
         diseases: [
-            'Darah tinggi'
+            'Darah Tinggi'
         ],
         ingredients: [
             'Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'
@@ -49,7 +58,7 @@ const menus = [
         title: "Chickpea Quinoa Soup",
         price: 36000,
         diseases: [
-            'Darah tinggi'
+            'Darah Tinggi'
         ],
         ingredients: [
             'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'
@@ -63,7 +72,7 @@ const menus = [
         title: "Vegan Roasted Red Pepper Pasta",
         price: 43000,
         diseases: [
-            'Darah tinggi'
+            'Darah Tinggi'
         ],
         ingredients: [
             'Olive Oil', 'Bawang Merah', 'Bawang Putih', 'Garam', 'Merica', 'Susu almond', 'Ragi', 'Bubuk garut', 'Spaghetti'
@@ -114,11 +123,40 @@ const menus = [
         carbs: 81,
         protein: 17
     },
+    {
+        id: 8,
+        title: "Beef Sukiyaki",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
+    {
+        id: 9,
+        title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
+        price: 38000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'
+        ],
+        calories: 439,
+        carbs: 81,
+        protein: 17
+    },
 ]
 
 export default {
     name: "Menu",
     components: {MenuCard},
+    props: ['conditions'],
     data() {
         return {
             menus

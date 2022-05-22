@@ -125,9 +125,9 @@ window.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             const id = entry.target.getAttribute('id');
             if (entry.intersectionRatio > 0) {
-                document.querySelector(`nav div a[href="#${id}"]`).children[0].classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
+                document.querySelector(`nav div a[href="#${id}"] span`).classList.add('border-b-4', 'border-greenprimary', 'text-greenprimary');
             } else {
-                document.querySelector(`nav div a[href="#${id}"]`).children[0].classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
+                document.querySelector(`nav div a[href="#${id}"] span`).classList.remove('border-b-4', 'border-greenprimary', 'text-greenprimary');
             }
         });
     });
