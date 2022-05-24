@@ -1,23 +1,39 @@
 <template>
     <section class="overflow-y-hidden py-20 items-center justify-center">
-        <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Kami</h1>
-        <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Seluruh resep dari menu kami telah disetujui oleh ahli gizi.</h2>
-        <div class="mx-auto container px-6 xl:px-0 items-center ">
-            <div class="flex flex-col items-center ">
-                <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
-                    <template v-if="conditions">
+        <template v-if="customer">
+            <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Anda</h1>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Seluruh resep dari menu kami telah disetujui oleh ahli gizi</h2>
+            <div class="mx-auto container px-6 xl:px-0 items-center ">
+                <div class="flex flex-col items-center ">
+                    <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
                         <template v-for="menu in menus">
-                            <MenuCard v-if="menu.diseases[0] === conditions[0].condition" :key="menu.id" :menu="menu"></MenuCard>
+                            <MenuCard v-if="menu.diseases[0] === customer.conditions[0].condition" :key="menu.id" :menu="menu"></MenuCard>
                         </template>
-                    </template>
-                    <template v-else>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-content-center mt-16 align-items-center">
+                <h1 class="text-6xl font-semibold leading-10 text-center w-max h-max">{{ 135000 | toCurrency }}</h1>
+                <p class="text-center w-max h-max ml-1 text-xl"> + Free ongkir</p>
+            </div>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-10 ">Untuk hari senin, selasa, dan hari rabu</h2>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-2 ">Kami hanya melayani daerah Kota Surabaya</h2>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-12 ">Klik tombol di bawah untuk melakukan PO melalui WhatsApp kami</h2>
+            <a :href="walink" class="block mx-auto mt-2 bg-greenprimary text-center transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</a>
+        </template>
+        <template v-else>
+            <h1 class="text-5xl font-semibold leading-10 text-greenprimary text-center mb-16">Menu Kami</h1>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Seluruh resep dari menu kami telah disetujui oleh ahli gizi</h2>
+            <div class="mx-auto container px-6 xl:px-0 items-center ">
+                <div class="flex flex-col items-center ">
+                    <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
                         <template v-for="menu in menus">
                             <MenuCard :key="menu.id" :menu="menu"></MenuCard>
                         </template>
-                    </template>
+                    </div>
                 </div>
             </div>
-        </div>
+        </template>
     </section>
 </template>
 
@@ -156,11 +172,19 @@ const menus = [
 export default {
     name: "Menu",
     components: {MenuCard},
-    props: ['conditions'],
+    props: ['customer'],
     data() {
+        let walink;
         return {
-            menus
+            menus,
+            walink
         }
+    },
+    mounted(){
+        this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition +
+            ".%0aNama:%20" + this.customer.name +
+            "%0aKontak:%20" + this.customer.phone +
+            "%0aAlamat:%20" + this.customer.address
     }
 };
 </script>

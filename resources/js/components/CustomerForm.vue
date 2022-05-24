@@ -3,7 +3,7 @@
         <div class="w-2/3 m-auto h-screen">
             <div class="modal-content h-screen my-2">
                 <div class="modal-header">
-                    <h4 class="modal-title">{{ name }}'s QR code for {{ type }}</h4>
+                    <h4 class="modal-title">Formulir Data Penyakit</h4>
                     <button type="button" class="btn btn-sm" v-on:click="closeModal">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -17,8 +17,7 @@
                             >
                                 <div class="flex items-center">
                                     <p class="text-sm text-gray-800">
-                                        We take privacy issues seriously. You can be sure that your
-                                        personal data is securely protected.
+                                        Masukkan data anda untuk melihat menu yang tersedia untuk anda.
                                     </p>
                                 </div>
                             </div>
@@ -28,55 +27,57 @@
                                 <div class="w-80">
                                     <div class="flex items-center">
                                         <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
-                                            Personal Information
+                                            Informasi Anda
                                         </h1>
                                     </div>
                                     <p class="mt-4 text-sm leading-5 text-gray-600">
-                                        Information about the section could go here and a brief
-                                        description of how this might be used.
+                                        Kami memperlukan informasi pribadi anda untuk mengantarkan pesanan bila anda melakukan PO.
                                     </p>
                                 </div>
                                 <div>
                                     <div class="md:flex items-center lg:ml-24 lg:mt-0 mt-4">
                                         <div class="md:w-64">
                                             <label class="text-sm leading-none text-gray-800" id="firstName"
-                                            >Name</label
+                                            >Nama</label
                                             >
                                             <input
+                                                required
                                                 type="name"
                                                 name="name"
                                                 tabindex="0"
                                                 class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                                                 aria-labelledby="firstName"
-                                                placeholder="John"
+                                                placeholder="Hadi Soetomo"
                                             />
                                         </div>
                                         <div class="md:w-64 md:ml-12 ">
                                             <label class="text-sm leading-none text-gray-800" id="lastName"
-                                            >Address</label
+                                            >Alamat</label
                                             >
                                             <input
+                                                required
                                                 type="name"
                                                 name="address"
                                                 tabindex="0"
                                                 class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                                                 aria-labelledby="address"
-                                                placeholder="Jl. Sudirman M/20"
+                                                placeholder="Jl. Sudirman M/20, 60211"
                                             />
                                         </div>
                                     </div>
                                     <div class="md:flex items-center lg:ml-24 mt-8">
                                         <div class="md:w-64">
                                             <label class="text-sm leading-none text-gray-800" id="phone"
-                                            >Phone number</label
+                                            >Nomor HP</label
                                             >
                                             <input
+                                                required
                                                 type="name"
                                                 name="phone"
                                                 tabindex="0"
                                                 class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
                                                 aria-labelledby="phone"
-                                                placeholder="123-1234567"
+                                                placeholder="082139842937"
                                             />
                                         </div>
                                     </div>
@@ -88,12 +89,11 @@
                                 <div class="w-80">
                                     <div class="flex items-center">
                                         <h1 class="text-xl font-medium pr-2 leading-5 text-gray-800">
-                                            Security
+                                            Penyakit
                                         </h1>
                                     </div>
                                     <p class="mt-4 text-sm leading-5 text-gray-600">
-                                        Information about the section could go here and a brief
-                                        description of how this might be used.
+                                        Pilih kondisi/penyakit yang anda miliki. Untuk sekarang ini, kami hanya melayani 1 jenis penyakit.
                                     </p>
                                 </div>
                                 <div>
@@ -102,7 +102,7 @@
                                         <fieldset>
                                             <legend class="sr-only">Checkbox variants</legend>
                                             <div class="flex items-center mb-4">
-                                                <input name="conditions[]" id="checkbox-1" type="radio" value="1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                                                <input required name="conditions[]" id="checkbox-1" type="radio" value="1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
                                                 <label for="checkbox-1" class="ml-2 text-sm font-medium text-gray-900">Diabetes</label>
                                             </div>
                                             <div class="flex items-center mb-4">

@@ -36,7 +36,7 @@
                         <h2>Pilih Menu Anda</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda yang dapat anda seleksi.</p>
+                        <p>Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda.</p>
                     </div>
                 </div>
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -120,12 +120,13 @@
                         <h2>Pengiriman</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Setelah melakukan pemesanan, makanan akan dikirimkan esok harinya (H+1).</p>
+                        <p>Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Senin, Selasa, dan Rabu di minggu depan setelah melakukan pemesanan.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <button @click="openCustomerForm" class="mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</button>
+        <h2 v-if="!customer" class="text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-4 ">Klik tombol di bawah untuk melihat menu yang terpersonalisasi bagi anda.</h2>
+        <button v-if="!customer" @click="openCustomerForm" class="mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</button>
         <CustomerForm v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
     </section>
 </template>
@@ -138,6 +139,7 @@ export default {
     components: {
         CustomerForm
     },
+    props: ['customer'],
     data(){
         return {
             isCustomerFormVisible: false,

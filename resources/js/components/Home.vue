@@ -3,9 +3,14 @@
     <!-- replace appropriate tags after installing vue-router -->
     <section>
         <Hero id="home"></Hero>
-        <Feature id="feature"></Feature>
         <template v-if="customer">
-            <Menu id="menu" :conditions="customer.conditions"></Menu>
+            <Feature id="feature" :customer="customer"></Feature>
+        </template>
+        <template v-else>
+            <Feature id="feature"></Feature>
+        </template>
+        <template v-if="customer">
+            <Menu id="menu" :customer="customer"></Menu>
         </template>
         <template v-else>
             <Menu id="menu"></Menu>

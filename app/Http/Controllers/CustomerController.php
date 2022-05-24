@@ -73,7 +73,7 @@ class CustomerController extends Controller
         $customer = Customer::with('conditions')->where('id', '=', $query->id)->first();
         Session::put('customer', $customer);
 
-        return redirect()->to('/');
+        return redirect()->to('/#menu');
     }
 
     /**

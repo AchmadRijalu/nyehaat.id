@@ -5703,12 +5703,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Feature",
   components: {
     CustomerForm: _CustomerForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  props: ['customer'],
   data: function data() {
     return {
       isCustomerFormVisible: false
@@ -5851,6 +5853,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -5897,6 +5904,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _MenuCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MenuCard */ "./resources/js/components/MenuCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6008,11 +6031,16 @@ var menus = [{
   components: {
     MenuCard: _MenuCard__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['conditions'],
+  props: ['customer'],
   data: function data() {
+    var walink;
     return {
-      menus: menus
+      menus: menus,
+      walink: walink
     };
+  },
+  mounted: function mounted() {
+    this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition + ".%0aNama:%20" + this.customer.name + "%0aKontak:%20" + this.customer.phone + "%0aAlamat:%20" + this.customer.address;
   }
 });
 
@@ -11526,7 +11554,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30223,7 +30251,7 @@ var render = function () {
       _c("div", { staticClass: "modal-content h-screen my-2" }, [
         _c("div", { staticClass: "modal-header" }, [
           _c("h4", { staticClass: "modal-title" }, [
-            _vm._v(_vm._s(_vm.name) + "'s QR code for " + _vm._s(_vm.type)),
+            _vm._v("Formulir Data Penyakit"),
           ]),
           _vm._v(" "),
           _c(
@@ -30281,7 +30309,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "flex items-center" }, [
           _c("p", { staticClass: "text-sm text-gray-800" }, [
             _vm._v(
-              "\n                                        We take privacy issues seriously. You can be sure that your\n                                        personal data is securely protected.\n                                    "
+              "\n                                        Masukkan data anda untuk melihat menu yang tersedia untuk anda.\n                                    "
             ),
           ]),
         ]),
@@ -30308,7 +30336,7 @@ var staticRenderFns = [
               },
               [
                 _vm._v(
-                  "\n                                            Personal Information\n                                        "
+                  "\n                                            Informasi Anda\n                                        "
                 ),
               ]
             ),
@@ -30316,7 +30344,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
             _vm._v(
-              "\n                                        Information about the section could go here and a brief\n                                        description of how this might be used.\n                                    "
+              "\n                                        Kami memperlukan informasi pribadi anda untuk mengantarkan pesanan bila anda melakukan PO.\n                                    "
             ),
           ]),
         ]),
@@ -30333,18 +30361,19 @@ var staticRenderFns = [
                     staticClass: "text-sm leading-none text-gray-800",
                     attrs: { id: "firstName" },
                   },
-                  [_vm._v("Name")]
+                  [_vm._v("Nama")]
                 ),
                 _vm._v(" "),
                 _c("input", {
                   staticClass:
                     "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
                   attrs: {
+                    required: "",
                     type: "name",
                     name: "name",
                     tabindex: "0",
                     "aria-labelledby": "firstName",
-                    placeholder: "John",
+                    placeholder: "Hadi Soetomo",
                   },
                 }),
               ]),
@@ -30356,18 +30385,19 @@ var staticRenderFns = [
                     staticClass: "text-sm leading-none text-gray-800",
                     attrs: { id: "lastName" },
                   },
-                  [_vm._v("Address")]
+                  [_vm._v("Alamat")]
                 ),
                 _vm._v(" "),
                 _c("input", {
                   staticClass:
                     "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
                   attrs: {
+                    required: "",
                     type: "name",
                     name: "address",
                     tabindex: "0",
                     "aria-labelledby": "address",
-                    placeholder: "Jl. Sudirman M/20",
+                    placeholder: "Jl. Sudirman M/20, 60211",
                   },
                 }),
               ]),
@@ -30382,18 +30412,19 @@ var staticRenderFns = [
                   staticClass: "text-sm leading-none text-gray-800",
                   attrs: { id: "phone" },
                 },
-                [_vm._v("Phone number")]
+                [_vm._v("Nomor HP")]
               ),
               _vm._v(" "),
               _c("input", {
                 staticClass:
                   "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
                 attrs: {
+                  required: "",
                   type: "name",
                   name: "phone",
                   tabindex: "0",
                   "aria-labelledby": "phone",
-                  placeholder: "123-1234567",
+                  placeholder: "082139842937",
                 },
               }),
             ]),
@@ -30419,7 +30450,7 @@ var staticRenderFns = [
               },
               [
                 _vm._v(
-                  "\n                                            Security\n                                        "
+                  "\n                                            Penyakit\n                                        "
                 ),
               ]
             ),
@@ -30427,7 +30458,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
             _vm._v(
-              "\n                                        Information about the section could go here and a brief\n                                        description of how this might be used.\n                                    "
+              "\n                                        Pilih kondisi/penyakit yang anda miliki. Untuk sekarang ini, kami hanya melayani 1 jenis penyakit.\n                                    "
             ),
           ]),
         ]),
@@ -30447,6 +30478,7 @@ var staticRenderFns = [
                     staticClass:
                       "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2",
                     attrs: {
+                      required: "",
                       name: "conditions[]",
                       id: "checkbox-1",
                       type: "radio",
@@ -30816,15 +30848,32 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass:
-            "mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3",
-          on: { click: _vm.openCustomerForm },
-        },
-        [_vm._v("Pesan di sini")]
-      ),
+      !_vm.customer
+        ? _c(
+            "h2",
+            {
+              staticClass:
+                "text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-4 ",
+            },
+            [
+              _vm._v(
+                "Klik tombol di bawah untuk melihat menu yang terpersonalisasi bagi anda."
+              ),
+            ]
+          )
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.customer
+        ? _c(
+            "button",
+            {
+              staticClass:
+                "mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3",
+              on: { click: _vm.openCustomerForm },
+            },
+            [_vm._v("Pesan di sini")]
+          )
+        : _vm._e(),
       _vm._v(" "),
       _c("CustomerForm", {
         directives: [
@@ -30875,7 +30924,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda yang dapat anda seleksi."
+            "Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda."
           ),
         ]),
       ]
@@ -30927,7 +30976,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Setelah melakukan pemesanan, makanan akan dikirimkan esok harinya (H+1)."
+            "Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Senin, Selasa, dan Rabu di minggu depan setelah melakukan pemesanan."
           ),
         ]),
       ]
@@ -31141,14 +31190,12 @@ var render = function () {
     [
       _c("Hero", { attrs: { id: "home" } }),
       _vm._v(" "),
-      _c("Feature", { attrs: { id: "feature" } }),
+      _vm.customer
+        ? [_c("Feature", { attrs: { id: "feature", customer: _vm.customer } })]
+        : [_c("Feature", { attrs: { id: "feature" } })],
       _vm._v(" "),
       _vm.customer
-        ? [
-            _c("Menu", {
-              attrs: { id: "menu", conditions: _vm.customer.conditions },
-            }),
-          ]
+        ? [_c("Menu", { attrs: { id: "menu", customer: _vm.customer } })]
         : [_c("Menu", { attrs: { id: "menu" } })],
       _vm._v(" "),
       _c("Team", { attrs: { id: "tentang-kami" } }),
@@ -31185,41 +31232,46 @@ var render = function () {
     "section",
     { staticClass: "overflow-y-hidden py-20 items-center justify-center" },
     [
-      _c(
-        "h1",
-        {
-          staticClass:
-            "text-5xl font-semibold leading-10 text-greenprimary text-center mb-16",
-        },
-        [_vm._v("Menu Kami")]
-      ),
-      _vm._v(" "),
-      _c(
-        "h2",
-        {
-          staticClass:
-            "text-xl font-medium leading-10 text-gray-800 text-center mb-16 ",
-        },
-        [_vm._v("Seluruh resep dari menu kami telah disetujui oleh ahli gizi.")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "mx-auto container px-6 xl:px-0 items-center " },
-        [
-          _c("div", { staticClass: "flex flex-col items-center " }, [
+      _vm.customer
+        ? [
             _c(
-              "div",
+              "h1",
               {
                 staticClass:
-                  "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                  "text-5xl font-semibold leading-10 text-greenprimary text-center mb-16",
+              },
+              [_vm._v("Menu Anda")]
+            ),
+            _vm._v(" "),
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-xl font-medium leading-10 text-gray-800 text-center mb-16 ",
               },
               [
-                _vm.conditions
-                  ? [
+                _vm._v(
+                  "Seluruh resep dari menu kami telah disetujui oleh ahli gizi"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mx-auto container px-6 xl:px-0 items-center " },
+              [
+                _c("div", { staticClass: "flex flex-col items-center " }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                    },
+                    [
                       _vm._l(_vm.menus, function (menu) {
                         return [
-                          menu.diseases[0] === _vm.conditions[0].condition
+                          menu.diseases[0] ===
+                          _vm.customer.conditions[0].condition
                             ? _c("MenuCard", {
                                 key: menu.id,
                                 attrs: { menu: menu },
@@ -31227,8 +31279,113 @@ var render = function () {
                             : _vm._e(),
                         ]
                       }),
-                    ]
-                  : [
+                    ],
+                    2
+                  ),
+                ]),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-row justify-content-center mt-16 align-items-center",
+              },
+              [
+                _c(
+                  "h1",
+                  {
+                    staticClass:
+                      "text-6xl font-semibold leading-10 text-center w-max h-max",
+                  },
+                  [_vm._v(_vm._s(_vm._f("toCurrency")(135000)))]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  { staticClass: "text-center w-max h-max ml-1 text-xl" },
+                  [_vm._v(" + Free ongkir")]
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-xl font-medium leading-10 text-gray-800 text-center mt-10 ",
+              },
+              [_vm._v("Untuk hari senin, selasa, dan hari rabu")]
+            ),
+            _vm._v(" "),
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-xl font-medium leading-10 text-gray-800 text-center mt-2 ",
+              },
+              [_vm._v("Kami hanya melayani daerah Kota Surabaya")]
+            ),
+            _vm._v(" "),
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-12 ",
+              },
+              [
+                _vm._v(
+                  "Klik tombol di bawah untuk melakukan PO melalui WhatsApp kami"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass:
+                  "block mx-auto mt-2 bg-greenprimary text-center transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3",
+                attrs: { href: _vm.walink },
+              },
+              [_vm._v("Pesan di sini")]
+            ),
+          ]
+        : [
+            _c(
+              "h1",
+              {
+                staticClass:
+                  "text-5xl font-semibold leading-10 text-greenprimary text-center mb-16",
+              },
+              [_vm._v("Menu Kami")]
+            ),
+            _vm._v(" "),
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "text-xl font-medium leading-10 text-gray-800 text-center mb-16 ",
+              },
+              [
+                _vm._v(
+                  "Seluruh resep dari menu kami telah disetujui oleh ahli gizi"
+                ),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mx-auto container px-6 xl:px-0 items-center " },
+              [
+                _c("div", { staticClass: "flex flex-col items-center " }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                    },
+                    [
                       _vm._l(_vm.menus, function (menu) {
                         return [
                           _c("MenuCard", {
@@ -31238,13 +31395,14 @@ var render = function () {
                         ]
                       }),
                     ],
-              ],
-              2
+                    2
+                  ),
+                ]),
+              ]
             ),
-          ]),
-        ]
-      ),
-    ]
+          ],
+    ],
+    2
   )
 }
 var staticRenderFns = []
