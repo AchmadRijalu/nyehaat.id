@@ -5982,13 +5982,13 @@ var menus = [{
   protein: 14
 }, {
   id: 2,
-  title: "Smoothie Cherry-Bayam Anti Peradangan",
-  price: 35000,
+  title: "Nasi Goreng Kembang Kol",
+  price: 23000,
   diseases: ['Penyakit Jantung'],
-  ingredients: ['Yogurt rendah lemak', 'Jahe', 'Cherry', 'Daun bayam', 'Alpukat', 'Mentega'],
-  calories: 410,
-  carbs: 46.6,
-  protein: 17.4
+  ingredients: ['Nasi Goreng', 'Kembang Kol', 'Madu', 'Minyak Sayur', 'Telur', 'Kacang Polong', 'Edamame', 'Irisan Jeruk'],
+  calories: 251,
+  carbs: 20,
+  protein: 15
 }, {
   id: 6,
   title: "Ayam-Jagung Lapis Aprikot",
