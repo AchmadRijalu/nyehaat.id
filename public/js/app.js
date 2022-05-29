@@ -30911,7 +30911,7 @@ var staticRenderFns = [
     return _c(
       "div",
       { staticClass: "text-gray-800 text-2xl font-semibold text-center" },
-      [_c("h2", [_vm._v("Pilih Menu Anda")])]
+      [_c("h2", [_vm._v("Masukkan Datas Anda")])]
     )
   },
   function () {
@@ -30924,7 +30924,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda."
+            "Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda (2 hidangan/hari)."
           ),
         ]),
       ]
@@ -30950,7 +30950,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Pemesanan akan dibantu oleh Customer Service nyehaat.id melalui WhatsApp."
+            "Layanan PO dibuka pada hari Senin hingga Kamis. Pemesanan akan dibantu oleh Customer Service Nyehaat.id melalui WhatsApp."
           ),
         ]),
       ]
@@ -30976,7 +30976,7 @@ var staticRenderFns = [
       [
         _c("p", [
           _vm._v(
-            "Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Senin, Selasa, dan Rabu di minggu depan setelah melakukan pemesanan."
+            "Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Sabtu dan Minggu."
           ),
         ]),
       ]
@@ -31265,7 +31265,7 @@ var render = function () {
                     "div",
                     {
                       staticClass:
-                        "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                        "grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
                     },
                     [
                       _vm._l(_vm.menus, function (menu) {
@@ -31299,7 +31299,7 @@ var render = function () {
                     staticClass:
                       "text-6xl font-semibold leading-10 text-center w-max h-max",
                   },
-                  [_vm._v(_vm._s(_vm._f("toCurrency")(135000)))]
+                  [_vm._v(_vm._s(_vm._f("toCurrency")(180000)))]
                 ),
                 _vm._v(" "),
                 _c(
@@ -31316,7 +31316,11 @@ var render = function () {
                 staticClass:
                   "text-xl font-medium leading-10 text-gray-800 text-center mt-10 ",
               },
-              [_vm._v("Untuk hari senin, selasa, dan hari rabu")]
+              [
+                _vm._v(
+                  "Untuk hari Sabtu dan Minggu (2 hidangan/hari, total 4 hidangan)"
+                ),
+              ]
             ),
             _vm._v(" "),
             _c(
@@ -31383,7 +31387,7 @@ var render = function () {
                     "div",
                     {
                       staticClass:
-                        "grid xl:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                        "grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
                     },
                     [
                       _vm._l(_vm.menus, function (menu) {
@@ -31442,11 +31446,11 @@ var render = function () {
         "div",
         {
           staticClass:
-            "max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full",
+            "max-w-xs bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full",
         },
         [
           _c("img", {
-            staticClass: "pb-8 rounded-t-lg h-72 object-cover w-full",
+            staticClass: "pb-8 rounded-t-lg h-64 object-cover w-full",
             attrs: {
               src: "/img/menu/" + _vm.menu.id + ".png",
               alt: "product image",
@@ -31520,12 +31524,12 @@ var render = function () {
               2
             ),
             _vm._v(" "),
-            _c("div", { staticClass: "pt-3 flex flex-row gap-x-4" }, [
+            _c("div", { staticClass: "pt-3 flex flex-row gap-x-2" }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full",
                   attrs: { href: "#" },
                 },
                 [
@@ -31539,7 +31543,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full",
                   attrs: { href: "#" },
                 },
                 [
@@ -31553,7 +31557,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full",
+                    "text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full",
                   attrs: { href: "#" },
                 },
                 [

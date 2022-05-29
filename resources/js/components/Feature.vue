@@ -33,10 +33,10 @@
                     </svg>
                     </div>
                     <div class="text-gray-800 text-2xl font-semibold text-center">
-                        <h2>Pilih Menu Anda</h2>
+                        <h2>Masukkan Datas Anda</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda.</p>
+                        <p>Nyehaat.id menyediakan variasi menu sehat yang disajikan untuk menyesuaikan pantangan anda (2 hidangan/hari).</p>
                     </div>
                 </div>
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -77,7 +77,7 @@
                         <h2>Pesan</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Pemesanan akan dibantu oleh Customer Service nyehaat.id melalui WhatsApp.</p>
+                        <p>Layanan PO dibuka pada hari Senin hingga Kamis. Pemesanan akan dibantu oleh Customer Service Nyehaat.id melalui WhatsApp.</p>
                     </div>
                 </div>
                 <div class="cursor-pointer hover:shadow py-6 xl:px-4 rounded xl:w-96 w-60 flex justify-center items-center flex-col">
@@ -120,7 +120,7 @@
                         <h2>Pengiriman</h2>
                     </div>
                     <div class="text-gray-600 mt-2 text-lg text-center">
-                        <p>Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Senin, Selasa, dan Rabu di minggu depan setelah melakukan pemesanan.</p>
+                        <p>Setelah melakukan pemesanan, makanan akan dikirimkan pada hari Sabtu dan Minggu.</p>
                     </div>
                 </div>
             </div>

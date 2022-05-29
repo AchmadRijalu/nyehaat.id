@@ -1,7 +1,7 @@
 <template>
     <a :href="'https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20' + menu.title">
-        <div class="max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full">
-            <img class="pb-8 rounded-t-lg h-72 object-cover w-full" :src="'/img/menu/' + menu.id + '.png'" alt="product image" />
+        <div class="max-w-xs bg-white rounded-lg shadow-md hover:shadow-xl duration-500 ease-in-out dark:bg-gray-800 dark:border-gray-700 h-full">
+            <img class="pb-8 rounded-t-lg h-64 object-cover w-full" :src="'/img/menu/' + menu.id + '.png'" alt="product image" />
             <div class="px-4 pb-4">
                 <h3 class="text-xl font-semibold font-opensans tracking-tight text-gray-900">{{ menu.title }}</h3>
                 <div class="pt-3">
@@ -20,16 +20,16 @@
                         </template>
                     </span>
                 </div>
-                <div class="pt-3 flex flex-row gap-x-4">
-                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
+                <div class="pt-3 flex flex-row gap-x-2">
+                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Calories</h5>
                         <h5>{{ menu.calories }} kcal</h5>
                     </div>
-                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
+                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Carbs</h5>
                         <h5>{{ menu.carbs }} g</h5>
                     </div>
-                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-sm px-4 py-2.5 text-center basis-full">
+                    <div href="#" class="text-white bg-greenprimary font-medium font-opensans rounded-lg text-xs px-2 py-2.5 text-center basis-full">
                         <h5 class="font-bold">Protein</h5>
                         <h5>{{ menu.protein }} g</h5>
                     </div>
