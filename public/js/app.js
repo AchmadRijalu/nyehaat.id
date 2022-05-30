@@ -6009,6 +6009,15 @@ var menus = [{
   protein: 17
 }, {
   id: 8,
+  title: "Spicy Pasta",
+  price: 32000,
+  diseases: ['Penyakit Jantung'],
+  ingredients: ['Pasta', 'minyak zaitun', 'cabai hijau cincang halus', 'jamur kancing', 'Tomat Kaleng', 'ketumbar cincang', 'Minyak Zaitun'],
+  calories: 339,
+  carbs: 79,
+  protein: 12
+}, {
+  id: 9,
   title: "Beef Sukiyaki",
   price: 38000,
   diseases: ['Diabetes'],
@@ -6017,7 +6026,7 @@ var menus = [{
   carbs: 81,
   protein: 17
 }, {
-  id: 9,
+  id: 10,
   title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
   price: 38000,
   diseases: ['Diabetes'],
@@ -11530,7 +11539,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.modal[data-v-f726b6a6] {\n    position: fixed;\n    top: 0;\n    right: 0;\n    bottom: 0;\n    left: 0;\n    z-index: 1050;\n    display: block;\n    overflow: hidden;\n    outline: 0;\n    background-color: rgba(0, 0, 0, 0.6);\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.modal[data-v-f726b6a6] {\r\n    position: fixed;\r\n    top: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    left: 0;\r\n    z-index: 1050;\r\n    display: block;\r\n    overflow: hidden;\r\n    outline: 0;\r\n    background-color: rgba(0, 0, 0, 0.6);\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11554,7 +11563,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* Top menu */\n.top-100[data-v-f2b6376c] {\r\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\r\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\r\n        top: -50%;\n}\n100% {\r\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\r\n    outline: none !important;\r\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\r\n    -webkit-tap-highlight-color: transparent;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31102,7 +31111,7 @@ var staticRenderFns = [
             _c("a", { staticClass: "hover:underline", attrs: { href: "/" } }, [
               _vm._v("Nyehaat.id"),
             ]),
-            _vm._v(". Surabaya,Indonesia\n"),
+            _vm._v(". Surabaya,Indonesia\r\n"),
           ]
         ),
       ]

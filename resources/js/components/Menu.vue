@@ -141,6 +141,20 @@ const menus = [
     },
     {
         id: 8,
+        title: "Spicy Pasta",
+        price: 32000,
+        diseases: [
+            'Penyakit Jantung'
+        ],
+        ingredients: [
+            'Pasta', 'minyak zaitun', 'cabai hijau cincang halus', 'jamur kancing', 'Tomat Kaleng', 'ketumbar cincang', 'Minyak Zaitun'
+        ],
+        calories: 339,
+        carbs: 79,
+        protein: 12
+    },
+    {
+        id: 9,
         title: "Beef Sukiyaki",
         price: 38000,
         diseases: [
@@ -154,7 +168,7 @@ const menus = [
         protein: 17
     },
     {
-        id: 9,
+        id: 10,
         title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
         price: 38000,
         diseases: [
@@ -167,6 +181,7 @@ const menus = [
         carbs: 81,
         protein: 17
     },
+
 ]
 
 export default {
