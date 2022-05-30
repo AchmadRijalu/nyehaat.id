@@ -205,9 +205,9 @@ const menus = [
         ingredients: [
             'Olive Oil', 'Panko Breadcrumbs', 'Bawang Putih', 'Keju Parmesan', 'Kuning Telor', 'Merica', 'Garam', 'Pasta', 'Bayam', 'Kaca Polong'
         ],
-        calories: 290,
-        carbs: 23.9,
-        protein: 36.7
+        calories: 430,
+        carbs: 54.1,
+        protein: 20.2
     }
 
 ]
