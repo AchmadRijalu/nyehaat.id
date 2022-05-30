@@ -195,6 +195,20 @@ const menus = [
         carbs: 23.9,
         protein: 36.7
     },
+    {
+        id: 12,
+        title: "Pea & Spinach Carbonara",
+        price: 45000,
+        diseases: [
+            'Diabetes'
+        ],
+        ingredients: [
+            'Olive Oil', 'Panko Breadcrumbs', 'Bawang Putih', 'Keju Parmesan', 'Kuning Telor', 'Merica', 'Garam', 'Pasta', 'Bayam', 'Kaca Polong'
+        ],
+        calories: 290,
+        carbs: 23.9,
+        protein: 36.7
+    }
 
 ]
 
