@@ -181,6 +181,20 @@ const menus = [
         carbs: 81,
         protein: 17
     },
+    {
+        id: 11,
+        title: "Ayam Jahe",
+        price: 42000,
+        diseases: [
+            'Darah Tinggi'
+        ],
+        ingredients: [
+            'Ayam', 'Garam', 'Merica', 'Olive Oil', 'Wortel', 'Jahe', 'Beras Coklat'
+        ],
+        calories: 290,
+        carbs: 23.9,
+        protein: 36.7
+    },
 
 ]
 
