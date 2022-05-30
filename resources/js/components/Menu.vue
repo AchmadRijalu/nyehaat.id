@@ -43,17 +43,17 @@ import MenuCard from "./MenuCard";
 const menus = [
     {
         id: 1,
-        title: "Tumis Jamur & Tahu Saus Tiram",
-        price: 30000,
+        title: "Ayam Jahe",
+        price: 42000,
         diseases: [
-            'Diabetes'
+            'Darah Tinggi'
         ],
         ingredients: [
-            'Minyak kanola', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'
+            'Ayam', 'Garam', 'Merica', 'Olive Oil', 'Wortel', 'Jahe', 'Nasi Merah'
         ],
-        calories: 171,
-        carbs: 8.6,
-        protein: 7.7
+        calories: 290,
+        carbs: 23.9,
+        protein: 36.7
     },
     {
         id: 3,
@@ -63,7 +63,7 @@ const menus = [
             'Darah Tinggi'
         ],
         ingredients: [
-            'Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'
+            'Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod', 'Nasi Merah'
         ],
         calories: 221,
         carbs: 11.3,
@@ -77,7 +77,7 @@ const menus = [
             'Darah Tinggi'
         ],
         ingredients: [
-            'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'
+            'Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream', 'Nasi Merah'
         ],
         calories: 227,
         carbs: 112.9,
@@ -119,7 +119,7 @@ const menus = [
             'Penyakit Jantung'
         ],
         ingredients: [
-            'Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis',
+            'Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis', 'Nasi Merah'
         ],
         calories: 500,
         carbs: 33,
@@ -161,7 +161,7 @@ const menus = [
             'Diabetes'
         ],
         ingredients: [
-            'Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'
+            'Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi', 'Nasi Merah'
         ],
         calories: 439,
         carbs: 81,
@@ -175,7 +175,7 @@ const menus = [
             'Diabetes'
         ],
         ingredients: [
-            'Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'
+            'Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam', 'Nasi Merah'
         ],
         calories: 439,
         carbs: 81,
@@ -183,17 +183,17 @@ const menus = [
     },
     {
         id: 11,
-        title: "Ayam Jahe",
-        price: 42000,
+        title: "Tumis Jamur & Tahu Saus Tiram",
+        price: 30000,
         diseases: [
-            'Darah Tinggi'
+            'Diabetes'
         ],
         ingredients: [
-            'Ayam', 'Garam', 'Merica', 'Olive Oil', 'Wortel', 'Jahe', 'Beras Coklat'
+            'Minyak kanola', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram', 'Nasi Merah'
         ],
-        calories: 290,
-        carbs: 23.9,
-        protein: 36.7
+        calories: 171,
+        carbs: 8.6,
+        protein: 7.7
     },
     {
         id: 12,

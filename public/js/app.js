@@ -5946,19 +5946,19 @@ __webpack_require__.r(__webpack_exports__);
 
 var menus = [{
   id: 1,
-  title: "Tumis Jamur & Tahu Saus Tiram",
-  price: 30000,
-  diseases: ['Diabetes'],
-  ingredients: ['Minyak kanola', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram'],
-  calories: 171,
-  carbs: 8.6,
-  protein: 7.7
+  title: "Ayam Jahe",
+  price: 42000,
+  diseases: ['Darah Tinggi'],
+  ingredients: ['Ayam', 'Garam', 'Merica', 'Olive Oil', 'Wortel', 'Jahe', 'Nasi Merah'],
+  calories: 290,
+  carbs: 23.9,
+  protein: 36.7
 }, {
   id: 3,
   title: "Baked Cod with Spring Vegetables",
   price: 42000,
   diseases: ['Darah Tinggi'],
-  ingredients: ['Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod'],
+  ingredients: ['Tomat ceri', 'Lemon', 'Asparagus', 'Merica', 'Bawang merah', 'Olive Oil', 'Garam', 'Peterseli', 'Ikan kod', 'Nasi Merah'],
   calories: 221,
   carbs: 11.3,
   protein: 20.9
@@ -5967,7 +5967,7 @@ var menus = [{
   title: "Chickpea Quinoa Soup",
   price: 36000,
   diseases: ['Darah Tinggi'],
-  ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream'],
+  ingredients: ['Minyak canola', 'Bawang', 'Saus Tomat', 'Wortel', 'Quinoa', 'Bubuk cabai', 'Saus Worcestershire', 'Garam', 'Merica', 'Zucchini', 'Sour cream', 'Nasi Merah'],
   calories: 227,
   carbs: 112.9,
   protein: 8
@@ -5994,7 +5994,7 @@ var menus = [{
   title: "Ayam-Jagung Lapis Aprikot",
   price: 28000,
   diseases: ['Penyakit Jantung'],
-  ingredients: ['Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis'],
+  ingredients: ['Selai Aprikot', 'Paprika Merah', 'Ayam Paha Stik Drum', 'Potongan Jagung', 'Air Jeruk Nipis', 'Nasi Merah'],
   calories: 500,
   carbs: 33,
   protein: 51
@@ -6021,7 +6021,7 @@ var menus = [{
   title: "Beef Sukiyaki",
   price: 38000,
   diseases: ['Diabetes'],
-  ingredients: ['Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi'],
+  ingredients: ['Daging Sapi', 'Bawang Bombai', 'Bawang Putih', 'Kucai', 'Kecap Manis', 'Wijen', 'Merica', 'Minyak Jagung', 'Kaldu Sapi', 'Nasi Merah'],
   calories: 439,
   carbs: 81,
   protein: 17
@@ -6030,19 +6030,19 @@ var menus = [{
   title: "Tumis Daging Sapi Bumbu Jahe dengan Baby Bok Choy",
   price: 38000,
   diseases: ['Diabetes'],
-  ingredients: ['Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam'],
+  ingredients: ['Daging Sapi', 'Jahe', 'Kecap', 'Tepung Maizena', 'Minyak Wijen', 'Saus Tiram', 'Baby Bok Choy', 'Minyak Sayur', 'Kaldu Ayam', 'Nasi Merah'],
   calories: 439,
   carbs: 81,
   protein: 17
 }, {
   id: 11,
-  title: "Ayam Jahe",
-  price: 42000,
-  diseases: ['Darah Tinggi'],
-  ingredients: ['Ayam', 'Garam', 'Merica', 'Olive Oil', 'Wortel', 'Jahe', 'Beras Coklat'],
-  calories: 290,
-  carbs: 23.9,
-  protein: 36.7
+  title: "Tumis Jamur & Tahu Saus Tiram",
+  price: 30000,
+  diseases: ['Diabetes'],
+  ingredients: ['Minyak kanola', 'Jamur', 'Paprika merah', 'Daun bawang', 'Jahe', 'Bawang putih', 'Tahu', 'Saus tiram', 'Nasi Merah'],
+  calories: 171,
+  carbs: 8.6,
+  protein: 7.7
 }, {
   id: 12,
   title: "Pea & Spinach Carbonara",
