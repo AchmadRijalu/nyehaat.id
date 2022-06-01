@@ -5,9 +5,16 @@
             <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mb-16 ">Seluruh resep dari menu kami telah disetujui oleh ahli gizi</h2>
             <div class="mx-auto container px-6 xl:px-0 items-center ">
                 <div class="flex flex-col items-center ">
-                    <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ">
-                        <template v-for="menu in menus">
-                            <MenuCard v-if="menu.diseases[0] === customer.conditions[0].condition" :key="menu.id" :menu="menu"></MenuCard>
+                    <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch">
+                        <template v-if="customer.conditions[0].condition === 'Tidak Ada'">
+                            <template v-for="menu in menus">
+                                <MenuCard :key="menu.id" :menu="menu"></MenuCard>
+                            </template>
+                        </template>
+                        <template v-else>
+                            <template v-for="menu in menus">
+                                <MenuCard v-if="menu.diseases[0] === customer.conditions[0].condition" :key="menu.id" :menu="menu"></MenuCard>
+                            </template>
                         </template>
                     </div>
                 </div>
@@ -17,6 +24,7 @@
                 <p class="text-center w-max h-max ml-1 text-xl"> + Free ongkir</p>
             </div>
             <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-10 ">Untuk hari Sabtu dan Minggu (2 hidangan/hari, total 4 hidangan)</h2>
+            <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-2" v-if="customer.conditions[0].condition === 'Tidak Ada'">Pilih 4 menu bila anda tidak memiliki penyakit</h2>
             <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-2 ">Kami hanya melayani daerah Kota Surabaya</h2>
             <h2 class="text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-12 ">Klik tombol di bawah untuk melakukan PO melalui WhatsApp kami</h2>
             <a :href="walink" class="block mx-auto mt-2 bg-greenprimary text-center transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</a>
@@ -224,10 +232,21 @@ export default {
         }
     },
     mounted(){
-        this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition +
-            ".%0aNama:%20" + this.customer.name +
-            "%0aKontak:%20" + this.customer.phone +
-            "%0aAlamat:%20" + this.customer.address
+        if (this.customer.conditions[0].condition === 'Tidak Ada') {
+            this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20bagi%20tidak%20ada%20penyakit" +
+                ".%0aMenu1:%20..." +
+                ".%0aMenu2:%20..." +
+                ".%0aMenu3:%20..." +
+                ".%0aMenu4:%20...%0a" +
+                "%0aNama:%20" + this.customer.name +
+                "%0aKontak:%20" + this.customer.phone +
+                "%0aAlamat:%20" + this.customer.address
+        } else {
+            this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition +
+                ".%0aNama:%20" + this.customer.name +
+                "%0aKontak:%20" + this.customer.phone +
+                "%0aAlamat:%20" + this.customer.address
+        }
     }
 };
 </script>

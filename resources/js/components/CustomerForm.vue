@@ -35,12 +35,24 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <div class="md:flex items-center lg:ml-24 lg:mt-0 mt-4">
+                                    <div class="md:flex items-center !items-start lg:ml-24 lg:mt-0 mt-4">
                                         <div class="md:w-64">
                                             <label class="text-sm leading-none text-gray-800" id="firstName"
                                             >Nama</label
                                             >
                                             <input
+                                                v-if="formdata"
+                                                :value="formdata.name"
+                                                required
+                                                type="name"
+                                                name="name"
+                                                tabindex="0"
+                                                class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                                                aria-labelledby="firstName"
+                                                placeholder="Hadi Soetomo"
+                                            />
+                                            <input
+                                                v-else
                                                 required
                                                 type="name"
                                                 name="name"
@@ -54,8 +66,22 @@
                                             <label class="text-sm leading-none text-gray-800" id="lastName"
                                             >Alamat</label
                                             >
-                                            <input
+                                            <textarea
+                                                v-if="formdata"
+                                                :value="formdata.address"
                                                 required
+                                                rows="3"
+                                                type="name"
+                                                name="address"
+                                                tabindex="0"
+                                                class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                                                aria-labelledby="address"
+                                                placeholder="Jl. Sudirman M/20, 60211"
+                                            />
+                                            <textarea
+                                                v-else
+                                                required
+                                                rows="3"
                                                 type="name"
                                                 name="address"
                                                 tabindex="0"
@@ -71,6 +97,18 @@
                                             >Nomor HP</label
                                             >
                                             <input
+                                                v-if="formdata"
+                                                :value="formdata.phone"
+                                                required
+                                                type="name"
+                                                name="phone"
+                                                tabindex="0"
+                                                class="w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800"
+                                                aria-labelledby="phone"
+                                                placeholder="082139842937"
+                                            />
+                                            <input
+                                                v-else
                                                 required
                                                 type="name"
                                                 name="phone"
@@ -113,6 +151,10 @@
                                                 <input name="conditions[]" id="checkbox-3" type="radio" value="3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
                                                 <label for="checkbox-3" class="ml-2 text-sm font-medium text-gray-900">Penyakit Jantung</label>
                                             </div>
+                                            <div class="flex items-center mb-4">
+                                                <input name="conditions[]" id="checkbox-4" type="radio" value="4" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                                                <label for="checkbox-4" class="ml-2 text-sm font-medium text-gray-900">Tidak Ada</label>
+                                            </div>
 <!--                                            <div class="flex mb-4">-->
 <!--                                                <div class="flex items-center h-5">-->
 <!--                                                    <input name="condition[]" id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">-->
@@ -139,8 +181,8 @@
 
 <script>
 export default {
-    name: 'CustomerFOrm',
-    props: ['name', 'type', 'qrCode'],
+    name: 'CustomerForm',
+    props: ['formdata'],
     data() {
         return {
             csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')

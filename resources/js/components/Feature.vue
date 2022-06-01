@@ -127,7 +127,8 @@
         </div>
         <h2 v-if="!customer" class="text-xl font-medium leading-10 text-gray-800 text-center mt-8 mb-4 ">Klik tombol di bawah untuk melihat menu yang terpersonalisasi bagi anda.</h2>
         <button v-if="!customer" @click="openCustomerForm" class="mx-auto mt-2 bg-greenprimary transition duration-150 ease-in-out focus:outline-none hover:bg-green-400 rounded text-white px-8 py-3 text-sm w-2/3">Pesan di sini</button>
-        <CustomerForm v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
+        <CustomerForm v-if="formdata" v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" :formdata="formdata" />
+        <CustomerForm v-else v-show="isCustomerFormVisible" @close-modal="closeCustomerForm" />
     </section>
 </template>
 
@@ -139,7 +140,7 @@ export default {
     components: {
         CustomerForm
     },
-    props: ['customer'],
+    props: ['customer', 'formdata'],
     data(){
         return {
             isCustomerFormVisible: false,

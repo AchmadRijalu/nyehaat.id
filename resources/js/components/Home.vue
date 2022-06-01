@@ -4,10 +4,20 @@
     <section>
         <Hero id="home"></Hero>
         <template v-if="customer">
-            <Feature id="feature" :customer="customer"></Feature>
+            <template v-if="formdata">
+                <Feature id="feature" :customer="customer" :formdata="formdata"></Feature>
+            </template>
+            <template v-else>
+                <Feature id="feature" :customer="customer"></Feature>
+            </template>
         </template>
         <template v-else>
-            <Feature id="feature"></Feature>
+            <template v-if="formdata">
+                <Feature id="feature" :formdata="formdata"></Feature>
+            </template>
+            <template v-else>
+                <Feature id="feature"></Feature>
+            </template>
         </template>
         <template v-if="customer">
             <Menu id="menu" :customer="customer"></Menu>
@@ -36,7 +46,7 @@ export default {
         Team,
         Footer
     },
-    props: ['customer'],
+    props: ['customer', 'formdata'],
     methods: {
         MenuHandler(flag) {
             if (flag) {

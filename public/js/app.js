@@ -5507,9 +5507,51 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'CustomerFOrm',
-  props: ['name', 'type', 'qrCode'],
+  name: 'CustomerForm',
+  props: ['formdata'],
   data: function data() {
     return {
       csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
@@ -5704,13 +5746,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Feature",
   components: {
     CustomerForm: _CustomerForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  props: ['customer'],
+  props: ['customer', 'formdata'],
   data: function data() {
     return {
       isCustomerFormVisible: false
@@ -5858,6 +5901,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -5872,7 +5925,7 @@ __webpack_require__.r(__webpack_exports__);
     Team: _Team__WEBPACK_IMPORTED_MODULE_2__["default"],
     Footer: _Footer__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
-  props: ['customer'],
+  props: ['customer', 'formdata'],
   methods: {
     MenuHandler: function MenuHandler(flag) {
       if (flag) {
@@ -5904,6 +5957,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _MenuCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MenuCard */ "./resources/js/components/MenuCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6067,7 +6128,11 @@ var menus = [{
     };
   },
   mounted: function mounted() {
-    this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition + ".%0aNama:%20" + this.customer.name + "%0aKontak:%20" + this.customer.phone + "%0aAlamat:%20" + this.customer.address;
+    if (this.customer.conditions[0].condition === 'Tidak Ada') {
+      this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20bagi%20tidak%20ada%20penyakit" + ".%0aMenu1:%20..." + ".%0aMenu2:%20..." + ".%0aMenu3:%20..." + ".%0aMenu4:%20...%0a" + "%0aNama:%20" + this.customer.name + "%0aKontak:%20" + this.customer.phone + "%0aAlamat:%20" + this.customer.address;
+    } else {
+      this.walink = "https://wa.me/6281231149830?text=Halo,%20saya%20ingin%20memesan%20menu%20untuk%20" + this.customer.conditions[0].condition + ".%0aNama:%20" + this.customer.name + "%0aKontak:%20" + this.customer.phone + "%0aAlamat:%20" + this.customer.address;
+    }
   }
 });
 
@@ -11581,7 +11646,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Top menu */\n.top-100[data-v-f2b6376c] {\n    -webkit-animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n            animation: slideDown-data-v-f2b6376c 0.5s ease-in-out;\n}\n@-webkit-keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n@keyframes slideDown-data-v-f2b6376c {\n0% {\n        top: -50%;\n}\n100% {\n        top: 0;\n}\n}\n*[data-v-f2b6376c] {\n    outline: none !important;\n    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\n    -webkit-tap-highlight-color: transparent;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -30308,7 +30373,152 @@ var render = function () {
                 _vm._v(" "),
                 _vm._m(0),
                 _vm._v(" "),
-                _vm._m(1),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "mt-16 lg:flex justify-between border-b border-gray-200 pb-16",
+                  },
+                  [
+                    _vm._m(1),
+                    _vm._v(" "),
+                    _c("div", [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "md:flex items-center !items-start lg:ml-24 lg:mt-0 mt-4",
+                        },
+                        [
+                          _c("div", { staticClass: "md:w-64" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "text-sm leading-none text-gray-800",
+                                attrs: { id: "firstName" },
+                              },
+                              [_vm._v("Nama")]
+                            ),
+                            _vm._v(" "),
+                            _vm.formdata
+                              ? _c("input", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    type: "name",
+                                    name: "name",
+                                    tabindex: "0",
+                                    "aria-labelledby": "firstName",
+                                    placeholder: "Hadi Soetomo",
+                                  },
+                                  domProps: { value: _vm.formdata.name },
+                                })
+                              : _c("input", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    type: "name",
+                                    name: "name",
+                                    tabindex: "0",
+                                    "aria-labelledby": "firstName",
+                                    placeholder: "Hadi Soetomo",
+                                  },
+                                }),
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "md:w-64 md:ml-12 " }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "text-sm leading-none text-gray-800",
+                                attrs: { id: "lastName" },
+                              },
+                              [_vm._v("Alamat")]
+                            ),
+                            _vm._v(" "),
+                            _vm.formdata
+                              ? _c("textarea", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    rows: "3",
+                                    type: "name",
+                                    name: "address",
+                                    tabindex: "0",
+                                    "aria-labelledby": "address",
+                                    placeholder: "Jl. Sudirman M/20, 60211",
+                                  },
+                                  domProps: { value: _vm.formdata.address },
+                                })
+                              : _c("textarea", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    rows: "3",
+                                    type: "name",
+                                    name: "address",
+                                    tabindex: "0",
+                                    "aria-labelledby": "address",
+                                    placeholder: "Jl. Sudirman M/20, 60211",
+                                  },
+                                }),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "md:flex items-center lg:ml-24 mt-8" },
+                        [
+                          _c("div", { staticClass: "md:w-64" }, [
+                            _c(
+                              "label",
+                              {
+                                staticClass:
+                                  "text-sm leading-none text-gray-800",
+                                attrs: { id: "phone" },
+                              },
+                              [_vm._v("Nomor HP")]
+                            ),
+                            _vm._v(" "),
+                            _vm.formdata
+                              ? _c("input", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    type: "name",
+                                    name: "phone",
+                                    tabindex: "0",
+                                    "aria-labelledby": "phone",
+                                    placeholder: "082139842937",
+                                  },
+                                  domProps: { value: _vm.formdata.phone },
+                                })
+                              : _c("input", {
+                                  staticClass:
+                                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
+                                  attrs: {
+                                    required: "",
+                                    type: "name",
+                                    name: "phone",
+                                    tabindex: "0",
+                                    "aria-labelledby": "phone",
+                                    placeholder: "082139842937",
+                                  },
+                                }),
+                          ]),
+                        ]
+                      ),
+                    ]),
+                  ]
+                ),
                 _vm._v(" "),
                 _vm._m(2),
                 _vm._v(" "),
@@ -30347,118 +30557,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass:
-          "mt-16 lg:flex justify-between border-b border-gray-200 pb-16",
-      },
-      [
-        _c("div", { staticClass: "w-80" }, [
-          _c("div", { staticClass: "flex items-center" }, [
-            _c(
-              "h1",
-              {
-                staticClass: "text-xl font-medium pr-2 leading-5 text-gray-800",
-              },
-              [
-                _vm._v(
-                  "\n                                            Informasi Anda\n                                        "
-                ),
-              ]
-            ),
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
+    return _c("div", { staticClass: "w-80" }, [
+      _c("div", { staticClass: "flex items-center" }, [
+        _c(
+          "h1",
+          { staticClass: "text-xl font-medium pr-2 leading-5 text-gray-800" },
+          [
             _vm._v(
-              "\n                                        Kami memperlukan informasi pribadi anda untuk mengantarkan pesanan bila anda melakukan PO.\n                                    "
+              "\n                                            Informasi Anda\n                                        "
             ),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _c(
-            "div",
-            { staticClass: "md:flex items-center lg:ml-24 lg:mt-0 mt-4" },
-            [
-              _c("div", { staticClass: "md:w-64" }, [
-                _c(
-                  "label",
-                  {
-                    staticClass: "text-sm leading-none text-gray-800",
-                    attrs: { id: "firstName" },
-                  },
-                  [_vm._v("Nama")]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass:
-                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
-                  attrs: {
-                    required: "",
-                    type: "name",
-                    name: "name",
-                    tabindex: "0",
-                    "aria-labelledby": "firstName",
-                    placeholder: "Hadi Soetomo",
-                  },
-                }),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "md:w-64 md:ml-12 " }, [
-                _c(
-                  "label",
-                  {
-                    staticClass: "text-sm leading-none text-gray-800",
-                    attrs: { id: "lastName" },
-                  },
-                  [_vm._v("Alamat")]
-                ),
-                _vm._v(" "),
-                _c("input", {
-                  staticClass:
-                    "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
-                  attrs: {
-                    required: "",
-                    type: "name",
-                    name: "address",
-                    tabindex: "0",
-                    "aria-labelledby": "address",
-                    placeholder: "Jl. Sudirman M/20, 60211",
-                  },
-                }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "md:flex items-center lg:ml-24 mt-8" }, [
-            _c("div", { staticClass: "md:w-64" }, [
-              _c(
-                "label",
-                {
-                  staticClass: "text-sm leading-none text-gray-800",
-                  attrs: { id: "phone" },
-                },
-                [_vm._v("Nomor HP")]
-              ),
-              _vm._v(" "),
-              _c("input", {
-                staticClass:
-                  "w-full p-3 mt-3 border rounded border-gray-200 focus:outline-none focus:border-gray-600 text-sm font-medium leading-none text-gray-800",
-                attrs: {
-                  required: "",
-                  type: "name",
-                  name: "phone",
-                  tabindex: "0",
-                  "aria-labelledby": "phone",
-                  placeholder: "082139842937",
-                },
-              }),
-            ]),
-          ]),
-        ]),
-      ]
-    )
+          ]
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "mt-4 text-sm leading-5 text-gray-600" }, [
+        _vm._v(
+          "\n                                        Kami memperlukan informasi pribadi anda untuk mengantarkan pesanan bila anda melakukan PO.\n                                    "
+        ),
+      ]),
+    ])
   },
   function () {
     var _vm = this
@@ -30564,6 +30681,28 @@ var staticRenderFns = [
                       attrs: { for: "checkbox-3" },
                     },
                     [_vm._v("Penyakit Jantung")]
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "flex items-center mb-4" }, [
+                  _c("input", {
+                    staticClass:
+                      "w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2",
+                    attrs: {
+                      name: "conditions[]",
+                      id: "checkbox-4",
+                      type: "radio",
+                      value: "4",
+                    },
+                  }),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "ml-2 text-sm font-medium text-gray-900",
+                      attrs: { for: "checkbox-4" },
+                    },
+                    [_vm._v("Tidak Ada")]
                   ),
                 ]),
               ]),
@@ -30902,17 +31041,30 @@ var render = function () {
           )
         : _vm._e(),
       _vm._v(" "),
-      _c("CustomerForm", {
-        directives: [
-          {
-            name: "show",
-            rawName: "v-show",
-            value: _vm.isCustomerFormVisible,
-            expression: "isCustomerFormVisible",
-          },
-        ],
-        on: { "close-modal": _vm.closeCustomerForm },
-      }),
+      _vm.formdata
+        ? _c("CustomerForm", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.isCustomerFormVisible,
+                expression: "isCustomerFormVisible",
+              },
+            ],
+            attrs: { formdata: _vm.formdata },
+            on: { "close-modal": _vm.closeCustomerForm },
+          })
+        : _c("CustomerForm", {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.isCustomerFormVisible,
+                expression: "isCustomerFormVisible",
+              },
+            ],
+            on: { "close-modal": _vm.closeCustomerForm },
+          }),
     ],
     1
   )
@@ -31218,8 +31370,32 @@ var render = function () {
       _c("Hero", { attrs: { id: "home" } }),
       _vm._v(" "),
       _vm.customer
-        ? [_c("Feature", { attrs: { id: "feature", customer: _vm.customer } })]
-        : [_c("Feature", { attrs: { id: "feature" } })],
+        ? [
+            _vm.formdata
+              ? [
+                  _c("Feature", {
+                    attrs: {
+                      id: "feature",
+                      customer: _vm.customer,
+                      formdata: _vm.formdata,
+                    },
+                  }),
+                ]
+              : [
+                  _c("Feature", {
+                    attrs: { id: "feature", customer: _vm.customer },
+                  }),
+                ],
+          ]
+        : [
+            _vm.formdata
+              ? [
+                  _c("Feature", {
+                    attrs: { id: "feature", formdata: _vm.formdata },
+                  }),
+                ]
+              : [_c("Feature", { attrs: { id: "feature" } })],
+          ],
       _vm._v(" "),
       _vm.customer
         ? [_c("Menu", { attrs: { id: "menu", customer: _vm.customer } })]
@@ -31292,20 +31468,33 @@ var render = function () {
                     "div",
                     {
                       staticClass:
-                        "grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch  ",
+                        "grid xl:grid-cols-4 md:grid-cols-2 gap-x-8 gap-y-8 place-items-center items-stretch",
                     },
                     [
-                      _vm._l(_vm.menus, function (menu) {
-                        return [
-                          menu.diseases[0] ===
-                          _vm.customer.conditions[0].condition
-                            ? _c("MenuCard", {
-                                key: menu.id,
-                                attrs: { menu: menu },
-                              })
-                            : _vm._e(),
-                        ]
-                      }),
+                      _vm.customer.conditions[0].condition === "Tidak Ada"
+                        ? [
+                            _vm._l(_vm.menus, function (menu) {
+                              return [
+                                _c("MenuCard", {
+                                  key: menu.id,
+                                  attrs: { menu: menu },
+                                }),
+                              ]
+                            }),
+                          ]
+                        : [
+                            _vm._l(_vm.menus, function (menu) {
+                              return [
+                                menu.diseases[0] ===
+                                _vm.customer.conditions[0].condition
+                                  ? _c("MenuCard", {
+                                      key: menu.id,
+                                      attrs: { menu: menu },
+                                    })
+                                  : _vm._e(),
+                              ]
+                            }),
+                          ],
                     ],
                     2
                   ),
@@ -31349,6 +31538,17 @@ var render = function () {
                 ),
               ]
             ),
+            _vm._v(" "),
+            _vm.customer.conditions[0].condition === "Tidak Ada"
+              ? _c(
+                  "h2",
+                  {
+                    staticClass:
+                      "text-xl font-medium leading-10 text-gray-800 text-center mt-2",
+                  },
+                  [_vm._v("Pilih 4 menu bila anda tidak memiliki penyakit")]
+                )
+              : _vm._e(),
             _vm._v(" "),
             _c(
               "h2",

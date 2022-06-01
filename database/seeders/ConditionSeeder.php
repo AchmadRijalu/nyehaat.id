@@ -35,5 +35,12 @@ class ConditionSeeder extends Seeder
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now()
         ]);
+
+        DB::table('conditions')->insert([
+            'id' => 4,
+            'condition' => 'Tidak Ada',
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now()
+        ]);
     }
 }

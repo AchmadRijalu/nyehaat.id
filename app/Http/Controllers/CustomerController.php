@@ -37,12 +37,6 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        if (Customer::query()->where('phone', '=', $request->phone)->exists()) {
-            $customer = Customer::with('conditions')->where('phone', '=', $request->phone)->first();
-            Session::put('customer', $customer);
-            return redirect()->to('/');
-        }
-
         $query = Customer::query()->create([
             'name' => $request->name,
             'address' => $request->address,
@@ -70,10 +64,17 @@ class CustomerController extends Controller
             ]);
         }
 
-        $customer = Customer::with('conditions')->where('id', '=', $query->id)->first();
-        Session::put('customer', $customer);
+        if (in_array('4', $request->get('conditions'))) {
+            CustomerCondition::query()->create([
+                'customer_id' => $query->id,
+                'condition_id' => 4,
+            ]);
+        }
 
-        return redirect()->to('/#menu');
+        $customer = Customer::with('conditions')->where('id', '=', $query->id)->first();
+        Session::put('formdata', $customer);
+
+        return redirect()->to('/#menu')->with(['customer' => $customer]);
     }
 
     /**
